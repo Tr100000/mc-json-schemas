@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft-07/schema",
   "$ref": "#/definitions/def",
   "exportedWith": {
-    "minecraft": "26.3",
-    "codec2schema": "0.3.7+26.3-pre-1",
+    "minecraft": "26.4-snapshot-1",
+    "codec2schema": "0.3.7+26.4-snapshot-1",
     "exportedBy": {
       "pluginId": "codec2schema:common",
-      "modVersion": "0.3.7+26.3-pre-1"
+      "modVersion": "0.3.7+26.4-snapshot-1"
     }
   },
   "definitions": {
@@ -17455,109 +17455,109 @@
         "minecraft:post_piercing_attack": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_719"
+            "$ref": "#/definitions/def_713"
           }
         },
         "minecraft:hit_block": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_720"
+            "$ref": "#/definitions/def_714"
           }
         },
         "minecraft:item_damage": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_721"
+            "$ref": "#/definitions/def_715"
           }
         },
         "minecraft:equipment_drops": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_722"
+            "$ref": "#/definitions/def_716"
           }
         },
         "minecraft:location_changed": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_724"
+            "$ref": "#/definitions/def_718"
           }
         },
         "minecraft:tick": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_728"
+            "$ref": "#/definitions/def_722"
           }
         },
         "minecraft:ammo_use": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_729"
+            "$ref": "#/definitions/def_723"
           }
         },
         "minecraft:projectile_piercing": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_730"
+            "$ref": "#/definitions/def_724"
           }
         },
         "minecraft:projectile_spawned": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_731"
+            "$ref": "#/definitions/def_725"
           }
         },
         "minecraft:projectile_spread": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_732"
+            "$ref": "#/definitions/def_726"
           }
         },
         "minecraft:projectile_count": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_733"
+            "$ref": "#/definitions/def_727"
           }
         },
         "minecraft:trident_return_acceleration": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_734"
+            "$ref": "#/definitions/def_728"
           }
         },
         "minecraft:fishing_time_reduction": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_735"
+            "$ref": "#/definitions/def_729"
           }
         },
         "minecraft:fishing_luck_bonus": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_736"
+            "$ref": "#/definitions/def_730"
           }
         },
         "minecraft:block_experience": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_737"
+            "$ref": "#/definitions/def_731"
           }
         },
         "minecraft:mob_experience": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_738"
+            "$ref": "#/definitions/def_732"
           }
         },
         "minecraft:repair_with_xp": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_739"
+            "$ref": "#/definitions/def_733"
           }
         },
         "minecraft:attributes": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_727"
+            "$ref": "#/definitions/def_721"
           }
         },
         "minecraft:crossbow_charge_time": {
@@ -17566,7 +17566,7 @@
         "minecraft:crossbow_charging_sounds": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_740"
+            "$ref": "#/definitions/def_734"
           }
         },
         "minecraft:trident_sound": {
@@ -46253,7 +46253,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_710"
+            "$ref": "#/definitions/def_704"
           }
         },
         {
@@ -46265,7 +46265,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_711"
+            "$ref": "#/definitions/def_705"
           }
         },
         {
@@ -46277,7 +46277,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_712"
+            "$ref": "#/definitions/def_706"
           }
         },
         {
@@ -46289,7 +46289,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_713"
+            "$ref": "#/definitions/def_707"
           }
         },
         {
@@ -46301,7 +46301,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_717"
+            "$ref": "#/definitions/def_711"
           }
         }
       ]
@@ -47093,7 +47093,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_687"
+            "$ref": "#/definitions/def_681"
           }
         }
       ]
@@ -47449,52 +47449,10 @@
       "type": "object",
       "properties": {
         "min_inclusive": {
-          "oneOf": [
-            {
-              "$ref": "#/definitions/def_679"
-            },
-            {
-              "oneOf": [
-                {
-                  "$ref": "#/definitions/def_681"
-                },
-                {
-                  "oneOf": [
-                    {
-                      "$ref": "#/definitions/def_683"
-                    },
-                    {
-                      "$ref": "#/definitions/def_685"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "$ref": "#/definitions/def_679"
         },
         "max_inclusive": {
-          "oneOf": [
-            {
-              "$ref": "#/definitions/def_679"
-            },
-            {
-              "oneOf": [
-                {
-                  "$ref": "#/definitions/def_681"
-                },
-                {
-                  "oneOf": [
-                    {
-                      "$ref": "#/definitions/def_683"
-                    },
-                    {
-                      "$ref": "#/definitions/def_685"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "$ref": "#/definitions/def_679"
         }
       },
       "required": [
@@ -47504,13 +47462,51 @@
     },
     "def_679": {
       "type": "object",
-      "properties": {
-        "absolute": {
-          "$ref": "#/definitions/def_680"
+      "oneOf": [
+        {
+          "required": [
+            "absolute"
+          ],
+          "properties": {
+            "absolute": {
+              "$ref": "#/definitions/def_680"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "required": [
+            "above_bottom"
+          ],
+          "properties": {
+            "above_bottom": {
+              "$ref": "#/definitions/def_680"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "required": [
+            "below_top"
+          ],
+          "properties": {
+            "below_top": {
+              "$ref": "#/definitions/def_680"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "required": [
+            "relative_to_sea_level"
+          ],
+          "properties": {
+            "relative_to_sea_level": {
+              "$ref": "#/definitions/def_680"
+            }
+          },
+          "additionalProperties": false
         }
-      },
-      "required": [
-        "absolute"
       ]
     },
     "def_680": {
@@ -47519,54 +47515,6 @@
       "maximum": 2031
     },
     "def_681": {
-      "type": "object",
-      "properties": {
-        "above_bottom": {
-          "$ref": "#/definitions/def_682"
-        }
-      },
-      "required": [
-        "above_bottom"
-      ]
-    },
-    "def_682": {
-      "type": "integer",
-      "minimum": -2032,
-      "maximum": 2031
-    },
-    "def_683": {
-      "type": "object",
-      "properties": {
-        "below_top": {
-          "$ref": "#/definitions/def_684"
-        }
-      },
-      "required": [
-        "below_top"
-      ]
-    },
-    "def_684": {
-      "type": "integer",
-      "minimum": -2032,
-      "maximum": 2031
-    },
-    "def_685": {
-      "type": "object",
-      "properties": {
-        "relative_to_sea_level": {
-          "$ref": "#/definitions/def_686"
-        }
-      },
-      "required": [
-        "relative_to_sea_level"
-      ]
-    },
-    "def_686": {
-      "type": "integer",
-      "minimum": -2032,
-      "maximum": 2031
-    },
-    "def_687": {
       "type": "object",
       "properties": {
         "min": {
@@ -47607,7 +47555,7 @@
               "$ref": "#/definitions/def_444"
             },
             {
-              "$ref": "#/definitions/def_688"
+              "$ref": "#/definitions/def_682"
             }
           ]
         },
@@ -47616,7 +47564,7 @@
         }
       ]
     },
-    "def_688": {
+    "def_682": {
       "type": "object",
       "properties": {
         "type": {
@@ -47647,7 +47595,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_689"
+            "$ref": "#/definitions/def_683"
           }
         },
         {
@@ -47659,7 +47607,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_690"
+            "$ref": "#/definitions/def_684"
           }
         },
         {
@@ -47671,7 +47619,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_697"
+            "$ref": "#/definitions/def_691"
           }
         },
         {
@@ -47683,7 +47631,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_698"
+            "$ref": "#/definitions/def_692"
           }
         },
         {
@@ -47695,7 +47643,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_701"
+            "$ref": "#/definitions/def_695"
           }
         },
         {
@@ -47707,7 +47655,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_703"
+            "$ref": "#/definitions/def_697"
           }
         },
         {
@@ -47719,7 +47667,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_704"
+            "$ref": "#/definitions/def_698"
           }
         },
         {
@@ -47731,7 +47679,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_705"
+            "$ref": "#/definitions/def_699"
           }
         },
         {
@@ -47743,7 +47691,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_707"
+            "$ref": "#/definitions/def_701"
           }
         },
         {
@@ -47755,12 +47703,12 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_708"
+            "$ref": "#/definitions/def_702"
           }
         }
       ]
     },
-    "def_689": {
+    "def_683": {
       "type": "object",
       "properties": {
         "source": {
@@ -47771,7 +47719,7 @@
         "source"
       ]
     },
-    "def_690": {
+    "def_684": {
       "type": "object",
       "properties": {
         "variety": {
@@ -47792,14 +47740,14 @@
                   }
                 },
                 {
-                  "$ref": "#/definitions/def_691"
+                  "$ref": "#/definitions/def_685"
                 }
               ]
             }
           ]
         },
         "slow_noise": {
-          "$ref": "#/definitions/def_692"
+          "$ref": "#/definitions/def_686"
         },
         "slow_scale": {
           "$ref": "#/definitions/def_90"
@@ -47810,7 +47758,7 @@
           "maximum": 9223372036854775807
         },
         "noise": {
-          "$ref": "#/definitions/def_692"
+          "$ref": "#/definitions/def_686"
         },
         "scale": {
           "$ref": "#/definitions/def_90"
@@ -47839,7 +47787,7 @@
         "states"
       ]
     },
-    "def_691": {
+    "def_685": {
       "type": "object",
       "properties": {
         "min_inclusive": {
@@ -47858,18 +47806,18 @@
         "max_inclusive"
       ]
     },
-    "def_692": {
+    "def_686": {
       "type": "object",
       "properties": {
         "base_amplitude": {
-          "$ref": "#/definitions/def_693",
+          "$ref": "#/definitions/def_687",
           "default": 1.0
         },
         "base_octave": {
-          "$ref": "#/definitions/def_694"
+          "$ref": "#/definitions/def_688"
         },
         "octave_count": {
-          "$ref": "#/definitions/def_695",
+          "$ref": "#/definitions/def_689",
           "default": 1
         },
         "normalize": {
@@ -47886,7 +47834,7 @@
         "amplitude_modifiers": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_696"
+            "$ref": "#/definitions/def_690"
           },
           "maxItems": 32,
           "default": []
@@ -47896,27 +47844,27 @@
         "base_octave"
       ]
     },
-    "def_693": {
+    "def_687": {
       "type": "number",
       "minimum": 9.999999747378752E-6,
       "maximum": 1000000.0
     },
-    "def_694": {
+    "def_688": {
       "type": "integer",
       "minimum": -32,
       "maximum": 32
     },
-    "def_695": {
+    "def_689": {
       "type": "integer",
       "minimum": 1,
       "maximum": 32
     },
-    "def_696": {
+    "def_690": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1000000.0
     },
-    "def_697": {
+    "def_691": {
       "type": "object",
       "properties": {
         "seed": {
@@ -47925,7 +47873,7 @@
           "maximum": 9223372036854775807
         },
         "noise": {
-          "$ref": "#/definitions/def_692"
+          "$ref": "#/definitions/def_686"
         },
         "scale": {
           "$ref": "#/definitions/def_90"
@@ -47951,7 +47899,7 @@
         "states"
       ]
     },
-    "def_698": {
+    "def_692": {
       "type": "object",
       "properties": {
         "seed": {
@@ -47960,16 +47908,16 @@
           "maximum": 9223372036854775807
         },
         "noise": {
-          "$ref": "#/definitions/def_692"
+          "$ref": "#/definitions/def_686"
         },
         "scale": {
           "$ref": "#/definitions/def_90"
         },
         "threshold": {
-          "$ref": "#/definitions/def_699"
+          "$ref": "#/definitions/def_693"
         },
         "high_chance": {
-          "$ref": "#/definitions/def_700"
+          "$ref": "#/definitions/def_694"
         },
         "default_state": {
           "anyOf": [
@@ -48019,28 +47967,28 @@
         "high_states"
       ]
     },
-    "def_699": {
+    "def_693": {
       "type": "number",
       "minimum": -1.0,
       "maximum": 1.0
     },
-    "def_700": {
+    "def_694": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_701": {
+    "def_695": {
       "type": "object",
       "properties": {
         "blocks": {
-          "$ref": "#/definitions/def_702"
+          "$ref": "#/definitions/def_696"
         }
       },
       "required": [
         "blocks"
       ]
     },
-    "def_702": {
+    "def_696": {
       "anyOf": [
         {
           "type": "string"
@@ -48063,7 +48011,7 @@
     "registry_fixed:minecraft:block_4": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_703": {
+    "def_697": {
       "type": "object",
       "properties": {
         "source": {
@@ -48091,7 +48039,7 @@
         "values"
       ]
     },
-    "def_704": {
+    "def_698": {
       "type": "object",
       "properties": {
         "state": {
@@ -48105,7 +48053,7 @@
         "state"
       ]
     },
-    "def_705": {
+    "def_699": {
       "type": "object",
       "properties": {
         "fallback": {
@@ -48114,7 +48062,7 @@
         "rules": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_706"
+            "$ref": "#/definitions/def_700"
           }
         }
       },
@@ -48122,7 +48070,7 @@
         "rules"
       ]
     },
-    "def_706": {
+    "def_700": {
       "type": "object",
       "properties": {
         "if_true": {
@@ -48137,7 +48085,7 @@
         "then"
       ]
     },
-    "def_707": {
+    "def_701": {
       "type": "object",
       "properties": {
         "state": {
@@ -48155,13 +48103,13 @@
         "state"
       ]
     },
-    "def_708": {
+    "def_702": {
       "type": "object",
       "properties": {
         "entries": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_709"
+            "$ref": "#/definitions/def_703"
           }
         }
       },
@@ -48169,7 +48117,7 @@
         "entries"
       ]
     },
-    "def_709": {
+    "def_703": {
       "type": "object",
       "properties": {
         "data": {
@@ -48266,7 +48214,7 @@
         }
       ]
     },
-    "def_710": {
+    "def_704": {
       "type": "object",
       "properties": {
         "radius": {
@@ -48320,7 +48268,7 @@
         "block_state"
       ]
     },
-    "def_711": {
+    "def_705": {
       "type": "object",
       "properties": {
         "function": {
@@ -48331,7 +48279,7 @@
         "function"
       ]
     },
-    "def_712": {
+    "def_706": {
       "type": "object",
       "properties": {
         "properties": {
@@ -48360,23 +48308,23 @@
         "properties"
       ]
     },
-    "def_713": {
+    "def_707": {
       "type": "object",
       "properties": {
         "particle": {
           "$ref": "#/definitions/def_441"
         },
         "horizontal_position": {
-          "$ref": "#/definitions/def_714"
+          "$ref": "#/definitions/def_708"
         },
         "vertical_position": {
-          "$ref": "#/definitions/def_714"
+          "$ref": "#/definitions/def_708"
         },
         "horizontal_velocity": {
-          "$ref": "#/definitions/def_716"
+          "$ref": "#/definitions/def_710"
         },
         "vertical_velocity": {
-          "$ref": "#/definitions/def_716"
+          "$ref": "#/definitions/def_710"
         },
         "speed": {
           "anyOf": [
@@ -48398,11 +48346,11 @@
         "vertical_velocity"
       ]
     },
-    "def_714": {
+    "def_708": {
       "type": "object",
       "properties": {
         "type": {
-          "$ref": "#/definitions/def_715"
+          "$ref": "#/definitions/def_709"
         },
         "offset": {
           "type": "number",
@@ -48417,13 +48365,13 @@
         "type"
       ]
     },
-    "def_715": {
+    "def_709": {
       "enum": [
         "entity_position",
         "in_bounding_box"
       ]
     },
-    "def_716": {
+    "def_710": {
       "type": "object",
       "properties": {
         "movement_scale": {
@@ -48443,11 +48391,11 @@
         }
       }
     },
-    "def_717": {
+    "def_711": {
       "type": "object",
       "properties": {
         "entity": {
-          "$ref": "#/definitions/def_718"
+          "$ref": "#/definitions/def_712"
         },
         "join_team": {
           "type": "boolean",
@@ -48458,7 +48406,7 @@
         "entity"
       ]
     },
-    "def_718": {
+    "def_712": {
       "anyOf": [
         {
           "type": "string"
@@ -48481,7 +48429,7 @@
     "registry_fixed:minecraft:entity_type_3": {
       "$ref": "#/definitions/registry:minecraft:entity_type"
     },
-    "def_719": {
+    "def_713": {
       "type": "object",
       "properties": {
         "effect": {
@@ -48495,7 +48443,7 @@
         "effect"
       ]
     },
-    "def_720": {
+    "def_714": {
       "type": "object",
       "properties": {
         "effect": {
@@ -48509,7 +48457,7 @@
         "effect"
       ]
     },
-    "def_721": {
+    "def_715": {
       "type": "object",
       "properties": {
         "effect": {
@@ -48523,11 +48471,11 @@
         "effect"
       ]
     },
-    "def_722": {
+    "def_716": {
       "type": "object",
       "properties": {
         "enchanted": {
-          "$ref": "#/definitions/def_723"
+          "$ref": "#/definitions/def_717"
         },
         "effect": {
           "$ref": "#/definitions/def_265"
@@ -48541,17 +48489,17 @@
         "effect"
       ]
     },
-    "def_723": {
+    "def_717": {
       "enum": [
         "attacker",
         "victim"
       ]
     },
-    "def_724": {
+    "def_718": {
       "type": "object",
       "properties": {
         "effect": {
-          "$ref": "#/definitions/def_725"
+          "$ref": "#/definitions/def_719"
         },
         "requirements": {
           "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
@@ -48561,7 +48509,7 @@
         "effect"
       ]
     },
-    "def_725": {
+    "def_719": {
       "type": "object",
       "properties": {
         "type": {
@@ -48598,7 +48546,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_726"
+            "$ref": "#/definitions/def_720"
           }
         },
         {
@@ -48622,7 +48570,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_727"
+            "$ref": "#/definitions/def_721"
           }
         },
         {
@@ -48730,7 +48678,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_710"
+            "$ref": "#/definitions/def_704"
           }
         },
         {
@@ -48742,7 +48690,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_711"
+            "$ref": "#/definitions/def_705"
           }
         },
         {
@@ -48754,7 +48702,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_712"
+            "$ref": "#/definitions/def_706"
           }
         },
         {
@@ -48766,7 +48714,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_713"
+            "$ref": "#/definitions/def_707"
           }
         },
         {
@@ -48778,18 +48726,18 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_717"
+            "$ref": "#/definitions/def_711"
           }
         }
       ]
     },
-    "def_726": {
+    "def_720": {
       "type": "object",
       "properties": {
         "effects": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_725"
+            "$ref": "#/definitions/def_719"
           }
         }
       },
@@ -48797,7 +48745,7 @@
         "effects"
       ]
     },
-    "def_727": {
+    "def_721": {
       "type": "object",
       "properties": {
         "id": {
@@ -48827,11 +48775,95 @@
         "operation"
       ]
     },
-    "def_728": {
+    "def_722": {
       "type": "object",
       "properties": {
         "effect": {
           "$ref": "#/definitions/def_638"
+        },
+        "requirements": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
+        }
+      },
+      "required": [
+        "effect"
+      ]
+    },
+    "def_723": {
+      "type": "object",
+      "properties": {
+        "effect": {
+          "$ref": "#/definitions/def_265"
+        },
+        "requirements": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
+        }
+      },
+      "required": [
+        "effect"
+      ]
+    },
+    "def_724": {
+      "type": "object",
+      "properties": {
+        "effect": {
+          "$ref": "#/definitions/def_265"
+        },
+        "requirements": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
+        }
+      },
+      "required": [
+        "effect"
+      ]
+    },
+    "def_725": {
+      "type": "object",
+      "properties": {
+        "effect": {
+          "$ref": "#/definitions/def_638"
+        },
+        "requirements": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
+        }
+      },
+      "required": [
+        "effect"
+      ]
+    },
+    "def_726": {
+      "type": "object",
+      "properties": {
+        "effect": {
+          "$ref": "#/definitions/def_265"
+        },
+        "requirements": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
+        }
+      },
+      "required": [
+        "effect"
+      ]
+    },
+    "def_727": {
+      "type": "object",
+      "properties": {
+        "effect": {
+          "$ref": "#/definitions/def_265"
+        },
+        "requirements": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
+        }
+      },
+      "required": [
+        "effect"
+      ]
+    },
+    "def_728": {
+      "type": "object",
+      "properties": {
+        "effect": {
+          "$ref": "#/definitions/def_265"
         },
         "requirements": {
           "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
@@ -48873,7 +48905,7 @@
       "type": "object",
       "properties": {
         "effect": {
-          "$ref": "#/definitions/def_638"
+          "$ref": "#/definitions/def_265"
         },
         "requirements": {
           "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
@@ -48912,90 +48944,6 @@
       ]
     },
     "def_734": {
-      "type": "object",
-      "properties": {
-        "effect": {
-          "$ref": "#/definitions/def_265"
-        },
-        "requirements": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
-        }
-      },
-      "required": [
-        "effect"
-      ]
-    },
-    "def_735": {
-      "type": "object",
-      "properties": {
-        "effect": {
-          "$ref": "#/definitions/def_265"
-        },
-        "requirements": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
-        }
-      },
-      "required": [
-        "effect"
-      ]
-    },
-    "def_736": {
-      "type": "object",
-      "properties": {
-        "effect": {
-          "$ref": "#/definitions/def_265"
-        },
-        "requirements": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
-        }
-      },
-      "required": [
-        "effect"
-      ]
-    },
-    "def_737": {
-      "type": "object",
-      "properties": {
-        "effect": {
-          "$ref": "#/definitions/def_265"
-        },
-        "requirements": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
-        }
-      },
-      "required": [
-        "effect"
-      ]
-    },
-    "def_738": {
-      "type": "object",
-      "properties": {
-        "effect": {
-          "$ref": "#/definitions/def_265"
-        },
-        "requirements": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
-        }
-      },
-      "required": [
-        "effect"
-      ]
-    },
-    "def_739": {
-      "type": "object",
-      "properties": {
-        "effect": {
-          "$ref": "#/definitions/def_265"
-        },
-        "requirements": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:predicate"
-        }
-      },
-      "required": [
-        "effect"
-      ]
-    },
-    "def_740": {
       "type": "object",
       "properties": {
         "start": {
