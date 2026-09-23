@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:common",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "properties": {
+        "asset_id": {
+          "$ref": "#/definitions/identifier"
+        }
+      },
+      "required": [
+        "asset_id"
+      ]
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "([_\\-a-z0-9.]+:)?[_\\-a-z0-9/.]+"
+    }
+  }
+}

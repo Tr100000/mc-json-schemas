@@ -1,0 +1,390 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:client",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "properties": {
+        "targets": {
+          "$ref": "#/definitions/def_1",
+          "default": {}
+        },
+        "passes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_4"
+          },
+          "default": []
+        }
+      }
+    },
+    "def_1": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/definitions/identifier"
+      },
+      "additionalProperties": {
+        "$ref": "#/definitions/def_2"
+      }
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "([_\\-a-z0-9.]+:)?[_\\-a-z0-9/.]+"
+    },
+    "def_2": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "$ref": "#/definitions/def_3"
+        },
+        "height": {
+          "$ref": "#/definitions/def_3"
+        },
+        "persistent": {
+          "type": "boolean",
+          "default": false
+        },
+        "clear_color": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 4,
+              "maxItems": 4
+            }
+          ],
+          "default": 0
+        }
+      }
+    },
+    "def_3": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "def_4": {
+      "type": "object",
+      "properties": {
+        "vertex_shader": {
+          "$ref": "#/definitions/identifier"
+        },
+        "fragment_shader": {
+          "$ref": "#/definitions/identifier"
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/def_5"
+              },
+              {
+                "$ref": "#/definitions/def_6"
+              }
+            ]
+          },
+          "default": []
+        },
+        "output": {
+          "$ref": "#/definitions/identifier"
+        },
+        "uniforms": {
+          "$ref": "#/definitions/def_7",
+          "default": {}
+        }
+      },
+      "required": [
+        "vertex_shader",
+        "fragment_shader",
+        "output"
+      ]
+    },
+    "def_5": {
+      "type": "object",
+      "properties": {
+        "sampler_name": {
+          "type": "string"
+        },
+        "location": {
+          "$ref": "#/definitions/identifier"
+        },
+        "width": {
+          "$ref": "#/definitions/def_3"
+        },
+        "height": {
+          "$ref": "#/definitions/def_3"
+        },
+        "bilinear": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "required": [
+        "sampler_name",
+        "location",
+        "width",
+        "height"
+      ]
+    },
+    "def_6": {
+      "type": "object",
+      "properties": {
+        "sampler_name": {
+          "type": "string"
+        },
+        "target": {
+          "$ref": "#/definitions/identifier"
+        },
+        "use_depth_buffer": {
+          "type": "boolean",
+          "default": false
+        },
+        "bilinear": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "required": [
+        "sampler_name",
+        "target"
+      ]
+    },
+    "def_7": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/def_8"
+        }
+      }
+    },
+    "def_8": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "int",
+            "ivec3",
+            "float",
+            "vec2",
+            "vec3",
+            "vec4",
+            "matrix4x4"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "int"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_9"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "ivec3"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_10"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "float"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_11"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "vec2"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_12"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "vec3"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_13"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "vec4"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_14"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "matrix4x4"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_15"
+          }
+        }
+      ]
+    },
+    "def_9": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_10": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "minItems": 3,
+          "maxItems": 3
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_11": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_12": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_13": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_14": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_15": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 16,
+          "maxItems": 16
+        }
+      },
+      "required": [
+        "value"
+      ]
+    }
+  }
+}

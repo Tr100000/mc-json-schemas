@@ -1,0 +1,511 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:common",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "minecraft:by_cost",
+            "minecraft:by_cost_with_difficulty",
+            "minecraft:single"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:by_cost"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_1"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:by_cost_with_difficulty"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_14"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:single"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_18"
+          }
+        }
+      ]
+    },
+    "def_1": {
+      "type": "object",
+      "properties": {
+        "enchantments": {
+          "$ref": "#/definitions/def_2"
+        },
+        "cost": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_3"
+            }
+          ]
+        }
+      },
+      "required": [
+        "enchantments",
+        "cost"
+      ]
+    },
+    "def_2": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/registry_fixed:minecraft:enchantment"
+              }
+            },
+            {
+              "$ref": "#/definitions/registry_fixed:minecraft:enchantment"
+            }
+          ]
+        }
+      ]
+    },
+    "registry_fixed:minecraft:enchantment": {
+      "$ref": "#/definitions/identifier"
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "([_\\-a-z0-9.]+:)?[_\\-a-z0-9/.]+"
+    },
+    "def_3": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "minecraft:constant",
+            "minecraft:uniform",
+            "minecraft:biased_to_bottom",
+            "minecraft:very_biased_to_bottom",
+            "minecraft:clamped",
+            "minecraft:weighted_list",
+            "minecraft:clamped_normal",
+            "minecraft:trapezoid"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:constant"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_4"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:uniform"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_5"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:biased_to_bottom"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_6"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:very_biased_to_bottom"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_7"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:clamped"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_8"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:weighted_list"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_9"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:clamped_normal"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_12"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:trapezoid"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_13"
+          }
+        }
+      ]
+    },
+    "def_4": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_5": {
+      "type": "object",
+      "properties": {
+        "min_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "max_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "min_inclusive",
+        "max_inclusive"
+      ]
+    },
+    "def_6": {
+      "type": "object",
+      "properties": {
+        "min_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "max_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "min_inclusive",
+        "max_inclusive"
+      ]
+    },
+    "def_7": {
+      "type": "object",
+      "properties": {
+        "min_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "max_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "min_inclusive",
+        "max_inclusive"
+      ]
+    },
+    "def_8": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_3"
+            }
+          ]
+        },
+        "min_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "max_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "source",
+        "min_inclusive",
+        "max_inclusive"
+      ]
+    },
+    "def_9": {
+      "type": "object",
+      "properties": {
+        "distribution": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_10"
+          }
+        }
+      },
+      "required": [
+        "distribution"
+      ]
+    },
+    "def_10": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_3"
+            }
+          ]
+        },
+        "weight": {
+          "$ref": "#/definitions/def_11"
+        }
+      },
+      "required": [
+        "data",
+        "weight"
+      ]
+    },
+    "def_11": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "def_12": {
+      "type": "object",
+      "properties": {
+        "mean": {
+          "type": "number"
+        },
+        "deviation": {
+          "type": "number"
+        },
+        "min_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "max_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "mean",
+        "deviation",
+        "min_inclusive",
+        "max_inclusive"
+      ]
+    },
+    "def_13": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "max": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "plateau": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "min",
+        "max",
+        "plateau"
+      ]
+    },
+    "def_14": {
+      "type": "object",
+      "properties": {
+        "enchantments": {
+          "$ref": "#/definitions/def_15"
+        },
+        "min_cost": {
+          "$ref": "#/definitions/def_16"
+        },
+        "max_cost_span": {
+          "$ref": "#/definitions/def_17"
+        }
+      },
+      "required": [
+        "enchantments",
+        "min_cost",
+        "max_cost_span"
+      ]
+    },
+    "def_15": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/registry_fixed:minecraft:enchantment_1"
+              }
+            },
+            {
+              "$ref": "#/definitions/registry_fixed:minecraft:enchantment_1"
+            }
+          ]
+        }
+      ]
+    },
+    "registry_fixed:minecraft:enchantment_1": {
+      "$ref": "#/definitions/identifier"
+    },
+    "def_16": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000
+    },
+    "def_17": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000
+    },
+    "def_18": {
+      "type": "object",
+      "properties": {
+        "enchantment": {
+          "$ref": "#/definitions/registry_fixed:minecraft:enchantment_2"
+        },
+        "level": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_3"
+            }
+          ]
+        }
+      },
+      "required": [
+        "enchantment",
+        "level"
+      ]
+    },
+    "registry_fixed:minecraft:enchantment_2": {
+      "$ref": "#/definitions/identifier"
+    }
+  }
+}

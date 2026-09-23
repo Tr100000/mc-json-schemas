@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:client",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "properties": {
+        "variants": {
+          "$ref": "#/definitions/def_1"
+        },
+        "multipart": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_6"
+          }
+        }
+      }
+    },
+    "def_1": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/def_2"
+            }
+          },
+          {
+            "$ref": "#/definitions/def_3"
+          }
+        ]
+      }
+    },
+    "def_2": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/def_3"
+        }
+      ],
+      "properties": {
+        "weight": {
+          "$ref": "#/definitions/def_5",
+          "default": 1
+        }
+      }
+    },
+    "def_3": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/def_4"
+        }
+      ],
+      "properties": {
+        "model": {
+          "$ref": "#/definitions/identifier"
+        }
+      },
+      "required": [
+        "model"
+      ]
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "([_\\-a-z0-9.]+:)?[_\\-a-z0-9/.]+"
+    },
+    "def_4": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647,
+          "default": 0
+        },
+        "y": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647,
+          "default": 0
+        },
+        "z": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647,
+          "default": 0
+        },
+        "uvlock": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "def_5": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "def_6": {
+      "type": "object",
+      "properties": {
+        "when": {
+          "$ref": "#/definitions/def_7"
+        },
+        "apply": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/def_2"
+              }
+            },
+            {
+              "$ref": "#/definitions/def_3"
+            }
+          ]
+        }
+      },
+      "required": [
+        "apply"
+      ]
+    },
+    "def_7": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/def_8"
+        },
+        {
+          "$ref": "#/definitions/def_10"
+        }
+      ]
+    },
+    "def_8": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/definitions/def_9"
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/def_7"
+        }
+      }
+    },
+    "def_9": {
+      "enum": [
+        "AND",
+        "OR"
+      ]
+    },
+    "def_10": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": -2147483648,
+                "maximum": 2147483647
+              },
+              {
+                "type": "boolean"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

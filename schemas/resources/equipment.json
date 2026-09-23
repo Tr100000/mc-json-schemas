@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:client",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "properties": {
+        "layers": {
+          "$ref": "#/definitions/def_1"
+        },
+        "trim_overrides": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_5"
+          },
+          "default": []
+        }
+      },
+      "required": [
+        "layers"
+      ]
+    },
+    "def_1": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/definitions/def_2"
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/def_3"
+        }
+      }
+    },
+    "def_2": {
+      "enum": [
+        "humanoid",
+        "humanoid_leggings",
+        "humanoid_baby",
+        "wings",
+        "wolf_body",
+        "horse_body",
+        "llama_body",
+        "pig_saddle",
+        "strider_saddle",
+        "camel_saddle",
+        "camel_husk_saddle",
+        "horse_saddle",
+        "donkey_saddle",
+        "mule_saddle",
+        "zombie_horse_saddle",
+        "skeleton_horse_saddle",
+        "happy_ghast_body",
+        "nautilus_saddle",
+        "nautilus_body"
+      ]
+    },
+    "def_3": {
+      "type": "object",
+      "properties": {
+        "texture": {
+          "$ref": "#/definitions/identifier"
+        },
+        "dyeable": {
+          "$ref": "#/definitions/def_4"
+        },
+        "use_player_texture": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "required": [
+        "texture"
+      ]
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "([_\\-a-z0-9.]+:)?[_\\-a-z0-9/.]+"
+    },
+    "def_4": {
+      "type": "object",
+      "properties": {
+        "color_when_undyed": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            }
+          ]
+        }
+      }
+    },
+    "def_5": {
+      "type": "object",
+      "properties": {
+        "when": {
+          "$ref": "#/definitions/def_6"
+        },
+        "texture": {
+          "$ref": "#/definitions/identifier"
+        },
+        "palette": {
+          "$ref": "#/definitions/identifier"
+        }
+      },
+      "required": [
+        "when"
+      ]
+    },
+    "def_6": {
+      "type": "object",
+      "properties": {
+        "material": {
+          "$ref": "#/definitions/identifier"
+        },
+        "pattern": {
+          "$ref": "#/definitions/identifier"
+        }
+      }
+    }
+  }
+}

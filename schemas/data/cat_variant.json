@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:common",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "properties": {
+        "asset_id": {
+          "$ref": "#/definitions/identifier"
+        },
+        "baby_asset_id": {
+          "$ref": "#/definitions/identifier"
+        },
+        "spawn_conditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_1"
+          }
+        }
+      },
+      "required": [
+        "asset_id",
+        "baby_asset_id",
+        "spawn_conditions"
+      ]
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "([_\\-a-z0-9.]+:)?[_\\-a-z0-9/.]+"
+    },
+    "def_1": {
+      "type": "object",
+      "properties": {
+        "condition": {
+          "$ref": "#/definitions/def_2"
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "priority"
+      ]
+    },
+    "def_2": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "minecraft:structure",
+            "minecraft:moon_brightness",
+            "minecraft:biome"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:structure"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_3"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:moon_brightness"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_5"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:biome"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_7"
+          }
+        }
+      ]
+    },
+    "def_3": {
+      "type": "object",
+      "properties": {
+        "structures": {
+          "$ref": "#/definitions/def_4"
+        }
+      },
+      "required": [
+        "structures"
+      ]
+    },
+    "def_4": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/registry_fixed:minecraft:worldgen_structure"
+              }
+            },
+            {
+              "$ref": "#/definitions/registry_fixed:minecraft:worldgen_structure"
+            }
+          ]
+        }
+      ]
+    },
+    "registry_fixed:minecraft:worldgen_structure": {
+      "$ref": "#/definitions/identifier"
+    },
+    "def_5": {
+      "type": "object",
+      "properties": {
+        "range": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/def_6"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        }
+      },
+      "required": [
+        "range"
+      ]
+    },
+    "def_6": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "type": "number"
+        },
+        "max": {
+          "type": "number"
+        }
+      }
+    },
+    "def_7": {
+      "type": "object",
+      "properties": {
+        "biomes": {
+          "$ref": "#/definitions/def_8"
+        }
+      },
+      "required": [
+        "biomes"
+      ]
+    },
+    "def_8": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/registry_fixed:minecraft:worldgen_biome"
+              }
+            },
+            {
+              "$ref": "#/definitions/registry_fixed:minecraft:worldgen_biome"
+            }
+          ]
+        }
+      ]
+    },
+    "registry_fixed:minecraft:worldgen_biome": {
+      "$ref": "#/definitions/identifier"
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:common",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "properties": {
+        "spawn_range": {
+          "$ref": "#/definitions/def_1",
+          "default": 4
+        },
+        "total_mobs": {
+          "$ref": "#/definitions/def_2",
+          "default": 6.0
+        },
+        "simultaneous_mobs": {
+          "$ref": "#/definitions/def_3",
+          "default": 2.0
+        },
+        "total_mobs_added_per_player": {
+          "$ref": "#/definitions/def_4",
+          "default": 2.0
+        },
+        "simultaneous_mobs_added_per_player": {
+          "$ref": "#/definitions/def_5",
+          "default": 1.0
+        },
+        "ticks_between_spawn": {
+          "$ref": "#/definitions/def_6",
+          "default": 40
+        },
+        "spawn_potentials": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_7"
+          },
+          "default": []
+        },
+        "loot_tables_to_eject": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_15"
+          },
+          "default": [
+            {
+              "data": "minecraft:spawners/trial_chamber/consumables",
+              "weight": 1
+            },
+            {
+              "data": "minecraft:spawners/trial_chamber/key",
+              "weight": 1
+            }
+          ]
+        },
+        "items_to_drop_when_ominous": {
+          "$ref": "#/definitions/identifier",
+          "default": "minecraft:spawners/trial_chamber/items_to_drop_when_ominous"
+        }
+      }
+    },
+    "def_1": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 128
+    },
+    "def_2": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 3.4028235E38
+    },
+    "def_3": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 3.4028235E38
+    },
+    "def_4": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 3.4028235E38
+    },
+    "def_5": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 3.4028235E38
+    },
+    "def_6": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "def_7": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "$ref": "#/definitions/def_8"
+        },
+        "weight": {
+          "$ref": "#/definitions/def_14"
+        }
+      },
+      "required": [
+        "data",
+        "weight"
+      ]
+    },
+    "def_8": {
+      "type": "object",
+      "properties": {
+        "entity": {},
+        "custom_spawn_rules": {
+          "$ref": "#/definitions/def_9"
+        },
+        "equipment": {
+          "$ref": "#/definitions/def_11"
+        }
+      },
+      "required": [
+        "entity"
+      ]
+    },
+    "def_9": {
+      "type": "object",
+      "properties": {
+        "block_light_limit": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": -2147483648,
+                    "maximum": 2147483647
+                  }
+                },
+                {
+                  "$ref": "#/definitions/def_10"
+                }
+              ]
+            }
+          ],
+          "default": [
+            0,
+            15
+          ]
+        },
+        "sky_light_limit": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": -2147483648,
+                    "maximum": 2147483647
+                  }
+                },
+                {
+                  "$ref": "#/definitions/def_10"
+                }
+              ]
+            }
+          ],
+          "default": [
+            0,
+            15
+          ]
+        }
+      }
+    },
+    "def_10": {
+      "type": "object",
+      "properties": {
+        "min_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "max_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "min_inclusive",
+        "max_inclusive"
+      ]
+    },
+    "def_11": {
+      "type": "object",
+      "properties": {
+        "loot_table": {
+          "$ref": "#/definitions/identifier"
+        },
+        "slot_drop_chances": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "$ref": "#/definitions/def_12"
+            }
+          ],
+          "default": {}
+        }
+      },
+      "required": [
+        "loot_table"
+      ]
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "([_\\-a-z0-9.]+:)?[_\\-a-z0-9/.]+"
+    },
+    "def_12": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/definitions/def_13"
+      },
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "def_13": {
+      "enum": [
+        "mainhand",
+        "offhand",
+        "feet",
+        "legs",
+        "chest",
+        "head",
+        "body",
+        "saddle"
+      ]
+    },
+    "def_14": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "def_15": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "$ref": "#/definitions/identifier"
+        },
+        "weight": {
+          "$ref": "#/definitions/def_14"
+        }
+      },
+      "required": [
+        "data",
+        "weight"
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:client",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/def_2"
+        }
+      ],
+      "properties": {
+        "model": {
+          "$ref": "#/definitions/def_1"
+        }
+      },
+      "required": [
+        "model"
+      ]
+    },
+    "def_1": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": []
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": []
+    },
+    "def_2": {
+      "type": "object",
+      "properties": {
+        "hand_animation_on_swap": {
+          "type": "boolean",
+          "default": true
+        },
+        "oversized_in_gui": {
+          "type": "boolean",
+          "default": false
+        },
+        "swap_animation_scale": {
+          "type": "number",
+          "default": 1.0
+        }
+      }
+    }
+  }
+}

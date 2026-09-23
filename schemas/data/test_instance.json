@@ -1,0 +1,623 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:common",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "minecraft:block_based",
+            "minecraft:function"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:block_based"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_1"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:function"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_30"
+          }
+        }
+      ]
+    },
+    "def_1": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/def_2"
+        }
+      ]
+    },
+    "def_2": {
+      "type": "object",
+      "properties": {
+        "environment": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:test_environment"
+        },
+        "dimension": {
+          "$ref": "#/definitions/identifier",
+          "default": "minecraft:overworld"
+        },
+        "structure": {
+          "$ref": "#/definitions/identifier"
+        },
+        "max_ticks": {
+          "$ref": "#/definitions/def_27"
+        },
+        "setup_ticks": {
+          "$ref": "#/definitions/def_6",
+          "default": 0
+        },
+        "required": {
+          "type": "boolean",
+          "default": true
+        },
+        "rotation": {
+          "$ref": "#/definitions/def_28",
+          "default": "none"
+        },
+        "manual_only": {
+          "type": "boolean",
+          "default": false
+        },
+        "max_attempts": {
+          "$ref": "#/definitions/def_27",
+          "default": 1
+        },
+        "required_successes": {
+          "$ref": "#/definitions/def_27",
+          "default": 1
+        },
+        "sky_access": {
+          "type": "boolean",
+          "default": false
+        },
+        "padding": {
+          "$ref": "#/definitions/def_29",
+          "default": 0
+        }
+      },
+      "required": [
+        "environment",
+        "structure",
+        "max_ticks"
+      ]
+    },
+    "registry_file_inline:minecraft:test_environment": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/def_3"
+        },
+        {
+          "$ref": "#/definitions/identifier"
+        }
+      ]
+    },
+    "def_3": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "minecraft:all_of",
+            "minecraft:clock_time",
+            "minecraft:difficulty",
+            "minecraft:function",
+            "minecraft:game_rules",
+            "minecraft:timeline_attributes",
+            "minecraft:weather"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:all_of"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_4"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:clock_time"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_5"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:difficulty"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_7"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:function"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_9"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:game_rules"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_10"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:timeline_attributes"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_24"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:weather"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_25"
+          }
+        }
+      ]
+    },
+    "def_4": {
+      "type": "object",
+      "properties": {
+        "definitions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/registry_file_inline:minecraft:test_environment"
+          }
+        }
+      },
+      "required": [
+        "definitions"
+      ]
+    },
+    "def_5": {
+      "type": "object",
+      "properties": {
+        "clock": {
+          "$ref": "#/definitions/registry_fixed:minecraft:world_clock"
+        },
+        "time": {
+          "$ref": "#/definitions/def_6"
+        }
+      },
+      "required": [
+        "clock",
+        "time"
+      ]
+    },
+    "registry_fixed:minecraft:world_clock": {
+      "$ref": "#/definitions/identifier"
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "([_\\-a-z0-9.]+:)?[_\\-a-z0-9/.]+"
+    },
+    "def_6": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "def_7": {
+      "type": "object",
+      "properties": {
+        "difficulty": {
+          "$ref": "#/definitions/def_8"
+        }
+      },
+      "required": [
+        "difficulty"
+      ]
+    },
+    "def_8": {
+      "enum": [
+        "peaceful",
+        "easy",
+        "normal",
+        "hard"
+      ]
+    },
+    "def_9": {
+      "type": "object",
+      "properties": {
+        "setup": {
+          "$ref": "#/definitions/identifier"
+        },
+        "teardown": {
+          "$ref": "#/definitions/identifier"
+        }
+      }
+    },
+    "def_10": {
+      "type": "object",
+      "properties": {
+        "rules": {
+          "$ref": "#/definitions/def_11"
+        }
+      },
+      "required": [
+        "rules"
+      ]
+    },
+    "def_11": {
+      "type": "object",
+      "properties": {
+        "minecraft:advance_time": {
+          "type": "boolean"
+        },
+        "minecraft:advance_weather": {
+          "type": "boolean"
+        },
+        "minecraft:allow_entering_nether_using_portals": {
+          "type": "boolean"
+        },
+        "minecraft:block_drops": {
+          "type": "boolean"
+        },
+        "minecraft:block_explosion_drop_decay": {
+          "type": "boolean"
+        },
+        "minecraft:command_blocks_work": {
+          "type": "boolean"
+        },
+        "minecraft:command_block_output": {
+          "type": "boolean"
+        },
+        "minecraft:drowning_damage": {
+          "type": "boolean"
+        },
+        "minecraft:elytra_movement_check": {
+          "type": "boolean"
+        },
+        "minecraft:ender_pearls_vanish_on_death": {
+          "type": "boolean"
+        },
+        "minecraft:entity_drops": {
+          "type": "boolean"
+        },
+        "minecraft:fall_damage": {
+          "type": "boolean"
+        },
+        "minecraft:fire_damage": {
+          "type": "boolean"
+        },
+        "minecraft:fire_spread_radius_around_player": {
+          "$ref": "#/definitions/def_12"
+        },
+        "minecraft:forgive_dead_players": {
+          "type": "boolean"
+        },
+        "minecraft:freeze_damage": {
+          "type": "boolean"
+        },
+        "minecraft:global_sound_events": {
+          "type": "boolean"
+        },
+        "minecraft:immediate_respawn": {
+          "type": "boolean"
+        },
+        "minecraft:keep_inventory": {
+          "type": "boolean"
+        },
+        "minecraft:lava_source_conversion": {
+          "type": "boolean"
+        },
+        "minecraft:limited_crafting": {
+          "type": "boolean"
+        },
+        "minecraft:locator_bar": {
+          "type": "boolean"
+        },
+        "minecraft:log_admin_commands": {
+          "type": "boolean"
+        },
+        "minecraft:max_block_modifications": {
+          "$ref": "#/definitions/def_13"
+        },
+        "minecraft:max_command_forks": {
+          "$ref": "#/definitions/def_14"
+        },
+        "minecraft:max_command_sequence_length": {
+          "$ref": "#/definitions/def_15"
+        },
+        "minecraft:max_entity_cramming": {
+          "$ref": "#/definitions/def_16"
+        },
+        "minecraft:max_minecart_speed": {
+          "$ref": "#/definitions/def_17"
+        },
+        "minecraft:max_snow_accumulation_height": {
+          "$ref": "#/definitions/def_18"
+        },
+        "minecraft:mob_drops": {
+          "type": "boolean"
+        },
+        "minecraft:mob_explosion_drop_decay": {
+          "type": "boolean"
+        },
+        "minecraft:mob_griefing": {
+          "type": "boolean"
+        },
+        "minecraft:natural_health_regeneration": {
+          "type": "boolean"
+        },
+        "minecraft:player_movement_check": {
+          "type": "boolean"
+        },
+        "minecraft:players_nether_portal_creative_delay": {
+          "$ref": "#/definitions/def_19"
+        },
+        "minecraft:players_nether_portal_default_delay": {
+          "$ref": "#/definitions/def_20"
+        },
+        "minecraft:players_sleeping_percentage": {
+          "$ref": "#/definitions/def_21"
+        },
+        "minecraft:projectiles_can_break_blocks": {
+          "type": "boolean"
+        },
+        "minecraft:pvp": {
+          "type": "boolean"
+        },
+        "minecraft:raids": {
+          "type": "boolean"
+        },
+        "minecraft:random_tick_speed": {
+          "$ref": "#/definitions/def_22"
+        },
+        "minecraft:reduced_debug_info": {
+          "type": "boolean"
+        },
+        "minecraft:respawn_radius": {
+          "$ref": "#/definitions/def_23"
+        },
+        "minecraft:send_command_feedback": {
+          "type": "boolean"
+        },
+        "minecraft:show_advancement_messages": {
+          "type": "boolean"
+        },
+        "minecraft:show_death_messages": {
+          "type": "boolean"
+        },
+        "minecraft:spawner_blocks_work": {
+          "type": "boolean"
+        },
+        "minecraft:spawn_mobs": {
+          "type": "boolean"
+        },
+        "minecraft:spawn_monsters": {
+          "type": "boolean"
+        },
+        "minecraft:spawn_patrols": {
+          "type": "boolean"
+        },
+        "minecraft:spawn_phantoms": {
+          "type": "boolean"
+        },
+        "minecraft:spawn_wandering_traders": {
+          "type": "boolean"
+        },
+        "minecraft:spawn_wardens": {
+          "type": "boolean"
+        },
+        "minecraft:spectators_generate_chunks": {
+          "type": "boolean"
+        },
+        "minecraft:spread_vines": {
+          "type": "boolean"
+        },
+        "minecraft:tnt_explodes": {
+          "type": "boolean"
+        },
+        "minecraft:tnt_explosion_drop_decay": {
+          "type": "boolean"
+        },
+        "minecraft:universal_anger": {
+          "type": "boolean"
+        },
+        "minecraft:water_source_conversion": {
+          "type": "boolean"
+        }
+      }
+    },
+    "def_12": {
+      "type": "integer",
+      "minimum": -1,
+      "maximum": 2147483647
+    },
+    "def_13": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2147483647
+    },
+    "def_14": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "def_15": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "def_16": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "def_17": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000
+    },
+    "def_18": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 8
+    },
+    "def_19": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "def_20": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "def_21": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "def_22": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "def_23": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "def_24": {
+      "type": "object",
+      "properties": {
+        "timelines": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/registry_fixed:minecraft:timeline"
+          }
+        }
+      },
+      "required": [
+        "timelines"
+      ]
+    },
+    "registry_fixed:minecraft:timeline": {
+      "$ref": "#/definitions/identifier"
+    },
+    "def_25": {
+      "type": "object",
+      "properties": {
+        "weather": {
+          "$ref": "#/definitions/def_26"
+        }
+      },
+      "required": [
+        "weather"
+      ]
+    },
+    "def_26": {
+      "enum": [
+        "clear",
+        "rain",
+        "thunder"
+      ]
+    },
+    "def_27": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "def_28": {
+      "enum": [
+        "none",
+        "clockwise_90",
+        "180",
+        "counterclockwise_90"
+      ]
+    },
+    "def_29": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 128
+    },
+    "def_30": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/def_2"
+        }
+      ],
+      "properties": {
+        "function": {
+          "$ref": "#/definitions/identifier"
+        }
+      },
+      "required": [
+        "function"
+      ]
+    }
+  }
+}

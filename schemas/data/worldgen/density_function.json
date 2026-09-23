@@ -1,0 +1,1425 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "anyOf": [
+    {
+      "$ref": "#/definitions/def"
+    },
+    {
+      "$ref": "#/definitions/def_1"
+    }
+  ],
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:common",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "number",
+      "minimum": -1000000.0,
+      "maximum": 1000000.0
+    },
+    "def_1": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "minecraft:constant",
+            "minecraft:blend_alpha",
+            "minecraft:blend_offset",
+            "minecraft:beardifier",
+            "minecraft:noise",
+            "minecraft:end_outer_islands",
+            "minecraft:distance_to_point",
+            "minecraft:gradient",
+            "minecraft:shift_a",
+            "minecraft:shift_b",
+            "minecraft:shift",
+            "minecraft:abs",
+            "minecraft:square",
+            "minecraft:cube",
+            "minecraft:sqrt",
+            "minecraft:half_negative",
+            "minecraft:quarter_negative",
+            "minecraft:reciprocal",
+            "minecraft:negate",
+            "minecraft:squeeze",
+            "minecraft:log",
+            "minecraft:sign",
+            "minecraft:floor",
+            "minecraft:round",
+            "minecraft:ceil",
+            "minecraft:truncate",
+            "minecraft:add",
+            "minecraft:sub",
+            "minecraft:mul",
+            "minecraft:div",
+            "minecraft:min",
+            "minecraft:max",
+            "minecraft:pow",
+            "minecraft:spline",
+            "minecraft:lerp",
+            "minecraft:clamp",
+            "minecraft:range_choice",
+            "minecraft:interval_select",
+            "minecraft:cache",
+            "minecraft:blend_density",
+            "minecraft:interpolated",
+            "minecraft:slice",
+            "minecraft:find_top_surface",
+            "minecraft:old_blended_noise"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:constant"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_2"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:blend_alpha"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_3"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:blend_offset"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_4"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:beardifier"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_5"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:noise"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_6"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:end_outer_islands"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_12"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:distance_to_point"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_13"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:gradient"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_15"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:shift_a"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_18"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:shift_b"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_19"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:shift"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_20"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:abs"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_21"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:square"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_22"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:cube"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_23"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:sqrt"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_24"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:half_negative"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_25"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:quarter_negative"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_26"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:reciprocal"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_27"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:negate"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_28"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:squeeze"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_29"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:log"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_30"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:sign"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_31"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:floor"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_32"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:round"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_33"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:ceil"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_34"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:truncate"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_35"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:add"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_36"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:sub"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_37"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:mul"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_38"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:div"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_39"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:min"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_40"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:max"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_41"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:pow"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_42"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:spline"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_43"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:lerp"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_47"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:clamp"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_48"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:range_choice"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_49"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:interval_select"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_50"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:cache"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_51"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:blend_density"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_52"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:interpolated"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_53"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:slice"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_55"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:find_top_surface"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_56"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:old_blended_noise"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_58"
+          }
+        }
+      ]
+    },
+    "def_2": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "$ref": "#/definitions/def"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_3": {},
+    "def_4": {},
+    "def_5": {},
+    "def_6": {
+      "type": "object",
+      "properties": {
+        "noise": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_noise"
+        },
+        "xz_scale": {
+          "type": "number"
+        },
+        "y_scale": {
+          "type": "number"
+        },
+        "shift_x": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 0.0
+        },
+        "shift_y": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 0.0
+        },
+        "shift_z": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 0.0
+        }
+      },
+      "required": [
+        "noise",
+        "xz_scale",
+        "y_scale"
+      ]
+    },
+    "registry_file_inline:minecraft:worldgen_noise": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/def_7"
+        },
+        {
+          "$ref": "#/definitions/identifier"
+        }
+      ]
+    },
+    "def_7": {
+      "type": "object",
+      "properties": {
+        "base_amplitude": {
+          "$ref": "#/definitions/def_8",
+          "default": 1.0
+        },
+        "base_octave": {
+          "$ref": "#/definitions/def_9"
+        },
+        "octave_count": {
+          "$ref": "#/definitions/def_10",
+          "default": 1
+        },
+        "normalize": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "default": true
+        },
+        "amplitude_modifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_11"
+          },
+          "maxItems": 32,
+          "default": []
+        }
+      },
+      "required": [
+        "base_octave"
+      ]
+    },
+    "def_8": {
+      "type": "number",
+      "minimum": 9.999999747378752E-6,
+      "maximum": 1000000.0
+    },
+    "def_9": {
+      "type": "integer",
+      "minimum": -32,
+      "maximum": 32
+    },
+    "def_10": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 32
+    },
+    "def_11": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1000000.0
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "([_\\-a-z0-9.]+:)?[_\\-a-z0-9/.]+"
+    },
+    "registry_file_inline:minecraft:worldgen_density_function": {
+      "anyOf": [
+        {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/def"
+            },
+            {
+              "$ref": "#/definitions/def_1"
+            }
+          ]
+        },
+        {
+          "$ref": "#/definitions/identifier"
+        }
+      ]
+    },
+    "def_12": {},
+    "def_13": {
+      "type": "object",
+      "properties": {
+        "point": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "metric": {
+          "$ref": "#/definitions/def_14"
+        }
+      },
+      "required": [
+        "point",
+        "metric"
+      ]
+    },
+    "def_14": {
+      "enum": [
+        "euclidean",
+        "euclidean_squared",
+        "manhattan",
+        "chebyshev"
+      ]
+    },
+    "def_15": {
+      "type": "object",
+      "properties": {
+        "axis": {
+          "$ref": "#/definitions/def_16"
+        },
+        "tiling": {
+          "$ref": "#/definitions/def_17",
+          "default": "clamp_to_edge"
+        },
+        "from_coordinate": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "to_coordinate": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "from_value": {
+          "$ref": "#/definitions/def"
+        },
+        "to_value": {
+          "$ref": "#/definitions/def"
+        }
+      },
+      "required": [
+        "axis",
+        "from_coordinate",
+        "to_coordinate",
+        "from_value",
+        "to_value"
+      ]
+    },
+    "def_16": {
+      "enum": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "def_17": {
+      "enum": [
+        "clamp_to_edge",
+        "repeat",
+        "mirrored_repeat"
+      ]
+    },
+    "def_18": {
+      "type": "object",
+      "properties": {
+        "noise": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_noise"
+        }
+      },
+      "required": [
+        "noise"
+      ]
+    },
+    "def_19": {
+      "type": "object",
+      "properties": {
+        "noise": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_noise"
+        }
+      },
+      "required": [
+        "noise"
+      ]
+    },
+    "def_20": {
+      "type": "object",
+      "properties": {
+        "noise": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_noise"
+        }
+      },
+      "required": [
+        "noise"
+      ]
+    },
+    "def_21": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_22": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_23": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_24": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_25": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_26": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_27": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_28": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_29": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_30": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_31": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_32": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "multiple": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 1.0
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_33": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "multiple": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 1.0
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_34": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "multiple": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 1.0
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_35": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "multiple": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 1.0
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_36": {
+      "type": "object",
+      "properties": {
+        "left": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "right": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "left",
+        "right"
+      ]
+    },
+    "def_37": {
+      "type": "object",
+      "properties": {
+        "left": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "right": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "left",
+        "right"
+      ]
+    },
+    "def_38": {
+      "type": "object",
+      "properties": {
+        "left": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "right": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "left",
+        "right"
+      ]
+    },
+    "def_39": {
+      "type": "object",
+      "properties": {
+        "left": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "right": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "left",
+        "right"
+      ]
+    },
+    "def_40": {
+      "type": "object",
+      "properties": {
+        "left": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "right": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "left",
+        "right"
+      ]
+    },
+    "def_41": {
+      "type": "object",
+      "properties": {
+        "left": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "right": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "left",
+        "right"
+      ]
+    },
+    "def_42": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "exponent": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "base",
+        "exponent"
+      ]
+    },
+    "def_43": {
+      "type": "object",
+      "properties": {
+        "spline": {
+          "$ref": "#/definitions/def_44"
+        }
+      },
+      "required": [
+        "spline"
+      ]
+    },
+    "def_44": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "#/definitions/def_45"
+        }
+      ]
+    },
+    "def_45": {
+      "type": "object",
+      "properties": {
+        "coordinate": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_46"
+          }
+        }
+      },
+      "required": [
+        "coordinate",
+        "points"
+      ]
+    },
+    "def_46": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "number"
+        },
+        "value": {
+          "$ref": "#/definitions/def_44"
+        },
+        "derivative": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "location",
+        "value",
+        "derivative"
+      ]
+    },
+    "def_47": {
+      "type": "object",
+      "properties": {
+        "alpha": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "first": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "second": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "alpha",
+        "first",
+        "second"
+      ]
+    },
+    "def_48": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "min": {
+          "$ref": "#/definitions/def"
+        },
+        "max": {
+          "$ref": "#/definitions/def"
+        }
+      },
+      "required": [
+        "input",
+        "min",
+        "max"
+      ]
+    },
+    "def_49": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "min_inclusive": {
+          "$ref": "#/definitions/def"
+        },
+        "max_exclusive": {
+          "$ref": "#/definitions/def"
+        },
+        "when_in_range": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "when_out_of_range": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input",
+        "min_inclusive",
+        "max_exclusive",
+        "when_in_range",
+        "when_out_of_range"
+      ]
+    },
+    "def_50": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "thresholds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def"
+          }
+        },
+        "functions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+          },
+          "minItems": 2
+        }
+      },
+      "required": [
+        "input",
+        "thresholds",
+        "functions"
+      ]
+    },
+    "def_51": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_52": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_53": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "cell_size_xz": {
+          "$ref": "#/definitions/def_54"
+        },
+        "cell_size_y": {
+          "$ref": "#/definitions/def_54"
+        }
+      },
+      "required": [
+        "input",
+        "cell_size_xz",
+        "cell_size_y"
+      ]
+    },
+    "def_54": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "def_55": {
+      "type": "object",
+      "properties": {
+        "axis": {
+          "$ref": "#/definitions/def_16"
+        },
+        "coordinate": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "axis",
+        "coordinate",
+        "input"
+      ]
+    },
+    "def_56": {
+      "type": "object",
+      "properties": {
+        "density": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "upper_bound": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "lower_bound": {
+          "$ref": "#/definitions/def_57"
+        },
+        "cell_height": {
+          "$ref": "#/definitions/def_54"
+        }
+      },
+      "required": [
+        "density",
+        "upper_bound",
+        "lower_bound",
+        "cell_height"
+      ]
+    },
+    "def_57": {
+      "type": "integer",
+      "minimum": -4064,
+      "maximum": 4062
+    },
+    "def_58": {
+      "type": "object",
+      "properties": {
+        "xz_scale": {
+          "$ref": "#/definitions/def_59"
+        },
+        "y_scale": {
+          "$ref": "#/definitions/def_59"
+        },
+        "xz_factor": {
+          "$ref": "#/definitions/def_59"
+        },
+        "y_factor": {
+          "$ref": "#/definitions/def_59"
+        },
+        "smear_scale_multiplier": {
+          "$ref": "#/definitions/def_60"
+        }
+      },
+      "required": [
+        "xz_scale",
+        "y_scale",
+        "xz_factor",
+        "y_factor",
+        "smear_scale_multiplier"
+      ]
+    },
+    "def_59": {
+      "type": "number",
+      "minimum": 0.001,
+      "maximum": 1000.0
+    },
+    "def_60": {
+      "type": "number",
+      "minimum": 1.0,
+      "maximum": 8.0
+    }
+  }
+}

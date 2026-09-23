@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:common",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "properties": {
+        "message_id": {
+          "type": "string"
+        },
+        "scaling": {
+          "$ref": "#/definitions/def_1"
+        },
+        "exhaustion": {
+          "type": "number"
+        },
+        "effects": {
+          "$ref": "#/definitions/def_2",
+          "default": "hurt"
+        },
+        "death_message_type": {
+          "$ref": "#/definitions/def_3",
+          "default": "default"
+        }
+      },
+      "required": [
+        "message_id",
+        "scaling",
+        "exhaustion"
+      ]
+    },
+    "def_1": {
+      "enum": [
+        "never",
+        "when_caused_by_living_non_player",
+        "always"
+      ]
+    },
+    "def_2": {
+      "enum": [
+        "hurt",
+        "thorns",
+        "drowning",
+        "burning",
+        "poking",
+        "freezing"
+      ]
+    },
+    "def_3": {
+      "enum": [
+        "default",
+        "fall_variants",
+        "intentional_game_design"
+      ]
+    }
+  }
+}

@@ -1,0 +1,486 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:common",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "minecraft:biome",
+            "minecraft:noise_threshold",
+            "minecraft:vertical_gradient",
+            "minecraft:y_above",
+            "minecraft:water",
+            "minecraft:temperature",
+            "minecraft:steep",
+            "minecraft:not",
+            "minecraft:hole",
+            "minecraft:above_preliminary_surface",
+            "minecraft:stone_depth"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:biome"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_1"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:noise_threshold"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_3"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:vertical_gradient"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_4"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:y_above"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_13"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:water"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_15"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:temperature"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_17"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:steep"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_18"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:not"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_19"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:hole"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_20"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:above_preliminary_surface"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_21"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:stone_depth"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_22"
+          }
+        }
+      ]
+    },
+    "def_1": {
+      "type": "object",
+      "properties": {
+        "biome_is": {
+          "$ref": "#/definitions/def_2"
+        }
+      },
+      "required": [
+        "biome_is"
+      ]
+    },
+    "def_2": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/registry_fixed:minecraft:worldgen_biome"
+              }
+            },
+            {
+              "$ref": "#/definitions/registry_fixed:minecraft:worldgen_biome"
+            }
+          ]
+        }
+      ]
+    },
+    "registry_fixed:minecraft:worldgen_biome": {
+      "$ref": "#/definitions/identifier"
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "([_\\-a-z0-9.]+:)?[_\\-a-z0-9/.]+"
+    },
+    "def_3": {
+      "type": "object",
+      "properties": {
+        "noise": {
+          "$ref": "#/definitions/identifier"
+        },
+        "min_threshold": {
+          "type": "number"
+        },
+        "max_threshold": {
+          "type": "number"
+        },
+        "is_3d": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "required": [
+        "noise",
+        "min_threshold",
+        "max_threshold"
+      ]
+    },
+    "def_4": {
+      "type": "object",
+      "properties": {
+        "random_name": {
+          "$ref": "#/definitions/identifier"
+        },
+        "true_at_and_below": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/def_5"
+            },
+            {
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/def_7"
+                },
+                {
+                  "oneOf": [
+                    {
+                      "$ref": "#/definitions/def_9"
+                    },
+                    {
+                      "$ref": "#/definitions/def_11"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "false_at_and_above": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/def_5"
+            },
+            {
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/def_7"
+                },
+                {
+                  "oneOf": [
+                    {
+                      "$ref": "#/definitions/def_9"
+                    },
+                    {
+                      "$ref": "#/definitions/def_11"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "random_name",
+        "true_at_and_below",
+        "false_at_and_above"
+      ]
+    },
+    "def_5": {
+      "type": "object",
+      "properties": {
+        "absolute": {
+          "$ref": "#/definitions/def_6"
+        }
+      },
+      "required": [
+        "absolute"
+      ]
+    },
+    "def_6": {
+      "type": "integer",
+      "minimum": -2032,
+      "maximum": 2031
+    },
+    "def_7": {
+      "type": "object",
+      "properties": {
+        "above_bottom": {
+          "$ref": "#/definitions/def_8"
+        }
+      },
+      "required": [
+        "above_bottom"
+      ]
+    },
+    "def_8": {
+      "type": "integer",
+      "minimum": -2032,
+      "maximum": 2031
+    },
+    "def_9": {
+      "type": "object",
+      "properties": {
+        "below_top": {
+          "$ref": "#/definitions/def_10"
+        }
+      },
+      "required": [
+        "below_top"
+      ]
+    },
+    "def_10": {
+      "type": "integer",
+      "minimum": -2032,
+      "maximum": 2031
+    },
+    "def_11": {
+      "type": "object",
+      "properties": {
+        "relative_to_sea_level": {
+          "$ref": "#/definitions/def_12"
+        }
+      },
+      "required": [
+        "relative_to_sea_level"
+      ]
+    },
+    "def_12": {
+      "type": "integer",
+      "minimum": -2032,
+      "maximum": 2031
+    },
+    "def_13": {
+      "type": "object",
+      "properties": {
+        "anchor": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/def_5"
+            },
+            {
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/def_7"
+                },
+                {
+                  "oneOf": [
+                    {
+                      "$ref": "#/definitions/def_9"
+                    },
+                    {
+                      "$ref": "#/definitions/def_11"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "surface_depth_multiplier": {
+          "$ref": "#/definitions/def_14"
+        },
+        "add_stone_depth": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "anchor",
+        "surface_depth_multiplier",
+        "add_stone_depth"
+      ]
+    },
+    "def_14": {
+      "type": "integer",
+      "minimum": -20,
+      "maximum": 20
+    },
+    "def_15": {
+      "type": "object",
+      "properties": {
+        "offset": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "surface_depth_multiplier": {
+          "$ref": "#/definitions/def_16"
+        },
+        "add_stone_depth": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "offset",
+        "surface_depth_multiplier",
+        "add_stone_depth"
+      ]
+    },
+    "def_16": {
+      "type": "integer",
+      "minimum": -20,
+      "maximum": 20
+    },
+    "def_17": {},
+    "def_18": {},
+    "def_19": {
+      "type": "object",
+      "properties": {
+        "invert": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_material_condition"
+        }
+      },
+      "required": [
+        "invert"
+      ]
+    },
+    "registry_file_inline:minecraft:worldgen_material_condition": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/def"
+        },
+        {
+          "$ref": "#/definitions/identifier"
+        }
+      ]
+    },
+    "def_20": {},
+    "def_21": {},
+    "def_22": {
+      "type": "object",
+      "properties": {
+        "offset": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "add_surface_depth": {
+          "type": "boolean"
+        },
+        "secondary_depth_range": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "surface_type": {
+          "$ref": "#/definitions/def_23"
+        }
+      },
+      "required": [
+        "offset",
+        "add_surface_depth",
+        "secondary_depth_range",
+        "surface_type"
+      ]
+    },
+    "def_23": {
+      "enum": [
+        "ceiling",
+        "floor"
+      ]
+    }
+  }
+}

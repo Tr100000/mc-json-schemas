@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$ref": "#/definitions/def",
+  "exportedWith": {
+    "minecraft": "26.3",
+    "codec2schema": "0.3.7+26.3-pre-1",
+    "exportedBy": {
+      "pluginId": "codec2schema:common",
+      "modVersion": "0.3.7+26.3-pre-1"
+    }
+  },
+  "definitions": {
+    "def": {
+      "type": "object",
+      "properties": {
+        "base_amplitude": {
+          "$ref": "#/definitions/def_1",
+          "default": 1.0
+        },
+        "base_octave": {
+          "$ref": "#/definitions/def_2"
+        },
+        "octave_count": {
+          "$ref": "#/definitions/def_3",
+          "default": 1
+        },
+        "normalize": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "default": true
+        },
+        "amplitude_modifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_4"
+          },
+          "maxItems": 32,
+          "default": []
+        }
+      },
+      "required": [
+        "base_octave"
+      ]
+    },
+    "def_1": {
+      "type": "number",
+      "minimum": 9.999999747378752E-6,
+      "maximum": 1000000.0
+    },
+    "def_2": {
+      "type": "integer",
+      "minimum": -32,
+      "maximum": 32
+    },
+    "def_3": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 32
+    },
+    "def_4": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1000000.0
+    }
+  }
+}
