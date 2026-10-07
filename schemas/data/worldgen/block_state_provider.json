@@ -8,14 +8,6 @@
       "$ref": "#/definitions/def_1"
     }
   ],
-  "exportedWith": {
-    "minecraft": "26.4-snapshot-1",
-    "codec2schema": "0.3.7+26.4-snapshot-1",
-    "exportedBy": {
-      "pluginId": "codec2schema:common",
-      "modVersion": "0.3.7+26.4-snapshot-1"
-    }
-  },
   "definitions": {
     "def": {
       "type": "object",
@@ -1096,6 +1088,7 @@
                 "minecraft:red_candle_cake",
                 "minecraft:black_candle_cake",
                 "minecraft:amethyst_block",
+                "minecraft:ice_crystal",
                 "minecraft:budding_amethyst",
                 "minecraft:amethyst_cluster",
                 "minecraft:large_amethyst_bud",
@@ -1250,6 +1243,7 @@
                 "minecraft:waxed_weathered_lightning_rod",
                 "minecraft:waxed_oxidized_lightning_rod",
                 "minecraft:dripstone_block",
+                "minecraft:icicle",
                 "minecraft:pointed_dripstone",
                 "minecraft:sulfur_spike",
                 "minecraft:cave_vines",
@@ -16520,6 +16514,25 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:ice_crystal"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:amethyst_cluster"
               }
             }
@@ -19014,6 +19027,31 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:icicle"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attached": {
+                "type": "string"
+              },
+              "thickness": {
+                "type": "string"
+              },
+              "vertical_direction": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:pointed_dripstone"
               }
             }
@@ -19883,7 +19921,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_55"
+            "$ref": "#/definitions/def_57"
           }
         },
         {
@@ -19895,7 +19933,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_56"
+            "$ref": "#/definitions/def_58"
           }
         }
       ]
@@ -21149,6 +21187,7 @@
             "minecraft:red_candle_cake",
             "minecraft:black_candle_cake",
             "minecraft:amethyst_block",
+            "minecraft:ice_crystal",
             "minecraft:budding_amethyst",
             "minecraft:amethyst_cluster",
             "minecraft:large_amethyst_bud",
@@ -21303,6 +21342,7 @@
             "minecraft:waxed_weathered_lightning_rod",
             "minecraft:waxed_oxidized_lightning_rod",
             "minecraft:dripstone_block",
+            "minecraft:icicle",
             "minecraft:pointed_dripstone",
             "minecraft:sulfur_spike",
             "minecraft:cave_vines",
@@ -21938,7 +21978,8 @@
             "minecraft:true",
             "minecraft:unobstructed",
             "minecraft:height_range",
-            "minecraft:volume_match"
+            "minecraft:volume_match",
+            "minecraft:below_heightmap"
           ]
         }
       },
@@ -22136,6 +22177,18 @@
           },
           "then": {
             "$ref": "#/definitions/def_54"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:below_heightmap"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_55"
           }
         }
       ]
@@ -22598,6 +22651,27 @@
     "def_55": {
       "type": "object",
       "properties": {
+        "heightmap": {
+          "$ref": "#/definitions/def_56"
+        }
+      },
+      "required": [
+        "heightmap"
+      ]
+    },
+    "def_56": {
+      "enum": [
+        "WORLD_SURFACE_WG",
+        "WORLD_SURFACE",
+        "OCEAN_FLOOR_WG",
+        "OCEAN_FLOOR",
+        "MOTION_BLOCKING",
+        "MOTION_BLOCKING_NO_LEAVES"
+      ]
+    },
+    "def_57": {
+      "type": "object",
+      "properties": {
         "state": {
           "anyOf": [
             {
@@ -22613,13 +22687,13 @@
         "state"
       ]
     },
-    "def_56": {
+    "def_58": {
       "type": "object",
       "properties": {
         "entries": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_57"
+            "$ref": "#/definitions/def_59"
           }
         }
       },
@@ -22627,7 +22701,7 @@
         "entries"
       ]
     },
-    "def_57": {
+    "def_59": {
       "type": "object",
       "properties": {
         "data": {

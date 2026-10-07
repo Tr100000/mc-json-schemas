@@ -11,14 +11,6 @@
       }
     }
   ],
-  "exportedWith": {
-    "minecraft": "26.4-snapshot-1",
-    "codec2schema": "0.3.7+26.4-snapshot-1",
-    "exportedBy": {
-      "pluginId": "codec2schema:common",
-      "modVersion": "0.3.7+26.4-snapshot-1"
-    }
-  },
   "definitions": {
     "def": {
       "type": "object",
@@ -1301,6 +1293,7 @@
             "minecraft:red_candle_cake",
             "minecraft:black_candle_cake",
             "minecraft:amethyst_block",
+            "minecraft:ice_crystal",
             "minecraft:budding_amethyst",
             "minecraft:amethyst_cluster",
             "minecraft:large_amethyst_bud",
@@ -1455,6 +1448,7 @@
             "minecraft:waxed_weathered_lightning_rod",
             "minecraft:waxed_oxidized_lightning_rod",
             "minecraft:dripstone_block",
+            "minecraft:icicle",
             "minecraft:pointed_dripstone",
             "minecraft:sulfur_spike",
             "minecraft:cave_vines",
@@ -2604,6 +2598,7 @@
                 "minecraft:red_candle_cake",
                 "minecraft:black_candle_cake",
                 "minecraft:amethyst_block",
+                "minecraft:ice_crystal",
                 "minecraft:budding_amethyst",
                 "minecraft:amethyst_cluster",
                 "minecraft:large_amethyst_bud",
@@ -2758,6 +2753,7 @@
                 "minecraft:waxed_weathered_lightning_rod",
                 "minecraft:waxed_oxidized_lightning_rod",
                 "minecraft:dripstone_block",
+                "minecraft:icicle",
                 "minecraft:pointed_dripstone",
                 "minecraft:sulfur_spike",
                 "minecraft:cave_vines",
@@ -18028,6 +18024,25 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:ice_crystal"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:amethyst_cluster"
               }
             }
@@ -20522,6 +20537,31 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:icicle"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attached": {
+                "type": "string"
+              },
+              "thickness": {
+                "type": "string"
+              },
+              "vertical_direction": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:pointed_dripstone"
               }
             }
@@ -21764,11 +21804,11 @@
             "minecraft:any_of",
             "minecraft:block_match",
             "minecraft:blockstate_match",
-            "minecraft:not",
-            "minecraft:tag_match",
             "minecraft:height_match",
+            "minecraft:not",
             "minecraft:random_block_match",
-            "minecraft:random_blockstate_match"
+            "minecraft:random_blockstate_match",
+            "minecraft:tag_match"
           ]
         }
       },
@@ -21840,7 +21880,7 @@
           "if": {
             "properties": {
               "predicate_type": {
-                "const": "minecraft:not"
+                "const": "minecraft:height_match"
               }
             }
           },
@@ -21852,7 +21892,7 @@
           "if": {
             "properties": {
               "predicate_type": {
-                "const": "minecraft:tag_match"
+                "const": "minecraft:not"
               }
             }
           },
@@ -21864,7 +21904,7 @@
           "if": {
             "properties": {
               "predicate_type": {
-                "const": "minecraft:height_match"
+                "const": "minecraft:random_block_match"
               }
             }
           },
@@ -21876,7 +21916,7 @@
           "if": {
             "properties": {
               "predicate_type": {
-                "const": "minecraft:random_block_match"
+                "const": "minecraft:random_blockstate_match"
               }
             }
           },
@@ -21888,7 +21928,7 @@
           "if": {
             "properties": {
               "predicate_type": {
-                "const": "minecraft:random_blockstate_match"
+                "const": "minecraft:tag_match"
               }
             }
           },
@@ -21959,28 +21999,6 @@
     "def_36": {
       "type": "object",
       "properties": {
-        "rule": {
-          "$ref": "#/definitions/def_30"
-        }
-      },
-      "required": [
-        "rule"
-      ]
-    },
-    "def_37": {
-      "type": "object",
-      "properties": {
-        "tag": {
-          "$ref": "#/definitions/identifier"
-        }
-      },
-      "required": [
-        "tag"
-      ]
-    },
-    "def_38": {
-      "type": "object",
-      "properties": {
         "min_inclusive": {
           "type": "integer",
           "minimum": -2147483648,
@@ -21997,7 +22015,18 @@
         "max_inclusive"
       ]
     },
-    "def_39": {
+    "def_37": {
+      "type": "object",
+      "properties": {
+        "rule": {
+          "$ref": "#/definitions/def_30"
+        }
+      },
+      "required": [
+        "rule"
+      ]
+    },
+    "def_38": {
       "type": "object",
       "properties": {
         "block": {
@@ -22012,7 +22041,7 @@
         "probability"
       ]
     },
-    "def_40": {
+    "def_39": {
       "type": "object",
       "properties": {
         "block_state": {
@@ -22032,6 +22061,17 @@
       "required": [
         "block_state",
         "probability"
+      ]
+    },
+    "def_40": {
+      "type": "object",
+      "properties": {
+        "tag": {
+          "$ref": "#/definitions/identifier"
+        }
+      },
+      "required": [
+        "tag"
       ]
     },
     "def_41": {

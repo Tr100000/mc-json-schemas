@@ -8,14 +8,6 @@
       "$ref": "#/definitions/def_1"
     }
   ],
-  "exportedWith": {
-    "minecraft": "26.4-snapshot-1",
-    "codec2schema": "0.3.7+26.4-snapshot-1",
-    "exportedBy": {
-      "pluginId": "codec2schema:common",
-      "modVersion": "0.3.7+26.4-snapshot-1"
-    }
-  },
   "definitions": {
     "def": {
       "type": "number",

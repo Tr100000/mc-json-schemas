@@ -1,14 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema",
   "$ref": "#/definitions/def",
-  "exportedWith": {
-    "minecraft": "26.4-snapshot-1",
-    "codec2schema": "0.3.7+26.4-snapshot-1",
-    "exportedBy": {
-      "pluginId": "codec2schema:common",
-      "modVersion": "0.3.7+26.4-snapshot-1"
-    }
-  },
   "definitions": {
     "def": {
       "type": "object",
@@ -1680,6 +1672,7 @@
             "minecraft:visual/star_angle",
             "minecraft:visual/moon_phase",
             "minecraft:visual/star_brightness",
+            "minecraft:visual/has_sky_occluder",
             "minecraft:visual/block_light_tint",
             "minecraft:visual/sky_light_color",
             "minecraft:visual/sky_light_factor",
@@ -2546,6 +2539,7 @@
             "minecraft:firework_rocket",
             "minecraft:fox",
             "minecraft:frog",
+            "minecraft:frostbite",
             "minecraft:furnace_minecart",
             "minecraft:ghast",
             "minecraft:happy_ghast",
@@ -2558,6 +2552,7 @@
             "minecraft:hopper_minecart",
             "minecraft:horse",
             "minecraft:husk",
+            "minecraft:ice_ball",
             "minecraft:illusioner",
             "minecraft:interaction",
             "minecraft:iron_golem",
@@ -3937,6 +3932,7 @@
             "minecraft:red_candle_cake",
             "minecraft:black_candle_cake",
             "minecraft:amethyst_block",
+            "minecraft:ice_crystal",
             "minecraft:budding_amethyst",
             "minecraft:amethyst_cluster",
             "minecraft:large_amethyst_bud",
@@ -4091,6 +4087,7 @@
             "minecraft:waxed_weathered_lightning_rod",
             "minecraft:waxed_oxidized_lightning_rod",
             "minecraft:dripstone_block",
+            "minecraft:icicle",
             "minecraft:pointed_dripstone",
             "minecraft:sulfur_spike",
             "minecraft:cave_vines",
@@ -7016,6 +7013,7 @@
             "minecraft:lava_bucket",
             "minecraft:powder_snow_bucket",
             "minecraft:snowball",
+            "minecraft:ice_ball",
             "minecraft:leather",
             "minecraft:milk_bucket",
             "minecraft:pufferfish_bucket",
@@ -7209,6 +7207,7 @@
             "minecraft:bogged_spawn_egg",
             "minecraft:camel_husk_spawn_egg",
             "minecraft:drowned_spawn_egg",
+            "minecraft:frostbite_spawn_egg",
             "minecraft:husk_spawn_egg",
             "minecraft:parched_spawn_egg",
             "minecraft:skeleton_spawn_egg",
@@ -7454,6 +7453,8 @@
             "minecraft:medium_amethyst_bud",
             "minecraft:large_amethyst_bud",
             "minecraft:amethyst_cluster",
+            "minecraft:ice_crystal",
+            "minecraft:icicle",
             "minecraft:pointed_dripstone",
             "minecraft:sulfur_spike",
             "minecraft:ochre_froglight",
@@ -10549,6 +10550,7 @@
             "minecraft:entity.zombie_nautilus.eat",
             "minecraft:entity.zombie_nautilus.hurt",
             "minecraft:entity.zombie_nautilus.hurt_land",
+            "minecraft:entity.zombie_nautilus.riding",
             "minecraft:entity.zombie_nautilus.swim",
             "minecraft:entity.zombified_piglin.ambient",
             "minecraft:entity.zombified_piglin.angry",
@@ -10641,7 +10643,32 @@
             "minecraft:block.straw_bed.hit",
             "minecraft:block.straw_bed.fall",
             "minecraft:block.red_shrub.break",
-            "minecraft:block.red_shrub.place"
+            "minecraft:block.red_shrub.place",
+            "minecraft:block.ice.break",
+            "minecraft:block.ice.hit",
+            "minecraft:block.ice.fall",
+            "minecraft:block.ice.place",
+            "minecraft:block.ice.step",
+            "minecraft:entity.frostbite.ambient",
+            "minecraft:entity.frostbite.death",
+            "minecraft:entity.frostbite.hurt",
+            "minecraft:entity.frostbite.step",
+            "minecraft:block.ice_crystal.break",
+            "minecraft:block.ice_crystal.hit",
+            "minecraft:block.ice_crystal.fall",
+            "minecraft:block.ice_crystal.place",
+            "minecraft:block.ice_crystal.step",
+            "minecraft:block.icicle.break",
+            "minecraft:block.icicle.hit",
+            "minecraft:block.icicle.fall",
+            "minecraft:block.icicle.place",
+            "minecraft:block.icicle.step",
+            "minecraft:block.icicle.land",
+            "minecraft:entity.ice_ball.break",
+            "minecraft:entity.ice_ball.throw",
+            "minecraft:entity.zombie.converted_to_frostbite",
+            "minecraft:entity.frostbite.converted_to_zombie",
+            "minecraft:event.mob_effect.freezing"
           ]
         },
         {
@@ -10805,7 +10832,8 @@
             "minecraft:weaving",
             "minecraft:oozing",
             "minecraft:infested",
-            "minecraft:breath_of_the_nautilus"
+            "minecraft:breath_of_the_nautilus",
+            "minecraft:freezing"
           ]
         },
         {
@@ -12363,6 +12391,7 @@
             "minecraft:lava_bucket",
             "minecraft:powder_snow_bucket",
             "minecraft:snowball",
+            "minecraft:ice_ball",
             "minecraft:leather",
             "minecraft:milk_bucket",
             "minecraft:pufferfish_bucket",
@@ -12556,6 +12585,7 @@
             "minecraft:bogged_spawn_egg",
             "minecraft:camel_husk_spawn_egg",
             "minecraft:drowned_spawn_egg",
+            "minecraft:frostbite_spawn_egg",
             "minecraft:husk_spawn_egg",
             "minecraft:parched_spawn_egg",
             "minecraft:skeleton_spawn_egg",
@@ -12801,6 +12831,8 @@
             "minecraft:medium_amethyst_bud",
             "minecraft:large_amethyst_bud",
             "minecraft:amethyst_cluster",
+            "minecraft:ice_crystal",
+            "minecraft:icicle",
             "minecraft:pointed_dripstone",
             "minecraft:sulfur_spike",
             "minecraft:ochre_froglight",
@@ -13319,7 +13351,9 @@
             "minecraft:wind_charged",
             "minecraft:weaving",
             "minecraft:oozing",
-            "minecraft:infested"
+            "minecraft:infested",
+            "minecraft:freezing",
+            "minecraft:long_freezing"
           ]
         },
         {
@@ -16744,6 +16778,9 @@
         "minecraft:amethyst_block": {
           "type": "string"
         },
+        "minecraft:ice_crystal": {
+          "type": "string"
+        },
         "minecraft:budding_amethyst": {
           "type": "string"
         },
@@ -17204,6 +17241,9 @@
           "type": "string"
         },
         "minecraft:dripstone_block": {
+          "type": "string"
+        },
+        "minecraft:icicle": {
           "type": "string"
         },
         "minecraft:pointed_dripstone": {
@@ -21275,6 +21315,7 @@
             "minecraft:visual/star_angle",
             "minecraft:visual/moon_phase",
             "minecraft:visual/star_brightness",
+            "minecraft:visual/has_sky_occluder",
             "minecraft:visual/block_light_tint",
             "minecraft:visual/sky_light_color",
             "minecraft:visual/sky_light_factor",
@@ -21524,7 +21565,7 @@
           "if": {
             "properties": {
               "attribute": {
-                "const": "minecraft:visual/block_light_tint"
+                "const": "minecraft:visual/has_sky_occluder"
               }
             }
           },
@@ -21536,7 +21577,7 @@
           "if": {
             "properties": {
               "attribute": {
-                "const": "minecraft:visual/sky_light_color"
+                "const": "minecraft:visual/block_light_tint"
               }
             }
           },
@@ -21548,7 +21589,7 @@
           "if": {
             "properties": {
               "attribute": {
-                "const": "minecraft:visual/sky_light_factor"
+                "const": "minecraft:visual/sky_light_color"
               }
             }
           },
@@ -21560,7 +21601,7 @@
           "if": {
             "properties": {
               "attribute": {
-                "const": "minecraft:visual/night_vision_color"
+                "const": "minecraft:visual/sky_light_factor"
               }
             }
           },
@@ -21572,7 +21613,7 @@
           "if": {
             "properties": {
               "attribute": {
-                "const": "minecraft:visual/ambient_light_color"
+                "const": "minecraft:visual/night_vision_color"
               }
             }
           },
@@ -21584,7 +21625,7 @@
           "if": {
             "properties": {
               "attribute": {
-                "const": "minecraft:visual/default_dripstone_particle"
+                "const": "minecraft:visual/ambient_light_color"
               }
             }
           },
@@ -21596,12 +21637,24 @@
           "if": {
             "properties": {
               "attribute": {
+                "const": "minecraft:visual/default_dripstone_particle"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_424"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "attribute": {
                 "const": "minecraft:visual/ambient_particles"
               }
             }
           },
           "then": {
-            "$ref": "#/definitions/def_557"
+            "$ref": "#/definitions/def_558"
           }
         },
         {
@@ -21613,7 +21666,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_560"
+            "$ref": "#/definitions/def_561"
           }
         },
         {
@@ -21625,7 +21678,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_563"
+            "$ref": "#/definitions/def_564"
           }
         },
         {
@@ -21637,7 +21690,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_564"
+            "$ref": "#/definitions/def_565"
           }
         },
         {
@@ -21649,7 +21702,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_568"
+            "$ref": "#/definitions/def_569"
           }
         },
         {
@@ -21661,7 +21714,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_569"
+            "$ref": "#/definitions/def_570"
           }
         },
         {
@@ -21673,7 +21726,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_570"
+            "$ref": "#/definitions/def_571"
           }
         },
         {
@@ -21685,7 +21738,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_571"
+            "$ref": "#/definitions/def_572"
           }
         },
         {
@@ -21697,7 +21750,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_572"
+            "$ref": "#/definitions/def_573"
           }
         },
         {
@@ -21709,7 +21762,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_575"
+            "$ref": "#/definitions/def_576"
           }
         },
         {
@@ -21721,7 +21774,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_576"
+            "$ref": "#/definitions/def_577"
           }
         },
         {
@@ -21733,7 +21786,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_577"
+            "$ref": "#/definitions/def_578"
           }
         },
         {
@@ -21745,7 +21798,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_578"
+            "$ref": "#/definitions/def_579"
           }
         },
         {
@@ -21757,7 +21810,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_579"
+            "$ref": "#/definitions/def_580"
           }
         },
         {
@@ -21769,7 +21822,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_580"
+            "$ref": "#/definitions/def_581"
           }
         },
         {
@@ -21781,7 +21834,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_582"
+            "$ref": "#/definitions/def_583"
           }
         },
         {
@@ -21793,7 +21846,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_583"
+            "$ref": "#/definitions/def_584"
           }
         },
         {
@@ -21805,7 +21858,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_584"
+            "$ref": "#/definitions/def_585"
           }
         },
         {
@@ -21817,7 +21870,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_585"
+            "$ref": "#/definitions/def_586"
           }
         },
         {
@@ -21829,7 +21882,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_586"
+            "$ref": "#/definitions/def_587"
           }
         },
         {
@@ -21841,7 +21894,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_587"
+            "$ref": "#/definitions/def_588"
           }
         },
         {
@@ -21853,7 +21906,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_588"
+            "$ref": "#/definitions/def_589"
           }
         },
         {
@@ -21865,7 +21918,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_589"
+            "$ref": "#/definitions/def_590"
           }
         },
         {
@@ -21877,7 +21930,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_590"
+            "$ref": "#/definitions/def_591"
           }
         },
         {
@@ -21889,7 +21942,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_591"
+            "$ref": "#/definitions/def_592"
           }
         },
         {
@@ -21901,7 +21954,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_609"
+            "$ref": "#/definitions/def_610"
           }
         },
         {
@@ -21913,7 +21966,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_610"
+            "$ref": "#/definitions/def_611"
           }
         },
         {
@@ -21925,7 +21978,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_612"
+            "$ref": "#/definitions/def_613"
           }
         }
       ]
@@ -22238,28 +22291,7 @@
       "type": "object",
       "properties": {
         "value": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "anyOf": [
-                {
-                  "type": "array",
-                  "items": {
-                    "type": "number"
-                  },
-                  "minItems": 3,
-                  "maxItems": 3
-                },
-                {
-                  "type": "integer",
-                  "minimum": -2147483648,
-                  "maximum": 2147483647
-                }
-              ]
-            }
-          ]
+          "type": "boolean"
         }
       },
       "required": [
@@ -22302,17 +22334,6 @@
       "type": "object",
       "properties": {
         "value": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "value"
-      ]
-    },
-    "def_421": {
-      "type": "object",
-      "properties": {
-        "value": {
           "anyOf": [
             {
               "type": "string"
@@ -22335,6 +22356,17 @@
               ]
             }
           ]
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_421": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
         }
       },
       "required": [
@@ -22377,7 +22409,28 @@
       "type": "object",
       "properties": {
         "value": {
-          "$ref": "#/definitions/def_424"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 3,
+                  "maxItems": 3
+                },
+                {
+                  "type": "integer",
+                  "minimum": -2147483648,
+                  "maximum": 2147483647
+                }
+              ]
+            }
+          ]
         }
       },
       "required": [
@@ -22385,6 +22438,17 @@
       ]
     },
     "def_424": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "$ref": "#/definitions/def_425"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_425": {
       "type": "object",
       "properties": {
         "type": {
@@ -22420,6 +22484,7 @@
             "minecraft:entity_effect",
             "minecraft:explosion_emitter",
             "minecraft:explosion",
+            "minecraft:freezing",
             "minecraft:gust",
             "minecraft:small_gust",
             "minecraft:gust_emitter_large",
@@ -22453,7 +22518,6 @@
             "minecraft:reset_mob_growth",
             "minecraft:item_slime",
             "minecraft:item_cobweb",
-            "minecraft:item_snowball",
             "minecraft:large_smoke",
             "minecraft:lava",
             "minecraft:mycelium",
@@ -22533,7 +22597,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_425"
+            "$ref": "#/definitions/def_426"
           }
         },
         {
@@ -22545,7 +22609,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_426"
+            "$ref": "#/definitions/def_427"
           }
         },
         {
@@ -22557,7 +22621,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_428"
+            "$ref": "#/definitions/def_429"
           }
         },
         {
@@ -22569,7 +22633,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_429"
+            "$ref": "#/definitions/def_430"
           }
         },
         {
@@ -22581,7 +22645,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_430"
+            "$ref": "#/definitions/def_431"
           }
         },
         {
@@ -22593,7 +22657,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_431"
+            "$ref": "#/definitions/def_432"
           }
         },
         {
@@ -22605,7 +22669,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_432"
+            "$ref": "#/definitions/def_433"
           }
         },
         {
@@ -22617,7 +22681,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_433"
+            "$ref": "#/definitions/def_434"
           }
         },
         {
@@ -22629,7 +22693,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_434"
+            "$ref": "#/definitions/def_435"
           }
         },
         {
@@ -22641,7 +22705,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_435"
+            "$ref": "#/definitions/def_436"
           }
         },
         {
@@ -22653,7 +22717,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_436"
+            "$ref": "#/definitions/def_437"
           }
         },
         {
@@ -22665,7 +22729,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_437"
+            "$ref": "#/definitions/def_438"
           }
         },
         {
@@ -22677,7 +22741,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_438"
+            "$ref": "#/definitions/def_439"
           }
         },
         {
@@ -22689,7 +22753,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_439"
+            "$ref": "#/definitions/def_440"
           }
         },
         {
@@ -22701,7 +22765,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_440"
+            "$ref": "#/definitions/def_441"
           }
         },
         {
@@ -22713,7 +22777,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_441"
+            "$ref": "#/definitions/def_442"
           }
         },
         {
@@ -22725,7 +22789,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_442"
+            "$ref": "#/definitions/def_443"
           }
         },
         {
@@ -22737,7 +22801,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_443"
+            "$ref": "#/definitions/def_444"
           }
         },
         {
@@ -22749,7 +22813,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_444"
+            "$ref": "#/definitions/def_445"
           }
         },
         {
@@ -22761,7 +22825,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_445"
+            "$ref": "#/definitions/def_446"
           }
         },
         {
@@ -22773,7 +22837,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_446"
+            "$ref": "#/definitions/def_447"
           }
         },
         {
@@ -22785,7 +22849,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_447"
+            "$ref": "#/definitions/def_448"
           }
         },
         {
@@ -22797,7 +22861,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_448"
+            "$ref": "#/definitions/def_449"
           }
         },
         {
@@ -22809,7 +22873,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_449"
+            "$ref": "#/definitions/def_450"
           }
         },
         {
@@ -22821,7 +22885,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_450"
+            "$ref": "#/definitions/def_451"
           }
         },
         {
@@ -22833,7 +22897,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_451"
+            "$ref": "#/definitions/def_452"
           }
         },
         {
@@ -22845,7 +22909,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_452"
+            "$ref": "#/definitions/def_453"
           }
         },
         {
@@ -22857,7 +22921,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_453"
+            "$ref": "#/definitions/def_454"
           }
         },
         {
@@ -22869,7 +22933,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_454"
+            "$ref": "#/definitions/def_455"
           }
         },
         {
@@ -22881,7 +22945,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_455"
+            "$ref": "#/definitions/def_456"
           }
         },
         {
@@ -22893,18 +22957,6 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_456"
-          }
-        },
-        {
-          "if": {
-            "properties": {
-              "type": {
-                "const": "minecraft:gust"
-              }
-            }
-          },
-          "then": {
             "$ref": "#/definitions/def_457"
           }
         },
@@ -22912,7 +22964,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:small_gust"
+                "const": "minecraft:freezing"
               }
             }
           },
@@ -22924,7 +22976,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:gust_emitter_large"
+                "const": "minecraft:gust"
               }
             }
           },
@@ -22936,7 +22988,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:gust_emitter_small"
+                "const": "minecraft:small_gust"
               }
             }
           },
@@ -22948,7 +23000,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:sonic_boom"
+                "const": "minecraft:gust_emitter_large"
               }
             }
           },
@@ -22960,7 +23012,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:falling_dust"
+                "const": "minecraft:gust_emitter_small"
               }
             }
           },
@@ -22972,7 +23024,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:firework"
+                "const": "minecraft:sonic_boom"
               }
             }
           },
@@ -22984,7 +23036,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:fishing"
+                "const": "minecraft:falling_dust"
               }
             }
           },
@@ -22996,7 +23048,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:flame"
+                "const": "minecraft:firework"
               }
             }
           },
@@ -23008,7 +23060,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:infested"
+                "const": "minecraft:fishing"
               }
             }
           },
@@ -23020,7 +23072,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:cherry_leaves"
+                "const": "minecraft:flame"
               }
             }
           },
@@ -23032,7 +23084,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:pale_oak_leaves"
+                "const": "minecraft:infested"
               }
             }
           },
@@ -23044,7 +23096,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:red_poplar_leaves"
+                "const": "minecraft:cherry_leaves"
               }
             }
           },
@@ -23056,7 +23108,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:orange_poplar_leaves"
+                "const": "minecraft:pale_oak_leaves"
               }
             }
           },
@@ -23068,7 +23120,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:yellow_poplar_leaves"
+                "const": "minecraft:red_poplar_leaves"
               }
             }
           },
@@ -23080,7 +23132,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:tinted_leaves"
+                "const": "minecraft:orange_poplar_leaves"
               }
             }
           },
@@ -23092,7 +23144,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:sculk_soul"
+                "const": "minecraft:yellow_poplar_leaves"
               }
             }
           },
@@ -23104,7 +23156,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:sculk_charge"
+                "const": "minecraft:tinted_leaves"
               }
             }
           },
@@ -23116,7 +23168,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:sculk_charge_pop"
+                "const": "minecraft:sculk_soul"
               }
             }
           },
@@ -23128,7 +23180,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:soul_fire_flame"
+                "const": "minecraft:sculk_charge"
               }
             }
           },
@@ -23140,7 +23192,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:soul"
+                "const": "minecraft:sculk_charge_pop"
               }
             }
           },
@@ -23152,7 +23204,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:flash"
+                "const": "minecraft:soul_fire_flame"
               }
             }
           },
@@ -23164,7 +23216,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:happy_villager"
+                "const": "minecraft:soul"
               }
             }
           },
@@ -23176,7 +23228,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:composter"
+                "const": "minecraft:flash"
               }
             }
           },
@@ -23188,7 +23240,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:heart"
+                "const": "minecraft:happy_villager"
               }
             }
           },
@@ -23200,7 +23252,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:instant_effect"
+                "const": "minecraft:composter"
               }
             }
           },
@@ -23212,7 +23264,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:item"
+                "const": "minecraft:heart"
               }
             }
           },
@@ -23224,7 +23276,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:vibration"
+                "const": "minecraft:instant_effect"
               }
             }
           },
@@ -23236,31 +23288,31 @@
           "if": {
             "properties": {
               "type": {
+                "const": "minecraft:item"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_485"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:vibration"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_486"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
                 "const": "minecraft:trail"
-              }
-            }
-          },
-          "then": {
-            "$ref": "#/definitions/def_488"
-          }
-        },
-        {
-          "if": {
-            "properties": {
-              "type": {
-                "const": "minecraft:pause_mob_growth"
-              }
-            }
-          },
-          "then": {
-            "$ref": "#/definitions/def_489"
-          }
-        },
-        {
-          "if": {
-            "properties": {
-              "type": {
-                "const": "minecraft:reset_mob_growth"
               }
             }
           },
@@ -23272,7 +23324,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:item_slime"
+                "const": "minecraft:pause_mob_growth"
               }
             }
           },
@@ -23284,7 +23336,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:item_cobweb"
+                "const": "minecraft:reset_mob_growth"
               }
             }
           },
@@ -23296,7 +23348,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:item_snowball"
+                "const": "minecraft:item_slime"
               }
             }
           },
@@ -23308,7 +23360,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:large_smoke"
+                "const": "minecraft:item_cobweb"
               }
             }
           },
@@ -23320,7 +23372,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:lava"
+                "const": "minecraft:large_smoke"
               }
             }
           },
@@ -23332,7 +23384,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:mycelium"
+                "const": "minecraft:lava"
               }
             }
           },
@@ -23344,7 +23396,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:note"
+                "const": "minecraft:mycelium"
               }
             }
           },
@@ -23356,7 +23408,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:poof"
+                "const": "minecraft:note"
               }
             }
           },
@@ -23368,7 +23420,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:portal"
+                "const": "minecraft:poof"
               }
             }
           },
@@ -23380,7 +23432,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:rain"
+                "const": "minecraft:portal"
               }
             }
           },
@@ -23392,7 +23444,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:smoke"
+                "const": "minecraft:rain"
               }
             }
           },
@@ -23404,7 +23456,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:white_smoke"
+                "const": "minecraft:smoke"
               }
             }
           },
@@ -23416,7 +23468,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:sneeze"
+                "const": "minecraft:white_smoke"
               }
             }
           },
@@ -23428,7 +23480,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:spit"
+                "const": "minecraft:sneeze"
               }
             }
           },
@@ -23440,7 +23492,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:squid_ink"
+                "const": "minecraft:spit"
               }
             }
           },
@@ -23452,7 +23504,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:sweep_attack"
+                "const": "minecraft:squid_ink"
               }
             }
           },
@@ -23464,7 +23516,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:totem_of_undying"
+                "const": "minecraft:sweep_attack"
               }
             }
           },
@@ -23476,7 +23528,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:underwater"
+                "const": "minecraft:totem_of_undying"
               }
             }
           },
@@ -23488,7 +23540,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:splash"
+                "const": "minecraft:underwater"
               }
             }
           },
@@ -23500,7 +23552,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:witch"
+                "const": "minecraft:splash"
               }
             }
           },
@@ -23512,7 +23564,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:bubble_pop"
+                "const": "minecraft:witch"
               }
             }
           },
@@ -23524,7 +23576,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:current_down"
+                "const": "minecraft:bubble_pop"
               }
             }
           },
@@ -23536,7 +23588,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:bubble_column_up"
+                "const": "minecraft:current_down"
               }
             }
           },
@@ -23548,7 +23600,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:nautilus"
+                "const": "minecraft:bubble_column_up"
               }
             }
           },
@@ -23560,7 +23612,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:dolphin"
+                "const": "minecraft:nautilus"
               }
             }
           },
@@ -23572,7 +23624,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:campfire_cosy_smoke"
+                "const": "minecraft:dolphin"
               }
             }
           },
@@ -23584,7 +23636,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:campfire_signal_smoke"
+                "const": "minecraft:campfire_cosy_smoke"
               }
             }
           },
@@ -23596,7 +23648,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:dripping_honey"
+                "const": "minecraft:campfire_signal_smoke"
               }
             }
           },
@@ -23608,7 +23660,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:falling_honey"
+                "const": "minecraft:dripping_honey"
               }
             }
           },
@@ -23620,7 +23672,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:landing_honey"
+                "const": "minecraft:falling_honey"
               }
             }
           },
@@ -23632,7 +23684,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:falling_nectar"
+                "const": "minecraft:landing_honey"
               }
             }
           },
@@ -23644,7 +23696,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:falling_spore_blossom"
+                "const": "minecraft:falling_nectar"
               }
             }
           },
@@ -23656,7 +23708,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:ash"
+                "const": "minecraft:falling_spore_blossom"
               }
             }
           },
@@ -23668,7 +23720,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:crimson_spore"
+                "const": "minecraft:ash"
               }
             }
           },
@@ -23680,7 +23732,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:warped_spore"
+                "const": "minecraft:crimson_spore"
               }
             }
           },
@@ -23692,7 +23744,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:spore_blossom_air"
+                "const": "minecraft:warped_spore"
               }
             }
           },
@@ -23704,7 +23756,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:dripping_obsidian_tear"
+                "const": "minecraft:spore_blossom_air"
               }
             }
           },
@@ -23716,7 +23768,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:falling_obsidian_tear"
+                "const": "minecraft:dripping_obsidian_tear"
               }
             }
           },
@@ -23728,7 +23780,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:landing_obsidian_tear"
+                "const": "minecraft:falling_obsidian_tear"
               }
             }
           },
@@ -23740,7 +23792,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:reverse_portal"
+                "const": "minecraft:landing_obsidian_tear"
               }
             }
           },
@@ -23752,7 +23804,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:white_ash"
+                "const": "minecraft:reverse_portal"
               }
             }
           },
@@ -23764,7 +23816,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:small_flame"
+                "const": "minecraft:white_ash"
               }
             }
           },
@@ -23776,7 +23828,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:snowflake"
+                "const": "minecraft:small_flame"
               }
             }
           },
@@ -23788,7 +23840,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:dripping_dripstone_lava"
+                "const": "minecraft:snowflake"
               }
             }
           },
@@ -23800,7 +23852,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:falling_dripstone_lava"
+                "const": "minecraft:dripping_dripstone_lava"
               }
             }
           },
@@ -23812,7 +23864,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:dripping_dripstone_water"
+                "const": "minecraft:falling_dripstone_lava"
               }
             }
           },
@@ -23824,7 +23876,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:falling_dripstone_water"
+                "const": "minecraft:dripping_dripstone_water"
               }
             }
           },
@@ -23836,7 +23888,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:glow_squid_ink"
+                "const": "minecraft:falling_dripstone_water"
               }
             }
           },
@@ -23848,7 +23900,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:glow"
+                "const": "minecraft:glow_squid_ink"
               }
             }
           },
@@ -23860,7 +23912,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:wax_on"
+                "const": "minecraft:glow"
               }
             }
           },
@@ -23872,7 +23924,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:wax_off"
+                "const": "minecraft:wax_on"
               }
             }
           },
@@ -23884,7 +23936,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:electric_spark"
+                "const": "minecraft:wax_off"
               }
             }
           },
@@ -23896,7 +23948,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:scrape"
+                "const": "minecraft:electric_spark"
               }
             }
           },
@@ -23908,7 +23960,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:shriek"
+                "const": "minecraft:scrape"
               }
             }
           },
@@ -23920,7 +23972,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:egg_crack"
+                "const": "minecraft:shriek"
               }
             }
           },
@@ -23932,7 +23984,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:dust_plume"
+                "const": "minecraft:egg_crack"
               }
             }
           },
@@ -23944,7 +23996,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:trial_spawner_detection"
+                "const": "minecraft:dust_plume"
               }
             }
           },
@@ -23956,7 +24008,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:trial_spawner_detection_ominous"
+                "const": "minecraft:trial_spawner_detection"
               }
             }
           },
@@ -23968,7 +24020,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:vault_connection"
+                "const": "minecraft:trial_spawner_detection_ominous"
               }
             }
           },
@@ -23980,7 +24032,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:dust_pillar"
+                "const": "minecraft:vault_connection"
               }
             }
           },
@@ -23992,7 +24044,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:ominous_spawning"
+                "const": "minecraft:dust_pillar"
               }
             }
           },
@@ -24004,7 +24056,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:raid_omen"
+                "const": "minecraft:ominous_spawning"
               }
             }
           },
@@ -24016,7 +24068,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:trial_omen"
+                "const": "minecraft:raid_omen"
               }
             }
           },
@@ -24028,7 +24080,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:block_crumble"
+                "const": "minecraft:trial_omen"
               }
             }
           },
@@ -24040,7 +24092,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:firefly"
+                "const": "minecraft:block_crumble"
               }
             }
           },
@@ -24052,18 +24104,30 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:sulfur_cube_goo"
+                "const": "minecraft:firefly"
               }
             }
           },
           "then": {
             "$ref": "#/definitions/def_556"
           }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:sulfur_cube_goo"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_557"
+          }
         }
       ]
     },
-    "def_425": {},
-    "def_426": {
+    "def_426": {},
+    "def_427": {
       "type": "object",
       "properties": {
         "block_state": {
@@ -24074,7 +24138,7 @@
                   "$ref": "#/definitions/registry:minecraft:block"
                 },
                 {
-                  "$ref": "#/definitions/def_427"
+                  "$ref": "#/definitions/def_428"
                 }
               ]
             },
@@ -24088,7 +24152,7 @@
         "block_state"
       ]
     },
-    "def_427": {
+    "def_428": {
       "type": "object",
       "properties": {
         "Name": {
@@ -25167,6 +25231,7 @@
                 "minecraft:red_candle_cake",
                 "minecraft:black_candle_cake",
                 "minecraft:amethyst_block",
+                "minecraft:ice_crystal",
                 "minecraft:budding_amethyst",
                 "minecraft:amethyst_cluster",
                 "minecraft:large_amethyst_bud",
@@ -25321,6 +25386,7 @@
                 "minecraft:waxed_weathered_lightning_rod",
                 "minecraft:waxed_oxidized_lightning_rod",
                 "minecraft:dripstone_block",
+                "minecraft:icicle",
                 "minecraft:pointed_dripstone",
                 "minecraft:sulfur_spike",
                 "minecraft:cave_vines",
@@ -40591,6 +40657,25 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:ice_crystal"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:amethyst_cluster"
               }
             }
@@ -43085,6 +43170,31 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:icicle"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attached": {
+                "type": "string"
+              },
+              "thickness": {
+                "type": "string"
+              },
+              "vertical_direction": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:pointed_dripstone"
               }
             }
@@ -43823,7 +43933,7 @@
         }
       ]
     },
-    "def_428": {
+    "def_429": {
       "type": "object",
       "properties": {
         "block_state": {
@@ -43834,7 +43944,7 @@
                   "$ref": "#/definitions/registry:minecraft:block"
                 },
                 {
-                  "$ref": "#/definitions/def_427"
+                  "$ref": "#/definitions/def_428"
                 }
               ]
             },
@@ -43848,11 +43958,11 @@
         "block_state"
       ]
     },
-    "def_429": {},
     "def_430": {},
     "def_431": {},
     "def_432": {},
-    "def_433": {
+    "def_433": {},
+    "def_434": {
       "type": "object",
       "properties": {
         "water_blocks": {
@@ -43861,21 +43971,6 @@
       },
       "required": [
         "water_blocks"
-      ]
-    },
-    "def_434": {
-      "type": "object",
-      "properties": {
-        "water_blocks": {
-          "$ref": "#/definitions/def_103"
-        },
-        "burst_impulse_base": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "water_blocks",
-        "burst_impulse_base"
       ]
     },
     "def_435": {
@@ -43898,17 +43993,32 @@
       "properties": {
         "water_blocks": {
           "$ref": "#/definitions/def_103"
+        },
+        "burst_impulse_base": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "water_blocks",
+        "burst_impulse_base"
+      ]
+    },
+    "def_437": {
+      "type": "object",
+      "properties": {
+        "water_blocks": {
+          "$ref": "#/definitions/def_103"
         }
       },
       "required": [
         "water_blocks"
       ]
     },
-    "def_437": {},
     "def_438": {},
     "def_439": {},
     "def_440": {},
-    "def_441": {
+    "def_441": {},
+    "def_442": {
       "type": "object",
       "properties": {
         "power": {
@@ -43918,12 +44028,12 @@
       },
       "required": []
     },
-    "def_442": {},
     "def_443": {},
     "def_444": {},
     "def_445": {},
     "def_446": {},
-    "def_447": {
+    "def_447": {},
+    "def_448": {
       "type": "object",
       "properties": {
         "color": {
@@ -43952,7 +44062,7 @@
         "scale"
       ]
     },
-    "def_448": {
+    "def_449": {
       "type": "object",
       "properties": {
         "from_color": {
@@ -43999,7 +44109,7 @@
         "scale"
       ]
     },
-    "def_449": {
+    "def_450": {
       "type": "object",
       "properties": {
         "color": {
@@ -44026,11 +44136,11 @@
         }
       }
     },
-    "def_450": {},
     "def_451": {},
     "def_452": {},
     "def_453": {},
-    "def_454": {
+    "def_454": {},
+    "def_455": {
       "type": "object",
       "properties": {
         "color": {
@@ -44055,14 +44165,15 @@
         "color"
       ]
     },
-    "def_455": {},
     "def_456": {},
     "def_457": {},
     "def_458": {},
     "def_459": {},
     "def_460": {},
     "def_461": {},
-    "def_462": {
+    "def_462": {},
+    "def_463": {},
+    "def_464": {
       "type": "object",
       "properties": {
         "block_state": {
@@ -44073,7 +44184,7 @@
                   "$ref": "#/definitions/registry:minecraft:block"
                 },
                 {
-                  "$ref": "#/definitions/def_427"
+                  "$ref": "#/definitions/def_428"
                 }
               ]
             },
@@ -44087,8 +44198,6 @@
         "block_state"
       ]
     },
-    "def_463": {},
-    "def_464": {},
     "def_465": {},
     "def_466": {},
     "def_467": {},
@@ -44096,7 +44205,9 @@
     "def_469": {},
     "def_470": {},
     "def_471": {},
-    "def_472": {
+    "def_472": {},
+    "def_473": {},
+    "def_474": {
       "type": "object",
       "properties": {
         "color": {
@@ -44121,8 +44232,8 @@
         "color"
       ]
     },
-    "def_473": {},
-    "def_474": {
+    "def_475": {},
+    "def_476": {
       "type": "object",
       "properties": {
         "roll": {
@@ -44133,10 +44244,10 @@
         "roll"
       ]
     },
-    "def_475": {},
-    "def_476": {},
     "def_477": {},
-    "def_478": {
+    "def_478": {},
+    "def_479": {},
+    "def_480": {
       "type": "object",
       "properties": {
         "color": {
@@ -44161,10 +44272,10 @@
         "color"
       ]
     },
-    "def_479": {},
-    "def_480": {},
     "def_481": {},
-    "def_482": {
+    "def_482": {},
+    "def_483": {},
+    "def_484": {
       "type": "object",
       "properties": {
         "color": {
@@ -44191,7 +44302,7 @@
         }
       }
     },
-    "def_483": {
+    "def_485": {
       "type": "object",
       "properties": {
         "item": {
@@ -44209,11 +44320,11 @@
         "item"
       ]
     },
-    "def_484": {
+    "def_486": {
       "type": "object",
       "properties": {
         "destination": {
-          "$ref": "#/definitions/def_485"
+          "$ref": "#/definitions/def_487"
         },
         "arrival_in_ticks": {
           "type": "integer",
@@ -44226,7 +44337,7 @@
         "arrival_in_ticks"
       ]
     },
-    "def_485": {
+    "def_487": {
       "type": "object",
       "properties": {
         "type": {
@@ -44249,7 +44360,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_486"
+            "$ref": "#/definitions/def_488"
           }
         },
         {
@@ -44261,12 +44372,12 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_487"
+            "$ref": "#/definitions/def_489"
           }
         }
       ]
     },
-    "def_486": {
+    "def_488": {
       "type": "object",
       "properties": {
         "pos": {
@@ -44284,7 +44395,7 @@
         "pos"
       ]
     },
-    "def_487": {
+    "def_489": {
       "type": "object",
       "properties": {
         "source_entity": {
@@ -44306,7 +44417,7 @@
         "source_entity"
       ]
     },
-    "def_488": {
+    "def_490": {
       "type": "object",
       "properties": {
         "target": {
@@ -44344,8 +44455,6 @@
         "duration"
       ]
     },
-    "def_489": {},
-    "def_490": {},
     "def_491": {},
     "def_492": {},
     "def_493": {},
@@ -44399,7 +44508,8 @@
     "def_541": {},
     "def_542": {},
     "def_543": {},
-    "def_544": {
+    "def_544": {},
+    "def_545": {
       "type": "object",
       "properties": {
         "delay": {
@@ -44412,12 +44522,12 @@
         "delay"
       ]
     },
-    "def_545": {},
     "def_546": {},
     "def_547": {},
     "def_548": {},
     "def_549": {},
-    "def_550": {
+    "def_550": {},
+    "def_551": {
       "type": "object",
       "properties": {
         "block_state": {
@@ -44428,7 +44538,7 @@
                   "$ref": "#/definitions/registry:minecraft:block"
                 },
                 {
-                  "$ref": "#/definitions/def_427"
+                  "$ref": "#/definitions/def_428"
                 }
               ]
             },
@@ -44442,10 +44552,10 @@
         "block_state"
       ]
     },
-    "def_551": {},
     "def_552": {},
     "def_553": {},
-    "def_554": {
+    "def_554": {},
+    "def_555": {
       "type": "object",
       "properties": {
         "block_state": {
@@ -44456,7 +44566,7 @@
                   "$ref": "#/definitions/registry:minecraft:block"
                 },
                 {
-                  "$ref": "#/definitions/def_427"
+                  "$ref": "#/definitions/def_428"
                 }
               ]
             },
@@ -44470,15 +44580,15 @@
         "block_state"
       ]
     },
-    "def_555": {},
     "def_556": {},
-    "def_557": {
+    "def_557": {},
+    "def_558": {
       "type": "object",
       "properties": {
         "value": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_558"
+            "$ref": "#/definitions/def_559"
           }
         }
       },
@@ -44486,14 +44596,14 @@
         "value"
       ]
     },
-    "def_558": {
+    "def_559": {
       "type": "object",
       "properties": {
         "particle": {
-          "$ref": "#/definitions/def_424"
+          "$ref": "#/definitions/def_425"
         },
         "probability": {
-          "$ref": "#/definitions/def_559"
+          "$ref": "#/definitions/def_560"
         }
       },
       "required": [
@@ -44501,37 +44611,37 @@
         "probability"
       ]
     },
-    "def_559": {
+    "def_560": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_560": {
+    "def_561": {
       "type": "object",
       "properties": {
         "value": {
-          "$ref": "#/definitions/def_561"
+          "$ref": "#/definitions/def_562"
         }
       },
       "required": [
         "value"
       ]
     },
-    "def_561": {
+    "def_562": {
       "type": "object",
       "properties": {
         "default": {
-          "$ref": "#/definitions/def_562"
+          "$ref": "#/definitions/def_563"
         },
         "creative": {
-          "$ref": "#/definitions/def_562"
+          "$ref": "#/definitions/def_563"
         },
         "underwater": {
-          "$ref": "#/definitions/def_562"
+          "$ref": "#/definitions/def_563"
         }
       }
     },
-    "def_562": {
+    "def_563": {
       "type": "object",
       "properties": {
         "sound": {
@@ -44554,7 +44664,7 @@
         "max_delay"
       ]
     },
-    "def_563": {
+    "def_564": {
       "type": "object",
       "properties": {
         "value": {
@@ -44565,43 +44675,43 @@
         "value"
       ]
     },
-    "def_564": {
+    "def_565": {
       "type": "object",
       "properties": {
         "value": {
-          "$ref": "#/definitions/def_565"
+          "$ref": "#/definitions/def_566"
         }
       },
       "required": [
         "value"
       ]
     },
-    "def_565": {
+    "def_566": {
       "type": "object",
       "properties": {
         "loop": {
           "$ref": "#/definitions/registry_file_inline:minecraft:sound_event"
         },
         "mood": {
-          "$ref": "#/definitions/def_566"
+          "$ref": "#/definitions/def_567"
         },
         "additions": {
           "anyOf": [
             {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/def_567"
+                "$ref": "#/definitions/def_568"
               }
             },
             {
-              "$ref": "#/definitions/def_567"
+              "$ref": "#/definitions/def_568"
             }
           ],
           "default": []
         }
       }
     },
-    "def_566": {
+    "def_567": {
       "type": "object",
       "properties": {
         "sound": {
@@ -44628,7 +44738,7 @@
         "offset"
       ]
     },
-    "def_567": {
+    "def_568": {
       "type": "object",
       "properties": {
         "sound": {
@@ -44643,22 +44753,11 @@
         "tick_chance"
       ]
     },
-    "def_568": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "boolean"
-        }
-      },
-      "required": [
-        "value"
-      ]
-    },
     "def_569": {
       "type": "object",
       "properties": {
         "value": {
-          "type": "number"
+          "type": "boolean"
         }
       },
       "required": [
@@ -44669,7 +44768,7 @@
       "type": "object",
       "properties": {
         "value": {
-          "type": "boolean"
+          "type": "number"
         }
       },
       "required": [
@@ -44691,7 +44790,7 @@
       "type": "object",
       "properties": {
         "value": {
-          "$ref": "#/definitions/def_573"
+          "type": "boolean"
         }
       },
       "required": [
@@ -44701,11 +44800,22 @@
     "def_573": {
       "type": "object",
       "properties": {
-        "can_sleep": {
+        "value": {
           "$ref": "#/definitions/def_574"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_574": {
+      "type": "object",
+      "properties": {
+        "can_sleep": {
+          "$ref": "#/definitions/def_575"
         },
         "can_set_spawn": {
-          "$ref": "#/definitions/def_574"
+          "$ref": "#/definitions/def_575"
         },
         "destroy_on_use": {
           "type": "boolean",
@@ -44724,29 +44834,18 @@
         "can_set_spawn"
       ]
     },
-    "def_574": {
+    "def_575": {
       "enum": [
         "always",
         "when_dark",
         "never"
       ]
     },
-    "def_575": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "$ref": "#/definitions/def_573"
-        }
-      },
-      "required": [
-        "value"
-      ]
-    },
     "def_576": {
       "type": "object",
       "properties": {
         "value": {
-          "type": "boolean"
+          "$ref": "#/definitions/def_574"
         }
       },
       "required": [
@@ -44790,12 +44889,23 @@
       "type": "object",
       "properties": {
         "value": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_581": {
+      "type": "object",
+      "properties": {
+        "value": {
           "anyOf": [
             {
               "type": "boolean"
             },
             {
-              "$ref": "#/definitions/def_581"
+              "$ref": "#/definitions/def_582"
             }
           ]
         }
@@ -44804,29 +44914,18 @@
         "value"
       ]
     },
-    "def_581": {
+    "def_582": {
       "enum": [
         "true",
         "false",
         "default"
       ]
     },
-    "def_582": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "value"
-      ]
-    },
     "def_583": {
       "type": "object",
       "properties": {
         "value": {
-          "type": "boolean"
+          "type": "number"
         }
       },
       "required": [
@@ -44859,7 +44958,7 @@
       "type": "object",
       "properties": {
         "value": {
-          "type": "number"
+          "type": "boolean"
         }
       },
       "required": [
@@ -44881,7 +44980,7 @@
       "type": "object",
       "properties": {
         "value": {
-          "type": "boolean"
+          "type": "number"
         }
       },
       "required": [
@@ -44914,7 +45013,7 @@
       "type": "object",
       "properties": {
         "value": {
-          "$ref": "#/definitions/def_592"
+          "type": "boolean"
         }
       },
       "required": [
@@ -44924,11 +45023,22 @@
     "def_592": {
       "type": "object",
       "properties": {
-        "spawns_by_category": {
+        "value": {
           "$ref": "#/definitions/def_593"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "def_593": {
+      "type": "object",
+      "properties": {
+        "spawns_by_category": {
+          "$ref": "#/definitions/def_594"
         },
         "spawn_costs": {
-          "$ref": "#/definitions/def_607"
+          "$ref": "#/definitions/def_608"
         }
       },
       "required": [
@@ -44936,19 +45046,19 @@
         "spawn_costs"
       ]
     },
-    "def_593": {
+    "def_594": {
       "type": "object",
       "propertyNames": {
-        "$ref": "#/definitions/def_594"
+        "$ref": "#/definitions/def_595"
       },
       "additionalProperties": {
         "type": "array",
         "items": {
-          "$ref": "#/definitions/def_595"
+          "$ref": "#/definitions/def_596"
         }
       }
     },
-    "def_594": {
+    "def_595": {
       "enum": [
         "monster",
         "creature",
@@ -44960,11 +45070,11 @@
         "misc"
       ]
     },
-    "def_595": {
+    "def_596": {
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/def_596"
+          "$ref": "#/definitions/def_597"
         }
       ],
       "properties": {
@@ -44976,7 +45086,7 @@
         "weight"
       ]
     },
-    "def_596": {
+    "def_597": {
       "type": "object",
       "properties": {
         "type": {
@@ -44990,7 +45100,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_597"
+              "$ref": "#/definitions/def_598"
             }
           ]
         }
@@ -45000,7 +45110,7 @@
         "count"
       ]
     },
-    "def_597": {
+    "def_598": {
       "type": "object",
       "properties": {
         "type": {
@@ -45029,7 +45139,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_598"
+            "$ref": "#/definitions/def_599"
           }
         },
         {
@@ -45041,7 +45151,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_599"
+            "$ref": "#/definitions/def_600"
           }
         },
         {
@@ -45053,7 +45163,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_600"
+            "$ref": "#/definitions/def_601"
           }
         },
         {
@@ -45065,7 +45175,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_601"
+            "$ref": "#/definitions/def_602"
           }
         },
         {
@@ -45077,7 +45187,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_602"
+            "$ref": "#/definitions/def_603"
           }
         },
         {
@@ -45089,7 +45199,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_603"
+            "$ref": "#/definitions/def_604"
           }
         },
         {
@@ -45101,7 +45211,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_605"
+            "$ref": "#/definitions/def_606"
           }
         },
         {
@@ -45113,12 +45223,12 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_606"
+            "$ref": "#/definitions/def_607"
           }
         }
       ]
     },
-    "def_598": {
+    "def_599": {
       "type": "object",
       "properties": {
         "value": {
@@ -45129,25 +45239,6 @@
       },
       "required": [
         "value"
-      ]
-    },
-    "def_599": {
-      "type": "object",
-      "properties": {
-        "min_inclusive": {
-          "type": "integer",
-          "minimum": -2147483648,
-          "maximum": 2147483647
-        },
-        "max_inclusive": {
-          "type": "integer",
-          "minimum": -2147483648,
-          "maximum": 2147483647
-        }
-      },
-      "required": [
-        "min_inclusive",
-        "max_inclusive"
       ]
     },
     "def_600": {
@@ -45191,6 +45282,25 @@
     "def_602": {
       "type": "object",
       "properties": {
+        "min_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "max_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "min_inclusive",
+        "max_inclusive"
+      ]
+    },
+    "def_603": {
+      "type": "object",
+      "properties": {
         "source": {
           "anyOf": [
             {
@@ -45199,7 +45309,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_597"
+              "$ref": "#/definitions/def_598"
             }
           ]
         },
@@ -45220,13 +45330,13 @@
         "max_inclusive"
       ]
     },
-    "def_603": {
+    "def_604": {
       "type": "object",
       "properties": {
         "distribution": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_604"
+            "$ref": "#/definitions/def_605"
           }
         }
       },
@@ -45234,7 +45344,7 @@
         "distribution"
       ]
     },
-    "def_604": {
+    "def_605": {
       "type": "object",
       "properties": {
         "data": {
@@ -45245,7 +45355,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_597"
+              "$ref": "#/definitions/def_598"
             }
           ]
         },
@@ -45258,7 +45368,7 @@
         "weight"
       ]
     },
-    "def_605": {
+    "def_606": {
       "type": "object",
       "properties": {
         "mean": {
@@ -45285,7 +45395,7 @@
         "max_inclusive"
       ]
     },
-    "def_606": {
+    "def_607": {
       "type": "object",
       "properties": {
         "min": {
@@ -45310,16 +45420,16 @@
         "plateau"
       ]
     },
-    "def_607": {
+    "def_608": {
       "type": "object",
       "propertyNames": {
         "$ref": "#/definitions/registry:minecraft:entity_type"
       },
       "additionalProperties": {
-        "$ref": "#/definitions/def_608"
+        "$ref": "#/definitions/def_609"
       }
     },
-    "def_608": {
+    "def_609": {
       "type": "object",
       "properties": {
         "energy_budget": {
@@ -45334,7 +45444,7 @@
         "charge"
       ]
     },
-    "def_609": {
+    "def_610": {
       "type": "object",
       "properties": {
         "value": {
@@ -45345,18 +45455,18 @@
         "value"
       ]
     },
-    "def_610": {
+    "def_611": {
       "type": "object",
       "properties": {
         "value": {
-          "$ref": "#/definitions/def_611"
+          "$ref": "#/definitions/def_612"
         }
       },
       "required": [
         "value"
       ]
     },
-    "def_611": {
+    "def_612": {
       "anyOf": [
         {
           "enum": [
@@ -45393,18 +45503,18 @@
         }
       ]
     },
-    "def_612": {
+    "def_613": {
       "type": "object",
       "properties": {
         "value": {
-          "$ref": "#/definitions/def_613"
+          "$ref": "#/definitions/def_614"
         }
       },
       "required": [
         "value"
       ]
     },
-    "def_613": {
+    "def_614": {
       "anyOf": [
         {
           "enum": [

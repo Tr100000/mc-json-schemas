@@ -1,14 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema",
   "$ref": "#/definitions/def",
-  "exportedWith": {
-    "minecraft": "26.4-snapshot-1",
-    "codec2schema": "0.3.7+26.4-snapshot-1",
-    "exportedBy": {
-      "pluginId": "codec2schema:common",
-      "modVersion": "0.3.7+26.4-snapshot-1"
-    }
-  },
   "definitions": {
     "def": {
       "type": "object",
@@ -1210,6 +1202,7 @@
             "minecraft:lava_bucket",
             "minecraft:powder_snow_bucket",
             "minecraft:snowball",
+            "minecraft:ice_ball",
             "minecraft:leather",
             "minecraft:milk_bucket",
             "minecraft:pufferfish_bucket",
@@ -1403,6 +1396,7 @@
             "minecraft:bogged_spawn_egg",
             "minecraft:camel_husk_spawn_egg",
             "minecraft:drowned_spawn_egg",
+            "minecraft:frostbite_spawn_egg",
             "minecraft:husk_spawn_egg",
             "minecraft:parched_spawn_egg",
             "minecraft:skeleton_spawn_egg",
@@ -1648,6 +1642,8 @@
             "minecraft:medium_amethyst_bud",
             "minecraft:large_amethyst_bud",
             "minecraft:amethyst_cluster",
+            "minecraft:ice_crystal",
+            "minecraft:icicle",
             "minecraft:pointed_dripstone",
             "minecraft:sulfur_spike",
             "minecraft:ochre_froglight",
@@ -3989,6 +3985,7 @@
             "minecraft:entity.zombie_nautilus.eat",
             "minecraft:entity.zombie_nautilus.hurt",
             "minecraft:entity.zombie_nautilus.hurt_land",
+            "minecraft:entity.zombie_nautilus.riding",
             "minecraft:entity.zombie_nautilus.swim",
             "minecraft:entity.zombified_piglin.ambient",
             "minecraft:entity.zombified_piglin.angry",
@@ -4081,7 +4078,32 @@
             "minecraft:block.straw_bed.hit",
             "minecraft:block.straw_bed.fall",
             "minecraft:block.red_shrub.break",
-            "minecraft:block.red_shrub.place"
+            "minecraft:block.red_shrub.place",
+            "minecraft:block.ice.break",
+            "minecraft:block.ice.hit",
+            "minecraft:block.ice.fall",
+            "minecraft:block.ice.place",
+            "minecraft:block.ice.step",
+            "minecraft:entity.frostbite.ambient",
+            "minecraft:entity.frostbite.death",
+            "minecraft:entity.frostbite.hurt",
+            "minecraft:entity.frostbite.step",
+            "minecraft:block.ice_crystal.break",
+            "minecraft:block.ice_crystal.hit",
+            "minecraft:block.ice_crystal.fall",
+            "minecraft:block.ice_crystal.place",
+            "minecraft:block.ice_crystal.step",
+            "minecraft:block.icicle.break",
+            "minecraft:block.icicle.hit",
+            "minecraft:block.icicle.fall",
+            "minecraft:block.icicle.place",
+            "minecraft:block.icicle.step",
+            "minecraft:block.icicle.land",
+            "minecraft:entity.ice_ball.break",
+            "minecraft:entity.ice_ball.throw",
+            "minecraft:entity.zombie.converted_to_frostbite",
+            "minecraft:entity.frostbite.converted_to_zombie",
+            "minecraft:event.mob_effect.freezing"
           ]
         },
         {

@@ -5,37 +5,52 @@
     "def": {
       "type": "object",
       "properties": {
-        "ambient_sound": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:sound_event"
+        "volume": {
+          "$ref": "#/definitions/def_1",
+          "default": 1.0
         },
-        "hurt_sound": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:sound_event"
+        "pitch": {
+          "$ref": "#/definitions/def_2",
+          "default": 1.0
         },
-        "death_sound": {
+        "break_sound": {
           "$ref": "#/definitions/registry_file_inline:minecraft:sound_event"
         },
         "step_sound": {
           "$ref": "#/definitions/registry_file_inline:minecraft:sound_event"
+        },
+        "place_sound": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:sound_event"
+        },
+        "hit_sound": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:sound_event"
+        },
+        "fall_sound": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:sound_event"
         }
-      },
-      "required": [
-        "ambient_sound",
-        "hurt_sound",
-        "death_sound",
-        "step_sound"
-      ]
+      }
+    },
+    "def_1": {
+      "type": "number",
+      "minimum": 1.0E-5,
+      "maximum": 10.0
+    },
+    "def_2": {
+      "type": "number",
+      "minimum": 1.0E-5,
+      "maximum": 2.0
     },
     "registry_file_inline:minecraft:sound_event": {
       "anyOf": [
         {
-          "$ref": "#/definitions/def_1"
+          "$ref": "#/definitions/def_3"
         },
         {
           "$ref": "#/definitions/registry:minecraft:sound_event"
         }
       ]
     },
-    "def_1": {
+    "def_3": {
       "type": "object",
       "properties": {
         "sound_id": {

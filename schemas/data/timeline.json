@@ -1,14 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema",
   "$ref": "#/definitions/def",
-  "exportedWith": {
-    "minecraft": "26.4-snapshot-1",
-    "codec2schema": "0.3.7+26.4-snapshot-1",
-    "exportedBy": {
-      "pluginId": "codec2schema:common",
-      "modVersion": "0.3.7+26.4-snapshot-1"
-    }
-  },
   "definitions": {
     "def": {
       "type": "object",
@@ -24,7 +16,7 @@
           "default": {}
         },
         "time_markers": {
-          "$ref": "#/definitions/def_54",
+          "$ref": "#/definitions/def_55",
           "default": {}
         }
       },
@@ -97,107 +89,110 @@
         "minecraft:visual/star_brightness": {
           "$ref": "#/definitions/def_19"
         },
-        "minecraft:visual/block_light_tint": {
+        "minecraft:visual/has_sky_occluder": {
           "$ref": "#/definitions/def_20"
         },
-        "minecraft:visual/sky_light_color": {
+        "minecraft:visual/block_light_tint": {
           "$ref": "#/definitions/def_21"
         },
-        "minecraft:visual/sky_light_factor": {
+        "minecraft:visual/sky_light_color": {
           "$ref": "#/definitions/def_22"
         },
-        "minecraft:visual/night_vision_color": {
+        "minecraft:visual/sky_light_factor": {
           "$ref": "#/definitions/def_23"
         },
-        "minecraft:visual/ambient_light_color": {
+        "minecraft:visual/night_vision_color": {
           "$ref": "#/definitions/def_24"
         },
-        "minecraft:visual/default_dripstone_particle": {
+        "minecraft:visual/ambient_light_color": {
           "$ref": "#/definitions/def_25"
         },
-        "minecraft:visual/ambient_particles": {
+        "minecraft:visual/default_dripstone_particle": {
           "$ref": "#/definitions/def_26"
         },
-        "minecraft:audio/background_music": {
+        "minecraft:visual/ambient_particles": {
           "$ref": "#/definitions/def_27"
         },
-        "minecraft:audio/music_volume": {
+        "minecraft:audio/background_music": {
           "$ref": "#/definitions/def_28"
         },
-        "minecraft:audio/ambient_sounds": {
+        "minecraft:audio/music_volume": {
           "$ref": "#/definitions/def_29"
         },
-        "minecraft:audio/firefly_bush_sounds": {
+        "minecraft:audio/ambient_sounds": {
           "$ref": "#/definitions/def_30"
         },
-        "minecraft:gameplay/sky_light_level": {
+        "minecraft:audio/firefly_bush_sounds": {
           "$ref": "#/definitions/def_31"
         },
-        "minecraft:gameplay/can_start_raid": {
+        "minecraft:gameplay/sky_light_level": {
           "$ref": "#/definitions/def_32"
         },
-        "minecraft:gameplay/water_evaporates": {
+        "minecraft:gameplay/can_start_raid": {
           "$ref": "#/definitions/def_33"
         },
-        "minecraft:gameplay/bed_rule": {
+        "minecraft:gameplay/water_evaporates": {
           "$ref": "#/definitions/def_34"
         },
-        "minecraft:gameplay/straw_bed_rule": {
+        "minecraft:gameplay/bed_rule": {
           "$ref": "#/definitions/def_35"
         },
-        "minecraft:gameplay/respawn_anchor_works": {
+        "minecraft:gameplay/straw_bed_rule": {
           "$ref": "#/definitions/def_36"
         },
-        "minecraft:gameplay/nether_portal_spawns_piglin": {
+        "minecraft:gameplay/respawn_anchor_works": {
           "$ref": "#/definitions/def_37"
         },
-        "minecraft:gameplay/fast_lava": {
+        "minecraft:gameplay/nether_portal_spawns_piglin": {
           "$ref": "#/definitions/def_38"
         },
-        "minecraft:gameplay/increased_fire_burnout": {
+        "minecraft:gameplay/fast_lava": {
           "$ref": "#/definitions/def_39"
         },
-        "minecraft:gameplay/eyeblossom_open": {
+        "minecraft:gameplay/increased_fire_burnout": {
           "$ref": "#/definitions/def_40"
         },
-        "minecraft:gameplay/turtle_egg_hatch_chance": {
+        "minecraft:gameplay/eyeblossom_open": {
           "$ref": "#/definitions/def_41"
         },
-        "minecraft:gameplay/piglins_zombify": {
+        "minecraft:gameplay/turtle_egg_hatch_chance": {
           "$ref": "#/definitions/def_42"
         },
-        "minecraft:gameplay/snow_golem_melts": {
+        "minecraft:gameplay/piglins_zombify": {
           "$ref": "#/definitions/def_43"
         },
-        "minecraft:gameplay/creaking_active": {
+        "minecraft:gameplay/snow_golem_melts": {
           "$ref": "#/definitions/def_44"
         },
-        "minecraft:gameplay/surface_slime_spawn_chance": {
+        "minecraft:gameplay/creaking_active": {
           "$ref": "#/definitions/def_45"
         },
-        "minecraft:gameplay/cat_waking_up_gift_chance": {
+        "minecraft:gameplay/surface_slime_spawn_chance": {
           "$ref": "#/definitions/def_46"
         },
-        "minecraft:gameplay/bees_stay_in_hive": {
+        "minecraft:gameplay/cat_waking_up_gift_chance": {
           "$ref": "#/definitions/def_47"
         },
-        "minecraft:gameplay/monsters_burn": {
+        "minecraft:gameplay/bees_stay_in_hive": {
           "$ref": "#/definitions/def_48"
         },
-        "minecraft:gameplay/can_pillager_patrol_spawn": {
+        "minecraft:gameplay/monsters_burn": {
           "$ref": "#/definitions/def_49"
         },
-        "minecraft:gameplay/natural_mob_spawns": {
+        "minecraft:gameplay/can_pillager_patrol_spawn": {
           "$ref": "#/definitions/def_50"
         },
-        "minecraft:gameplay/creature_world_gen_spawn_probability": {
+        "minecraft:gameplay/natural_mob_spawns": {
           "$ref": "#/definitions/def_51"
         },
-        "minecraft:gameplay/villager_activity": {
+        "minecraft:gameplay/creature_world_gen_spawn_probability": {
           "$ref": "#/definitions/def_52"
         },
-        "minecraft:gameplay/baby_villager_activity": {
+        "minecraft:gameplay/villager_activity": {
           "$ref": "#/definitions/def_53"
+        },
+        "minecraft:gameplay/baby_villager_activity": {
+          "$ref": "#/definitions/def_54"
         }
       }
     },
@@ -560,29 +555,36 @@
     },
     "def_54": {
       "type": "object",
+      "properties": {
+        "modifier": {}
+      },
+      "required": []
+    },
+    "def_55": {
+      "type": "object",
       "propertyNames": {
         "$ref": "#/definitions/identifier"
       },
       "additionalProperties": {
         "anyOf": [
           {
-            "$ref": "#/definitions/def_55"
+            "$ref": "#/definitions/def_56"
           },
           {
-            "$ref": "#/definitions/def_56"
+            "$ref": "#/definitions/def_57"
           }
         ]
       }
     },
-    "def_55": {
+    "def_56": {
       "type": "integer",
       "minimum": 0
     },
-    "def_56": {
+    "def_57": {
       "type": "object",
       "properties": {
         "ticks": {
-          "$ref": "#/definitions/def_55"
+          "$ref": "#/definitions/def_56"
         },
         "show_in_commands": {
           "type": "boolean",

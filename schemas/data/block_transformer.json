@@ -6,14 +6,6 @@
   },
   "minItems": 1,
   "maxItems": 200,
-  "exportedWith": {
-    "minecraft": "26.4-snapshot-1",
-    "codec2schema": "0.3.7+26.4-snapshot-1",
-    "exportedBy": {
-      "pluginId": "codec2schema:common",
-      "modVersion": "0.3.7+26.4-snapshot-1"
-    }
-  },
   "definitions": {
     "def": {
       "type": "object",
@@ -28,7 +20,7 @@
           }
         },
         "particle": {
-          "$ref": "#/definitions/def_60",
+          "$ref": "#/definitions/def_62",
           "default": "none"
         },
         "disallowed_faces": {
@@ -42,7 +34,7 @@
           "$ref": "#/definitions/identifier"
         },
         "drop_strategy": {
-          "$ref": "#/definitions/def_61",
+          "$ref": "#/definitions/def_63",
           "default": "from_middle"
         },
         "update_from_neighbors": {
@@ -50,7 +42,7 @@
           "default": true
         },
         "transform_type": {
-          "$ref": "#/definitions/def_62",
+          "$ref": "#/definitions/def_64",
           "default": "single_block"
         },
         "consume_on_use": {
@@ -1162,6 +1154,7 @@
                 "minecraft:red_candle_cake",
                 "minecraft:black_candle_cake",
                 "minecraft:amethyst_block",
+                "minecraft:ice_crystal",
                 "minecraft:budding_amethyst",
                 "minecraft:amethyst_cluster",
                 "minecraft:large_amethyst_bud",
@@ -1316,6 +1309,7 @@
                 "minecraft:waxed_weathered_lightning_rod",
                 "minecraft:waxed_oxidized_lightning_rod",
                 "minecraft:dripstone_block",
+                "minecraft:icicle",
                 "minecraft:pointed_dripstone",
                 "minecraft:sulfur_spike",
                 "minecraft:cave_vines",
@@ -16586,6 +16580,25 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:ice_crystal"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:amethyst_cluster"
               }
             }
@@ -19080,6 +19093,31 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:icicle"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "attached": {
+                "type": "string"
+              },
+              "thickness": {
+                "type": "string"
+              },
+              "vertical_direction": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:pointed_dripstone"
               }
             }
@@ -19949,7 +19987,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_56"
+            "$ref": "#/definitions/def_58"
           }
         },
         {
@@ -19961,7 +19999,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_57"
+            "$ref": "#/definitions/def_59"
           }
         }
       ]
@@ -21198,6 +21236,7 @@
             "minecraft:red_candle_cake",
             "minecraft:black_candle_cake",
             "minecraft:amethyst_block",
+            "minecraft:ice_crystal",
             "minecraft:budding_amethyst",
             "minecraft:amethyst_cluster",
             "minecraft:large_amethyst_bud",
@@ -21352,6 +21391,7 @@
             "minecraft:waxed_weathered_lightning_rod",
             "minecraft:waxed_oxidized_lightning_rod",
             "minecraft:dripstone_block",
+            "minecraft:icicle",
             "minecraft:pointed_dripstone",
             "minecraft:sulfur_spike",
             "minecraft:cave_vines",
@@ -21987,7 +22027,8 @@
             "minecraft:true",
             "minecraft:unobstructed",
             "minecraft:height_range",
-            "minecraft:volume_match"
+            "minecraft:volume_match",
+            "minecraft:below_heightmap"
           ]
         }
       },
@@ -22185,6 +22226,18 @@
           },
           "then": {
             "$ref": "#/definitions/def_55"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:below_heightmap"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_56"
           }
         }
       ]
@@ -22647,6 +22700,27 @@
     "def_56": {
       "type": "object",
       "properties": {
+        "heightmap": {
+          "$ref": "#/definitions/def_57"
+        }
+      },
+      "required": [
+        "heightmap"
+      ]
+    },
+    "def_57": {
+      "enum": [
+        "WORLD_SURFACE_WG",
+        "WORLD_SURFACE",
+        "OCEAN_FLOOR_WG",
+        "OCEAN_FLOOR",
+        "MOTION_BLOCKING",
+        "MOTION_BLOCKING_NO_LEAVES"
+      ]
+    },
+    "def_58": {
+      "type": "object",
+      "properties": {
         "state": {
           "anyOf": [
             {
@@ -22662,13 +22736,13 @@
         "state"
       ]
     },
-    "def_57": {
+    "def_59": {
       "type": "object",
       "properties": {
         "entries": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_58"
+            "$ref": "#/definitions/def_60"
           }
         }
       },
@@ -22676,7 +22750,7 @@
         "entries"
       ]
     },
-    "def_58": {
+    "def_60": {
       "type": "object",
       "properties": {
         "data": {
@@ -22701,14 +22775,14 @@
     "registry_file_inline:minecraft:sound_event": {
       "anyOf": [
         {
-          "$ref": "#/definitions/def_59"
+          "$ref": "#/definitions/def_61"
         },
         {
           "$ref": "#/definitions/registry:minecraft:sound_event"
         }
       ]
     },
-    "def_59": {
+    "def_61": {
       "type": "object",
       "properties": {
         "sound_id": {
@@ -24624,6 +24698,7 @@
             "minecraft:entity.zombie_nautilus.eat",
             "minecraft:entity.zombie_nautilus.hurt",
             "minecraft:entity.zombie_nautilus.hurt_land",
+            "minecraft:entity.zombie_nautilus.riding",
             "minecraft:entity.zombie_nautilus.swim",
             "minecraft:entity.zombified_piglin.ambient",
             "minecraft:entity.zombified_piglin.angry",
@@ -24716,7 +24791,32 @@
             "minecraft:block.straw_bed.hit",
             "minecraft:block.straw_bed.fall",
             "minecraft:block.red_shrub.break",
-            "minecraft:block.red_shrub.place"
+            "minecraft:block.red_shrub.place",
+            "minecraft:block.ice.break",
+            "minecraft:block.ice.hit",
+            "minecraft:block.ice.fall",
+            "minecraft:block.ice.place",
+            "minecraft:block.ice.step",
+            "minecraft:entity.frostbite.ambient",
+            "minecraft:entity.frostbite.death",
+            "minecraft:entity.frostbite.hurt",
+            "minecraft:entity.frostbite.step",
+            "minecraft:block.ice_crystal.break",
+            "minecraft:block.ice_crystal.hit",
+            "minecraft:block.ice_crystal.fall",
+            "minecraft:block.ice_crystal.place",
+            "minecraft:block.ice_crystal.step",
+            "minecraft:block.icicle.break",
+            "minecraft:block.icicle.hit",
+            "minecraft:block.icicle.fall",
+            "minecraft:block.icicle.place",
+            "minecraft:block.icicle.step",
+            "minecraft:block.icicle.land",
+            "minecraft:entity.ice_ball.break",
+            "minecraft:entity.ice_ball.throw",
+            "minecraft:entity.zombie.converted_to_frostbite",
+            "minecraft:entity.frostbite.converted_to_zombie",
+            "minecraft:event.mob_effect.freezing"
           ]
         },
         {
@@ -24724,7 +24824,7 @@
         }
       ]
     },
-    "def_60": {
+    "def_62": {
       "enum": [
         "none",
         "scrape",
@@ -24732,13 +24832,13 @@
         "wax_off"
       ]
     },
-    "def_61": {
+    "def_63": {
       "enum": [
         "clicked_face",
         "from_middle"
       ]
     },
-    "def_62": {
+    "def_64": {
       "enum": [
         "single_block",
         "copper_chest"
