@@ -16,6 +16,7 @@
             "minecraft:chorus_plant",
             "minecraft:coral_claw",
             "minecraft:coral_tree",
+            "minecraft:crevasse",
             "minecraft:delta_feature",
             "minecraft:disk",
             "minecraft:end_gateway",
@@ -105,7 +106,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_30"
+            "$ref": "#/definitions/def_32"
           }
         },
         {
@@ -117,7 +118,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_66"
+            "$ref": "#/definitions/def_68"
           }
         },
         {
@@ -129,7 +130,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_67"
+            "$ref": "#/definitions/def_69"
           }
         },
         {
@@ -141,7 +142,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_68"
+            "$ref": "#/definitions/def_70"
           }
         },
         {
@@ -153,7 +154,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_69"
+            "$ref": "#/definitions/def_71"
           }
         },
         {
@@ -165,7 +166,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_70"
+            "$ref": "#/definitions/def_72"
           }
         },
         {
@@ -177,7 +178,19 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_105"
+            "$ref": "#/definitions/def_107"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:crevasse"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_108"
           }
         },
         {
@@ -189,7 +202,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_106"
+            "$ref": "#/definitions/def_115"
           }
         },
         {
@@ -201,7 +214,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_107"
+            "$ref": "#/definitions/def_116"
           }
         },
         {
@@ -213,7 +226,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_109"
+            "$ref": "#/definitions/def_118"
           }
         },
         {
@@ -225,7 +238,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_110"
+            "$ref": "#/definitions/def_119"
           }
         },
         {
@@ -237,7 +250,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_111"
+            "$ref": "#/definitions/def_120"
           }
         },
         {
@@ -249,7 +262,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_112"
+            "$ref": "#/definitions/def_121"
           }
         },
         {
@@ -261,7 +274,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_113"
+            "$ref": "#/definitions/def_122"
           }
         },
         {
@@ -273,7 +286,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_115"
+            "$ref": "#/definitions/def_124"
           }
         },
         {
@@ -285,7 +298,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_141"
+            "$ref": "#/definitions/def_150"
           }
         },
         {
@@ -297,7 +310,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_143"
+            "$ref": "#/definitions/def_152"
           }
         },
         {
@@ -309,7 +322,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_183"
+            "$ref": "#/definitions/def_192"
           }
         },
         {
@@ -321,7 +334,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_184"
+            "$ref": "#/definitions/def_193"
           }
         },
         {
@@ -333,7 +346,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_194"
+            "$ref": "#/definitions/def_203"
           }
         },
         {
@@ -345,7 +358,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_195"
+            "$ref": "#/definitions/def_204"
           }
         },
         {
@@ -357,7 +370,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_196"
+            "$ref": "#/definitions/def_205"
           }
         },
         {
@@ -369,7 +382,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_197"
+            "$ref": "#/definitions/def_206"
           }
         },
         {
@@ -381,7 +394,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_198"
+            "$ref": "#/definitions/def_207"
           }
         },
         {
@@ -393,7 +406,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_199"
+            "$ref": "#/definitions/def_208"
           }
         },
         {
@@ -405,7 +418,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_210"
+            "$ref": "#/definitions/def_219"
           }
         },
         {
@@ -417,7 +430,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_211"
+            "$ref": "#/definitions/def_220"
           }
         },
         {
@@ -429,7 +442,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_216"
+            "$ref": "#/definitions/def_225"
           }
         },
         {
@@ -441,7 +454,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_217"
+            "$ref": "#/definitions/def_226"
           }
         },
         {
@@ -453,7 +466,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_218"
+            "$ref": "#/definitions/def_227"
           }
         },
         {
@@ -465,7 +478,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_222"
+            "$ref": "#/definitions/def_231"
           }
         },
         {
@@ -477,7 +490,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_224"
+            "$ref": "#/definitions/def_233"
           }
         },
         {
@@ -489,7 +502,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_225"
+            "$ref": "#/definitions/def_234"
           }
         },
         {
@@ -501,7 +514,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_226"
+            "$ref": "#/definitions/def_235"
           }
         },
         {
@@ -513,7 +526,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_228"
+            "$ref": "#/definitions/def_237"
           }
         },
         {
@@ -525,7 +538,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_231"
+            "$ref": "#/definitions/def_240"
           }
         },
         {
@@ -537,7 +550,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_232"
+            "$ref": "#/definitions/def_241"
           }
         },
         {
@@ -549,7 +562,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_244"
+            "$ref": "#/definitions/def_253"
           }
         },
         {
@@ -561,7 +574,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_247"
+            "$ref": "#/definitions/def_256"
           }
         },
         {
@@ -573,7 +586,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_253"
+            "$ref": "#/definitions/def_262"
           }
         },
         {
@@ -585,7 +598,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_254"
+            "$ref": "#/definitions/def_263"
           }
         },
         {
@@ -597,7 +610,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_255"
+            "$ref": "#/definitions/def_264"
           }
         },
         {
@@ -609,7 +622,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_256"
+            "$ref": "#/definitions/def_265"
           }
         },
         {
@@ -621,7 +634,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_258"
+            "$ref": "#/definitions/def_267"
           }
         },
         {
@@ -633,7 +646,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_264"
+            "$ref": "#/definitions/def_273"
           }
         },
         {
@@ -645,7 +658,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_275"
+            "$ref": "#/definitions/def_284"
           }
         },
         {
@@ -657,7 +670,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_276"
+            "$ref": "#/definitions/def_285"
           }
         },
         {
@@ -669,7 +682,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_279"
+            "$ref": "#/definitions/def_288"
           }
         },
         {
@@ -681,7 +694,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_281"
+            "$ref": "#/definitions/def_290"
           }
         },
         {
@@ -693,7 +706,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_285"
+            "$ref": "#/definitions/def_294"
           }
         },
         {
@@ -705,7 +718,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_375"
+            "$ref": "#/definitions/def_384"
           }
         },
         {
@@ -717,7 +730,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_379"
+            "$ref": "#/definitions/def_388"
           }
         },
         {
@@ -729,7 +742,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_386"
+            "$ref": "#/definitions/def_395"
           }
         },
         {
@@ -741,7 +754,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_387"
+            "$ref": "#/definitions/def_396"
           }
         },
         {
@@ -753,7 +766,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_388"
+            "$ref": "#/definitions/def_397"
           }
         },
         {
@@ -765,7 +778,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_394"
+            "$ref": "#/definitions/def_403"
           }
         }
       ]
@@ -1427,6 +1440,11 @@
             "minecraft:terracotta",
             "minecraft:coal_block",
             "minecraft:packed_ice",
+            "minecraft:packed_ice_bricks",
+            "minecraft:packed_ice_brick_slab",
+            "minecraft:packed_ice_brick_stairs",
+            "minecraft:packed_ice_brick_wall",
+            "minecraft:chiseled_packed_ice",
             "minecraft:sunflower",
             "minecraft:lilac",
             "minecraft:rose_bush",
@@ -1545,6 +1563,7 @@
             "minecraft:repeating_command_block",
             "minecraft:chain_command_block",
             "minecraft:frosted_ice",
+            "minecraft:brittle_ice",
             "minecraft:magma_block",
             "minecraft:nether_wart_block",
             "minecraft:red_nether_bricks",
@@ -2732,6 +2751,11 @@
                 "minecraft:terracotta",
                 "minecraft:coal_block",
                 "minecraft:packed_ice",
+                "minecraft:packed_ice_bricks",
+                "minecraft:packed_ice_brick_slab",
+                "minecraft:packed_ice_brick_stairs",
+                "minecraft:packed_ice_brick_wall",
+                "minecraft:chiseled_packed_ice",
                 "minecraft:sunflower",
                 "minecraft:lilac",
                 "minecraft:rose_bush",
@@ -2850,6 +2874,7 @@
                 "minecraft:repeating_command_block",
                 "minecraft:chain_command_block",
                 "minecraft:frosted_ice",
+                "minecraft:brittle_ice",
                 "minecraft:magma_block",
                 "minecraft:nether_wart_block",
                 "minecraft:red_nether_bricks",
@@ -7953,6 +7978,9 @@
             "properties": {
               "has_record": {
                 "type": "string"
+              },
+              "playlist_mode": {
+                "type": "string"
               }
             }
           }
@@ -11440,6 +11468,81 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:packed_ice_brick_slab"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:packed_ice_brick_stairs"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "half": {
+                "type": "string"
+              },
+              "shape": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:packed_ice_brick_wall"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "east": {
+                "type": "string"
+              },
+              "north": {
+                "type": "string"
+              },
+              "south": {
+                "type": "string"
+              },
+              "up": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              },
+              "west": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:sunflower"
               }
             }
@@ -13587,6 +13690,22 @@
             "properties": {
               "Name": {
                 "const": "minecraft:frosted_ice"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "age": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:brittle_ice"
               }
             }
           },
@@ -21966,7 +22085,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_11"
+            "$ref": "#/definitions/def_13"
           }
         },
         {
@@ -21978,7 +22097,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_13"
+            "$ref": "#/definitions/def_15"
           }
         },
         {
@@ -21990,7 +22109,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_15"
+            "$ref": "#/definitions/def_17"
           }
         },
         {
@@ -22002,7 +22121,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_16"
+            "$ref": "#/definitions/def_18"
           }
         },
         {
@@ -22014,7 +22133,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_17"
+            "$ref": "#/definitions/def_19"
           }
         },
         {
@@ -22026,7 +22145,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_18"
+            "$ref": "#/definitions/def_20"
           }
         },
         {
@@ -22038,7 +22157,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_19"
+            "$ref": "#/definitions/def_21"
           }
         },
         {
@@ -22050,7 +22169,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_20"
+            "$ref": "#/definitions/def_22"
           }
         },
         {
@@ -22062,7 +22181,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_21"
+            "$ref": "#/definitions/def_23"
           }
         },
         {
@@ -22074,7 +22193,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_22"
+            "$ref": "#/definitions/def_24"
           }
         },
         {
@@ -22086,7 +22205,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_23"
+            "$ref": "#/definitions/def_25"
           }
         },
         {
@@ -22098,7 +22217,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_24"
+            "$ref": "#/definitions/def_26"
           }
         },
         {
@@ -22110,7 +22229,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_27"
+            "$ref": "#/definitions/def_29"
           }
         },
         {
@@ -22122,7 +22241,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_28"
+            "$ref": "#/definitions/def_30"
           }
         }
       ]
@@ -22222,6 +22341,10 @@
         },
         "fluids": {
           "$ref": "#/definitions/def_10"
+        },
+        "state": {
+          "$ref": "#/definitions/def_11",
+          "default": {}
         }
       },
       "required": [
@@ -22256,9 +22379,7 @@
         {
           "enum": [
             "minecraft:empty",
-            "minecraft:flowing_water",
             "minecraft:water",
-            "minecraft:flowing_lava",
             "minecraft:lava"
           ]
         },
@@ -22269,16 +22390,43 @@
     },
     "def_11": {
       "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "$ref": "#/definitions/def_12"
+          }
+        ]
+      }
+    },
+    "def_12": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "type": "string"
+        },
+        "max": {
+          "type": "string"
+        }
+      }
+    },
+    "def_13": {
+      "type": "object",
       "properties": {
         "biomes": {
-          "$ref": "#/definitions/def_12"
+          "$ref": "#/definitions/def_14"
         }
       },
       "required": [
         "biomes"
       ]
     },
-    "def_12": {
+    "def_14": {
       "anyOf": [
         {
           "type": "string"
@@ -22301,7 +22449,7 @@
     "registry_fixed:minecraft:worldgen_biome": {
       "$ref": "#/definitions/identifier"
     },
-    "def_13": {
+    "def_15": {
       "type": "object",
       "properties": {
         "offset": {
@@ -22320,14 +22468,14 @@
           ]
         },
         "direction": {
-          "$ref": "#/definitions/def_14"
+          "$ref": "#/definitions/def_16"
         }
       },
       "required": [
         "direction"
       ]
     },
-    "def_14": {
+    "def_16": {
       "enum": [
         "down",
         "up",
@@ -22337,47 +22485,47 @@
         "east"
       ]
     },
-    "def_15": {
-      "type": "object",
-      "properties": {
-        "offset": {
-          "type": "array",
-          "items": {
-            "type": "integer",
-            "minimum": -2147483648,
-            "maximum": 2147483647
-          },
-          "minItems": 3,
-          "maxItems": 3,
-          "default": [
-            0,
-            0,
-            0
-          ]
-        }
-      }
-    },
-    "def_16": {
-      "type": "object",
-      "properties": {
-        "offset": {
-          "type": "array",
-          "items": {
-            "type": "integer",
-            "minimum": -2147483648,
-            "maximum": 2147483647
-          },
-          "minItems": 3,
-          "maxItems": 3,
-          "default": [
-            0,
-            0,
-            0
-          ]
-        }
-      }
-    },
     "def_17": {
+      "type": "object",
+      "properties": {
+        "offset": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "minItems": 3,
+          "maxItems": 3,
+          "default": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "def_18": {
+      "type": "object",
+      "properties": {
+        "offset": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "minItems": 3,
+          "maxItems": 3,
+          "default": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "def_19": {
       "type": "object",
       "properties": {
         "offset": {
@@ -22410,7 +22558,7 @@
         "state"
       ]
     },
-    "def_18": {
+    "def_20": {
       "type": "object",
       "properties": {
         "offset": {
@@ -22430,35 +22578,35 @@
         }
       }
     },
-    "def_19": {
-      "type": "object",
-      "properties": {
-        "predicates": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/def_5"
-          }
-        }
-      },
-      "required": [
-        "predicates"
-      ]
-    },
-    "def_20": {
-      "type": "object",
-      "properties": {
-        "predicates": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/def_5"
-          }
-        }
-      },
-      "required": [
-        "predicates"
-      ]
-    },
     "def_21": {
+      "type": "object",
+      "properties": {
+        "predicates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_5"
+          }
+        }
+      },
+      "required": [
+        "predicates"
+      ]
+    },
+    "def_22": {
+      "type": "object",
+      "properties": {
+        "predicates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/def_5"
+          }
+        }
+      },
+      "required": [
+        "predicates"
+      ]
+    },
+    "def_23": {
       "type": "object",
       "properties": {
         "predicate": {
@@ -22469,8 +22617,8 @@
         "predicate"
       ]
     },
-    "def_22": {},
-    "def_23": {
+    "def_24": {},
+    "def_25": {
       "type": "object",
       "properties": {
         "offset": {
@@ -22490,14 +22638,14 @@
         }
       }
     },
-    "def_24": {
+    "def_26": {
       "type": "object",
       "properties": {
         "min_inclusive": {
-          "$ref": "#/definitions/def_25"
+          "$ref": "#/definitions/def_27"
         },
         "max_inclusive": {
-          "$ref": "#/definitions/def_25"
+          "$ref": "#/definitions/def_27"
         }
       },
       "required": [
@@ -22505,7 +22653,7 @@
         "max_inclusive"
       ]
     },
-    "def_25": {
+    "def_27": {
       "type": "object",
       "oneOf": [
         {
@@ -22514,7 +22662,7 @@
           ],
           "properties": {
             "absolute": {
-              "$ref": "#/definitions/def_26"
+              "$ref": "#/definitions/def_28"
             }
           },
           "additionalProperties": false
@@ -22525,7 +22673,7 @@
           ],
           "properties": {
             "above_bottom": {
-              "$ref": "#/definitions/def_26"
+              "$ref": "#/definitions/def_28"
             }
           },
           "additionalProperties": false
@@ -22536,7 +22684,7 @@
           ],
           "properties": {
             "below_top": {
-              "$ref": "#/definitions/def_26"
+              "$ref": "#/definitions/def_28"
             }
           },
           "additionalProperties": false
@@ -22547,19 +22695,19 @@
           ],
           "properties": {
             "relative_to_sea_level": {
-              "$ref": "#/definitions/def_26"
+              "$ref": "#/definitions/def_28"
             }
           },
           "additionalProperties": false
         }
       ]
     },
-    "def_26": {
+    "def_28": {
       "type": "integer",
       "minimum": -2032,
       "maximum": 2031
     },
-    "def_27": {
+    "def_29": {
       "type": "object",
       "properties": {
         "min": {
@@ -22592,18 +22740,18 @@
         "match"
       ]
     },
-    "def_28": {
+    "def_30": {
       "type": "object",
       "properties": {
         "heightmap": {
-          "$ref": "#/definitions/def_29"
+          "$ref": "#/definitions/def_31"
         }
       },
       "required": [
         "heightmap"
       ]
     },
-    "def_29": {
+    "def_31": {
       "enum": [
         "WORLD_SURFACE_WG",
         "WORLD_SURFACE",
@@ -22613,17 +22761,17 @@
         "MOTION_BLOCKING_NO_LEAVES"
       ]
     },
-    "def_30": {
+    "def_32": {
       "type": "object",
       "properties": {
         "layers": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_31"
+            "$ref": "#/definitions/def_33"
           }
         },
         "direction": {
-          "$ref": "#/definitions/def_14"
+          "$ref": "#/definitions/def_16"
         },
         "allowed_placement": {
           "$ref": "#/definitions/def_5"
@@ -22639,7 +22787,7 @@
         "prioritize_tip"
       ]
     },
-    "def_31": {
+    "def_33": {
       "type": "object",
       "properties": {
         "height": {
@@ -22650,7 +22798,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -22663,7 +22811,7 @@
         "provider"
       ]
     },
-    "def_32": {
+    "def_34": {
       "type": "object",
       "properties": {
         "type": {
@@ -22692,7 +22840,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_33"
+            "$ref": "#/definitions/def_35"
           }
         },
         {
@@ -22704,7 +22852,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_34"
+            "$ref": "#/definitions/def_36"
           }
         },
         {
@@ -22716,7 +22864,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_35"
+            "$ref": "#/definitions/def_37"
           }
         },
         {
@@ -22728,7 +22876,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_36"
+            "$ref": "#/definitions/def_38"
           }
         },
         {
@@ -22740,7 +22888,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_37"
+            "$ref": "#/definitions/def_39"
           }
         },
         {
@@ -22752,7 +22900,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_38"
+            "$ref": "#/definitions/def_40"
           }
         },
         {
@@ -22764,7 +22912,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_41"
+            "$ref": "#/definitions/def_43"
           }
         },
         {
@@ -22776,12 +22924,12 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_42"
+            "$ref": "#/definitions/def_44"
           }
         }
       ]
     },
-    "def_33": {
+    "def_35": {
       "type": "object",
       "properties": {
         "value": {
@@ -22792,44 +22940,6 @@
       },
       "required": [
         "value"
-      ]
-    },
-    "def_34": {
-      "type": "object",
-      "properties": {
-        "min_inclusive": {
-          "type": "integer",
-          "minimum": -2147483648,
-          "maximum": 2147483647
-        },
-        "max_inclusive": {
-          "type": "integer",
-          "minimum": -2147483648,
-          "maximum": 2147483647
-        }
-      },
-      "required": [
-        "min_inclusive",
-        "max_inclusive"
-      ]
-    },
-    "def_35": {
-      "type": "object",
-      "properties": {
-        "min_inclusive": {
-          "type": "integer",
-          "minimum": -2147483648,
-          "maximum": 2147483647
-        },
-        "max_inclusive": {
-          "type": "integer",
-          "minimum": -2147483648,
-          "maximum": 2147483647
-        }
-      },
-      "required": [
-        "min_inclusive",
-        "max_inclusive"
       ]
     },
     "def_36": {
@@ -22854,6 +22964,44 @@
     "def_37": {
       "type": "object",
       "properties": {
+        "min_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "max_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "min_inclusive",
+        "max_inclusive"
+      ]
+    },
+    "def_38": {
+      "type": "object",
+      "properties": {
+        "min_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "max_inclusive": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "min_inclusive",
+        "max_inclusive"
+      ]
+    },
+    "def_39": {
+      "type": "object",
+      "properties": {
         "source": {
           "anyOf": [
             {
@@ -22862,7 +23010,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -22883,13 +23031,13 @@
         "max_inclusive"
       ]
     },
-    "def_38": {
+    "def_40": {
       "type": "object",
       "properties": {
         "distribution": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_39"
+            "$ref": "#/definitions/def_41"
           }
         }
       },
@@ -22897,7 +23045,7 @@
         "distribution"
       ]
     },
-    "def_39": {
+    "def_41": {
       "type": "object",
       "properties": {
         "data": {
@@ -22908,12 +23056,12 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "weight": {
-          "$ref": "#/definitions/def_40"
+          "$ref": "#/definitions/def_42"
         }
       },
       "required": [
@@ -22921,11 +23069,11 @@
         "weight"
       ]
     },
-    "def_40": {
+    "def_42": {
       "type": "integer",
       "minimum": 0
     },
-    "def_41": {
+    "def_43": {
       "type": "object",
       "properties": {
         "mean": {
@@ -22952,7 +23100,7 @@
         "max_inclusive"
       ]
     },
-    "def_42": {
+    "def_44": {
       "type": "object",
       "properties": {
         "min": {
@@ -22985,7 +23133,7 @@
               "$ref": "#/definitions/def_4"
             },
             {
-              "$ref": "#/definitions/def_43"
+              "$ref": "#/definitions/def_45"
             }
           ]
         },
@@ -22994,7 +23142,7 @@
         }
       ]
     },
-    "def_43": {
+    "def_45": {
       "type": "object",
       "properties": {
         "type": {
@@ -23025,7 +23173,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_44"
+            "$ref": "#/definitions/def_46"
           }
         },
         {
@@ -23037,7 +23185,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_45"
+            "$ref": "#/definitions/def_47"
           }
         },
         {
@@ -23049,7 +23197,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_53"
+            "$ref": "#/definitions/def_55"
           }
         },
         {
@@ -23061,7 +23209,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_54"
+            "$ref": "#/definitions/def_56"
           }
         },
         {
@@ -23073,7 +23221,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_57"
+            "$ref": "#/definitions/def_59"
           }
         },
         {
@@ -23085,7 +23233,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_59"
+            "$ref": "#/definitions/def_61"
           }
         },
         {
@@ -23097,7 +23245,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_60"
+            "$ref": "#/definitions/def_62"
           }
         },
         {
@@ -23109,7 +23257,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_61"
+            "$ref": "#/definitions/def_63"
           }
         },
         {
@@ -23121,7 +23269,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_63"
+            "$ref": "#/definitions/def_65"
           }
         },
         {
@@ -23133,12 +23281,12 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_64"
+            "$ref": "#/definitions/def_66"
           }
         }
       ]
     },
-    "def_44": {
+    "def_46": {
       "type": "object",
       "properties": {
         "source": {
@@ -23149,7 +23297,7 @@
         "source"
       ]
     },
-    "def_45": {
+    "def_47": {
       "type": "object",
       "properties": {
         "variety": {
@@ -23170,17 +23318,17 @@
                   }
                 },
                 {
-                  "$ref": "#/definitions/def_46"
+                  "$ref": "#/definitions/def_48"
                 }
               ]
             }
           ]
         },
         "slow_noise": {
-          "$ref": "#/definitions/def_47"
+          "$ref": "#/definitions/def_49"
         },
         "slow_scale": {
-          "$ref": "#/definitions/def_52"
+          "$ref": "#/definitions/def_54"
         },
         "seed": {
           "type": "integer",
@@ -23188,10 +23336,10 @@
           "maximum": 9223372036854775807
         },
         "noise": {
-          "$ref": "#/definitions/def_47"
+          "$ref": "#/definitions/def_49"
         },
         "scale": {
-          "$ref": "#/definitions/def_52"
+          "$ref": "#/definitions/def_54"
         },
         "states": {
           "type": "array",
@@ -23217,7 +23365,7 @@
         "states"
       ]
     },
-    "def_46": {
+    "def_48": {
       "type": "object",
       "properties": {
         "min_inclusive": {
@@ -23236,18 +23384,18 @@
         "max_inclusive"
       ]
     },
-    "def_47": {
+    "def_49": {
       "type": "object",
       "properties": {
         "base_amplitude": {
-          "$ref": "#/definitions/def_48",
+          "$ref": "#/definitions/def_50",
           "default": 1.0
         },
         "base_octave": {
-          "$ref": "#/definitions/def_49"
+          "$ref": "#/definitions/def_51"
         },
         "octave_count": {
-          "$ref": "#/definitions/def_50",
+          "$ref": "#/definitions/def_52",
           "default": 1
         },
         "normalize": {
@@ -23264,7 +23412,7 @@
         "amplitude_modifiers": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_51"
+            "$ref": "#/definitions/def_53"
           },
           "maxItems": 32,
           "default": []
@@ -23274,30 +23422,30 @@
         "base_octave"
       ]
     },
-    "def_48": {
+    "def_50": {
       "type": "number",
       "minimum": 9.999999747378752E-6,
       "maximum": 1000000.0
     },
-    "def_49": {
+    "def_51": {
       "type": "integer",
       "minimum": -32,
       "maximum": 32
     },
-    "def_50": {
+    "def_52": {
       "type": "integer",
       "minimum": 1,
       "maximum": 32
     },
-    "def_51": {
+    "def_53": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1000000.0
     },
-    "def_52": {
+    "def_54": {
       "type": "number"
     },
-    "def_53": {
+    "def_55": {
       "type": "object",
       "properties": {
         "seed": {
@@ -23306,10 +23454,10 @@
           "maximum": 9223372036854775807
         },
         "noise": {
-          "$ref": "#/definitions/def_47"
+          "$ref": "#/definitions/def_49"
         },
         "scale": {
-          "$ref": "#/definitions/def_52"
+          "$ref": "#/definitions/def_54"
         },
         "states": {
           "type": "array",
@@ -23332,7 +23480,7 @@
         "states"
       ]
     },
-    "def_54": {
+    "def_56": {
       "type": "object",
       "properties": {
         "seed": {
@@ -23341,16 +23489,16 @@
           "maximum": 9223372036854775807
         },
         "noise": {
-          "$ref": "#/definitions/def_47"
+          "$ref": "#/definitions/def_49"
         },
         "scale": {
-          "$ref": "#/definitions/def_52"
+          "$ref": "#/definitions/def_54"
         },
         "threshold": {
-          "$ref": "#/definitions/def_55"
+          "$ref": "#/definitions/def_57"
         },
         "high_chance": {
-          "$ref": "#/definitions/def_56"
+          "$ref": "#/definitions/def_58"
         },
         "default_state": {
           "anyOf": [
@@ -23400,28 +23548,28 @@
         "high_states"
       ]
     },
-    "def_55": {
+    "def_57": {
       "type": "number",
       "minimum": -1.0,
       "maximum": 1.0
     },
-    "def_56": {
+    "def_58": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_57": {
+    "def_59": {
       "type": "object",
       "properties": {
         "blocks": {
-          "$ref": "#/definitions/def_58"
+          "$ref": "#/definitions/def_60"
         }
       },
       "required": [
         "blocks"
       ]
     },
-    "def_58": {
+    "def_60": {
       "anyOf": [
         {
           "type": "string"
@@ -23444,7 +23592,7 @@
     "registry_fixed:minecraft:block_1": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_59": {
+    "def_61": {
       "type": "object",
       "properties": {
         "source": {
@@ -23461,7 +23609,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -23472,21 +23620,21 @@
         "values"
       ]
     },
-    "def_60": {
+    "def_62": {
       "type": "object",
       "properties": {
         "state": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
         },
         "direction": {
-          "$ref": "#/definitions/def_14"
+          "$ref": "#/definitions/def_16"
         }
       },
       "required": [
         "state"
       ]
     },
-    "def_61": {
+    "def_63": {
       "type": "object",
       "properties": {
         "fallback": {
@@ -23495,7 +23643,7 @@
         "rules": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_62"
+            "$ref": "#/definitions/def_64"
           }
         }
       },
@@ -23503,7 +23651,7 @@
         "rules"
       ]
     },
-    "def_62": {
+    "def_64": {
       "type": "object",
       "properties": {
         "if_true": {
@@ -23518,7 +23666,7 @@
         "then"
       ]
     },
-    "def_63": {
+    "def_65": {
       "type": "object",
       "properties": {
         "state": {
@@ -23536,13 +23684,13 @@
         "state"
       ]
     },
-    "def_64": {
+    "def_66": {
       "type": "object",
       "properties": {
         "entries": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_65"
+            "$ref": "#/definitions/def_67"
           }
         }
       },
@@ -23550,7 +23698,7 @@
         "entries"
       ]
     },
-    "def_65": {
+    "def_67": {
       "type": "object",
       "properties": {
         "data": {
@@ -23564,7 +23712,7 @@
           ]
         },
         "weight": {
-          "$ref": "#/definitions/def_40"
+          "$ref": "#/definitions/def_42"
         }
       },
       "required": [
@@ -23572,7 +23720,7 @@
         "weight"
       ]
     },
-    "def_66": {
+    "def_68": {
       "type": "object",
       "properties": {
         "state_provider": {
@@ -23583,10 +23731,10 @@
         "state_provider"
       ]
     },
-    "def_67": {},
-    "def_68": {},
     "def_69": {},
-    "def_70": {
+    "def_70": {},
+    "def_71": {},
+    "def_72": {
       "type": "object",
       "properties": {
         "feature": {
@@ -23600,14 +23748,14 @@
     "registry_file_inline:minecraft:worldgen_placed_feature": {
       "anyOf": [
         {
-          "$ref": "#/definitions/def_71"
+          "$ref": "#/definitions/def_73"
         },
         {
           "$ref": "#/definitions/identifier"
         }
       ]
     },
-    "def_71": {
+    "def_73": {
       "type": "object",
       "properties": {
         "feature": {
@@ -23616,7 +23764,7 @@
         "placement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_72"
+            "$ref": "#/definitions/def_74"
           }
         }
       },
@@ -23635,7 +23783,7 @@
         }
       ]
     },
-    "def_72": {
+    "def_74": {
       "type": "object",
       "properties": {
         "type": {
@@ -23674,7 +23822,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_73"
+            "$ref": "#/definitions/def_75"
           }
         },
         {
@@ -23686,7 +23834,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_74"
+            "$ref": "#/definitions/def_76"
           }
         },
         {
@@ -23698,7 +23846,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_76"
+            "$ref": "#/definitions/def_78"
           }
         },
         {
@@ -23710,7 +23858,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_78"
+            "$ref": "#/definitions/def_80"
           }
         },
         {
@@ -23722,7 +23870,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_79"
+            "$ref": "#/definitions/def_81"
           }
         },
         {
@@ -23734,7 +23882,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_80"
+            "$ref": "#/definitions/def_82"
           }
         },
         {
@@ -23746,7 +23894,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_81"
+            "$ref": "#/definitions/def_83"
           }
         },
         {
@@ -23758,7 +23906,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_82"
+            "$ref": "#/definitions/def_84"
           }
         },
         {
@@ -23770,7 +23918,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_83"
+            "$ref": "#/definitions/def_85"
           }
         },
         {
@@ -23782,7 +23930,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_84"
+            "$ref": "#/definitions/def_86"
           }
         },
         {
@@ -23794,7 +23942,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_85"
+            "$ref": "#/definitions/def_87"
           }
         },
         {
@@ -23806,7 +23954,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_86"
+            "$ref": "#/definitions/def_88"
           }
         },
         {
@@ -23818,7 +23966,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_89"
+            "$ref": "#/definitions/def_91"
           }
         },
         {
@@ -23830,7 +23978,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_90"
+            "$ref": "#/definitions/def_92"
           }
         },
         {
@@ -23842,7 +23990,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_101"
+            "$ref": "#/definitions/def_103"
           }
         },
         {
@@ -23854,7 +24002,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_102"
+            "$ref": "#/definitions/def_104"
           }
         },
         {
@@ -23866,7 +24014,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_103"
+            "$ref": "#/definitions/def_105"
           }
         },
         {
@@ -23878,12 +24026,12 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_104"
+            "$ref": "#/definitions/def_106"
           }
         }
       ]
     },
-    "def_73": {
+    "def_75": {
       "type": "object",
       "properties": {
         "predicate": {
@@ -23893,21 +24041,6 @@
       "required": [
         "predicate"
       ]
-    },
-    "def_74": {
-      "type": "object",
-      "properties": {
-        "chance": {
-          "$ref": "#/definitions/def_75"
-        }
-      },
-      "required": [
-        "chance"
-      ]
-    },
-    "def_75": {
-      "type": "integer",
-      "minimum": 1
     },
     "def_76": {
       "type": "object",
@@ -23921,15 +24054,30 @@
       ]
     },
     "def_77": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
+      "type": "integer",
+      "minimum": 1
     },
     "def_78": {
       "type": "object",
       "properties": {
+        "chance": {
+          "$ref": "#/definitions/def_79"
+        }
+      },
+      "required": [
+        "chance"
+      ]
+    },
+    "def_79": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_80": {
+      "type": "object",
+      "properties": {
         "heightmap": {
-          "$ref": "#/definitions/def_29"
+          "$ref": "#/definitions/def_31"
         },
         "min_inclusive": {
           "type": "integer",
@@ -23948,7 +24096,7 @@
         "heightmap"
       ]
     },
-    "def_79": {
+    "def_81": {
       "type": "object",
       "properties": {
         "max_water_depth": {
@@ -23961,8 +24109,8 @@
         "max_water_depth"
       ]
     },
-    "def_80": {},
-    "def_81": {
+    "def_82": {},
+    "def_83": {
       "type": "object",
       "properties": {
         "count": {
@@ -23973,7 +24121,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -23982,7 +24130,7 @@
         "count"
       ]
     },
-    "def_82": {
+    "def_84": {
       "type": "object",
       "properties": {
         "noise_to_count_ratio": {
@@ -24003,7 +24151,7 @@
         "noise_factor"
       ]
     },
-    "def_83": {
+    "def_85": {
       "type": "object",
       "properties": {
         "noise_level": {
@@ -24026,7 +24174,7 @@
         "above_noise"
       ]
     },
-    "def_84": {
+    "def_86": {
       "type": "object",
       "properties": {
         "count": {
@@ -24037,7 +24185,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -24046,7 +24194,7 @@
         "count"
       ]
     },
-    "def_85": {
+    "def_87": {
       "type": "object",
       "properties": {
         "xz_size": {
@@ -24057,7 +24205,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -24069,7 +24217,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -24087,11 +24235,11 @@
         "y_size"
       ]
     },
-    "def_86": {
+    "def_88": {
       "type": "object",
       "properties": {
         "direction_of_search": {
-          "$ref": "#/definitions/def_87"
+          "$ref": "#/definitions/def_89"
         },
         "target_condition": {
           "$ref": "#/definitions/def_5"
@@ -24103,7 +24251,7 @@
           }
         },
         "max_steps": {
-          "$ref": "#/definitions/def_88"
+          "$ref": "#/definitions/def_90"
         }
       },
       "required": [
@@ -24112,38 +24260,38 @@
         "max_steps"
       ]
     },
-    "def_87": {
+    "def_89": {
       "enum": [
         "down",
         "up"
       ]
     },
-    "def_88": {
+    "def_90": {
       "type": "integer",
       "minimum": 1,
       "maximum": 32
     },
-    "def_89": {
+    "def_91": {
       "type": "object",
       "properties": {
         "heightmap": {
-          "$ref": "#/definitions/def_29"
+          "$ref": "#/definitions/def_31"
         }
       },
       "required": [
         "heightmap"
       ]
     },
-    "def_90": {
+    "def_92": {
       "type": "object",
       "properties": {
         "height": {
           "anyOf": [
             {
-              "$ref": "#/definitions/def_25"
+              "$ref": "#/definitions/def_27"
             },
             {
-              "$ref": "#/definitions/def_91"
+              "$ref": "#/definitions/def_93"
             }
           ]
         }
@@ -24152,7 +24300,7 @@
         "height"
       ]
     },
-    "def_91": {
+    "def_93": {
       "type": "object",
       "properties": {
         "type": {
@@ -24179,7 +24327,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_92"
+            "$ref": "#/definitions/def_94"
           }
         },
         {
@@ -24191,7 +24339,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_93"
+            "$ref": "#/definitions/def_95"
           }
         },
         {
@@ -24203,7 +24351,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_94"
+            "$ref": "#/definitions/def_96"
           }
         },
         {
@@ -24215,7 +24363,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_96"
+            "$ref": "#/definitions/def_98"
           }
         },
         {
@@ -24227,7 +24375,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_98"
+            "$ref": "#/definitions/def_100"
           }
         },
         {
@@ -24239,69 +24387,45 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_99"
+            "$ref": "#/definitions/def_101"
           }
         }
       ]
     },
-    "def_92": {
+    "def_94": {
       "type": "object",
       "properties": {
         "value": {
-          "$ref": "#/definitions/def_25"
+          "$ref": "#/definitions/def_27"
         }
       },
       "required": [
         "value"
       ]
     },
-    "def_93": {
-      "type": "object",
-      "properties": {
-        "min_inclusive": {
-          "$ref": "#/definitions/def_25"
-        },
-        "max_inclusive": {
-          "$ref": "#/definitions/def_25"
-        }
-      },
-      "required": [
-        "min_inclusive",
-        "max_inclusive"
-      ]
-    },
-    "def_94": {
-      "type": "object",
-      "properties": {
-        "min_inclusive": {
-          "$ref": "#/definitions/def_25"
-        },
-        "max_inclusive": {
-          "$ref": "#/definitions/def_25"
-        },
-        "inner": {
-          "$ref": "#/definitions/def_95",
-          "default": 1
-        }
-      },
-      "required": [
-        "min_inclusive",
-        "max_inclusive"
-      ]
-    },
     "def_95": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 2147483647
+      "type": "object",
+      "properties": {
+        "min_inclusive": {
+          "$ref": "#/definitions/def_27"
+        },
+        "max_inclusive": {
+          "$ref": "#/definitions/def_27"
+        }
+      },
+      "required": [
+        "min_inclusive",
+        "max_inclusive"
+      ]
     },
     "def_96": {
       "type": "object",
       "properties": {
         "min_inclusive": {
-          "$ref": "#/definitions/def_25"
+          "$ref": "#/definitions/def_27"
         },
         "max_inclusive": {
-          "$ref": "#/definitions/def_25"
+          "$ref": "#/definitions/def_27"
         },
         "inner": {
           "$ref": "#/definitions/def_97",
@@ -24322,10 +24446,34 @@
       "type": "object",
       "properties": {
         "min_inclusive": {
-          "$ref": "#/definitions/def_25"
+          "$ref": "#/definitions/def_27"
         },
         "max_inclusive": {
-          "$ref": "#/definitions/def_25"
+          "$ref": "#/definitions/def_27"
+        },
+        "inner": {
+          "$ref": "#/definitions/def_99",
+          "default": 1
+        }
+      },
+      "required": [
+        "min_inclusive",
+        "max_inclusive"
+      ]
+    },
+    "def_99": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2147483647
+    },
+    "def_100": {
+      "type": "object",
+      "properties": {
+        "min_inclusive": {
+          "$ref": "#/definitions/def_27"
+        },
+        "max_inclusive": {
+          "$ref": "#/definitions/def_27"
         },
         "plateau": {
           "type": "integer",
@@ -24339,13 +24487,13 @@
         "max_inclusive"
       ]
     },
-    "def_99": {
+    "def_101": {
       "type": "object",
       "properties": {
         "distribution": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_100"
+            "$ref": "#/definitions/def_102"
           }
         }
       },
@@ -24353,21 +24501,21 @@
         "distribution"
       ]
     },
-    "def_100": {
+    "def_102": {
       "type": "object",
       "properties": {
         "data": {
           "anyOf": [
             {
-              "$ref": "#/definitions/def_25"
+              "$ref": "#/definitions/def_27"
             },
             {
-              "$ref": "#/definitions/def_91"
+              "$ref": "#/definitions/def_93"
             }
           ]
         },
         "weight": {
-          "$ref": "#/definitions/def_40"
+          "$ref": "#/definitions/def_42"
         }
       },
       "required": [
@@ -24375,8 +24523,8 @@
         "weight"
       ]
     },
-    "def_101": {},
-    "def_102": {
+    "def_103": {},
+    "def_104": {
       "type": "object",
       "properties": {
         "x": {
@@ -24387,7 +24535,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -24399,7 +24547,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -24411,7 +24559,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -24422,13 +24570,13 @@
         "z"
       ]
     },
-    "def_103": {
+    "def_105": {
       "type": "object",
       "properties": {
         "placements": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_72"
+            "$ref": "#/definitions/def_74"
           }
         }
       },
@@ -24436,7 +24584,7 @@
         "placements"
       ]
     },
-    "def_104": {
+    "def_106": {
       "type": "object",
       "properties": {
         "positions": {
@@ -24457,7 +24605,7 @@
         "positions"
       ]
     },
-    "def_105": {
+    "def_107": {
       "type": "object",
       "properties": {
         "feature": {
@@ -24468,7 +24616,115 @@
         "feature"
       ]
     },
-    "def_106": {
+    "def_108": {
+      "type": "object",
+      "properties": {
+        "max_width": {
+          "$ref": "#/definitions/def_109"
+        },
+        "max_length": {
+          "$ref": "#/definitions/def_110"
+        },
+        "min_footprint": {
+          "$ref": "#/definitions/def_111"
+        },
+        "cursor_surface_search_range": {
+          "$ref": "#/definitions/def_77"
+        },
+        "column_surface_search_range": {
+          "$ref": "#/definitions/def_77"
+        },
+        "twistiness": {
+          "$ref": "#/definitions/def_112"
+        },
+        "tapering": {
+          "$ref": "#/definitions/def_113"
+        },
+        "turn_factor": {
+          "$ref": "#/definitions/def_114"
+        },
+        "carve_depth": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "fill_depth": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "surface_block": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
+        },
+        "fill_block": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
+        },
+        "carvable_blocks": {
+          "$ref": "#/definitions/def_5"
+        },
+        "acceptable_barrier": {
+          "$ref": "#/definitions/def_5"
+        }
+      },
+      "required": [
+        "max_width",
+        "max_length",
+        "min_footprint",
+        "cursor_surface_search_range",
+        "column_surface_search_range",
+        "twistiness",
+        "tapering",
+        "turn_factor",
+        "carve_depth",
+        "fill_depth",
+        "surface_block",
+        "fill_block",
+        "carvable_blocks",
+        "acceptable_barrier"
+      ]
+    },
+    "def_109": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 8
+    },
+    "def_110": {
+      "type": "integer",
+      "minimum": 4,
+      "maximum": 16
+    },
+    "def_111": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 32
+    },
+    "def_112": {
+      "type": "number",
+      "maximum": 16.0
+    },
+    "def_113": {
+      "type": "number",
+      "maximum": 1.0
+    },
+    "def_114": {
+      "type": "number",
+      "maximum": 1.0
+    },
+    "def_115": {
       "type": "object",
       "properties": {
         "contents": {
@@ -24499,7 +24755,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -24511,7 +24767,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -24523,7 +24779,7 @@
         "rim_size"
       ]
     },
-    "def_107": {
+    "def_116": {
       "type": "object",
       "properties": {
         "state_provider": {
@@ -24540,12 +24796,12 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "half_height": {
-          "$ref": "#/definitions/def_108"
+          "$ref": "#/definitions/def_117"
         }
       },
       "required": [
@@ -24555,12 +24811,12 @@
         "half_height"
       ]
     },
-    "def_108": {
+    "def_117": {
       "type": "integer",
       "minimum": 0,
       "maximum": 4
     },
-    "def_109": {
+    "def_118": {
       "type": "object",
       "properties": {
         "exit": {
@@ -24581,9 +24837,9 @@
         "exact"
       ]
     },
-    "def_110": {},
-    "def_111": {},
-    "def_112": {
+    "def_119": {},
+    "def_120": {},
+    "def_121": {
       "type": "object",
       "properties": {
         "active": {
@@ -24592,13 +24848,13 @@
         }
       }
     },
-    "def_113": {
+    "def_122": {
       "type": "object",
       "properties": {
         "spikes": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_114"
+            "$ref": "#/definitions/def_123"
           }
         },
         "crystal_invulnerable": {
@@ -24620,7 +24876,7 @@
         "spikes"
       ]
     },
-    "def_114": {
+    "def_123": {
       "type": "object",
       "properties": {
         "centerX": {
@@ -24653,7 +24909,7 @@
         }
       }
     },
-    "def_115": {
+    "def_124": {
       "type": "object",
       "properties": {
         "trunk_provider": {
@@ -24667,20 +24923,20 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "stump_decorators": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_116"
+            "$ref": "#/definitions/def_125"
           }
         },
         "log_decorators": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_116"
+            "$ref": "#/definitions/def_125"
           }
         }
       },
@@ -24691,7 +24947,7 @@
         "log_decorators"
       ]
     },
-    "def_116": {
+    "def_125": {
       "type": "object",
       "properties": {
         "type": {
@@ -24723,7 +24979,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_117"
+            "$ref": "#/definitions/def_126"
           }
         },
         {
@@ -24735,7 +24991,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_118"
+            "$ref": "#/definitions/def_127"
           }
         },
         {
@@ -24747,7 +25003,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_120"
+            "$ref": "#/definitions/def_129"
           }
         },
         {
@@ -24759,7 +25015,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_124"
+            "$ref": "#/definitions/def_133"
           }
         },
         {
@@ -24771,7 +25027,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_126"
+            "$ref": "#/definitions/def_135"
           }
         },
         {
@@ -24783,7 +25039,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_128"
+            "$ref": "#/definitions/def_137"
           }
         },
         {
@@ -24795,7 +25051,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_130"
+            "$ref": "#/definitions/def_139"
           }
         },
         {
@@ -24807,7 +25063,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_132"
+            "$ref": "#/definitions/def_141"
           }
         },
         {
@@ -24819,7 +25075,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_133"
+            "$ref": "#/definitions/def_142"
           }
         },
         {
@@ -24831,7 +25087,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_138"
+            "$ref": "#/definitions/def_147"
           }
         },
         {
@@ -24843,39 +25099,39 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_139"
+            "$ref": "#/definitions/def_148"
           }
         }
       ]
     },
-    "def_117": {},
-    "def_118": {
+    "def_126": {},
+    "def_127": {
       "type": "object",
       "properties": {
         "probability": {
-          "$ref": "#/definitions/def_119"
+          "$ref": "#/definitions/def_128"
         }
       },
       "required": [
         "probability"
       ]
     },
-    "def_119": {
+    "def_128": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_120": {
+    "def_129": {
       "type": "object",
       "properties": {
         "leaves_probability": {
-          "$ref": "#/definitions/def_121"
+          "$ref": "#/definitions/def_130"
         },
         "trunk_probability": {
-          "$ref": "#/definitions/def_122"
+          "$ref": "#/definitions/def_131"
         },
         "ground_probability": {
-          "$ref": "#/definitions/def_123"
+          "$ref": "#/definitions/def_132"
         }
       },
       "required": [
@@ -24884,79 +25140,10 @@
         "ground_probability"
       ]
     },
-    "def_121": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
-    "def_122": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
-    "def_123": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
-    "def_124": {
-      "type": "object",
-      "properties": {
-        "probability": {
-          "$ref": "#/definitions/def_125"
-        }
-      },
-      "required": [
-        "probability"
-      ]
-    },
-    "def_125": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
-    "def_126": {
-      "type": "object",
-      "properties": {
-        "probability": {
-          "$ref": "#/definitions/def_127"
-        }
-      },
-      "required": [
-        "probability"
-      ]
-    },
-    "def_127": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
-    "def_128": {
-      "type": "object",
-      "properties": {
-        "probability": {
-          "$ref": "#/definitions/def_129"
-        }
-      },
-      "required": [
-        "probability"
-      ]
-    },
-    "def_129": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
     "def_130": {
-      "type": "object",
-      "properties": {
-        "probability": {
-          "$ref": "#/definitions/def_131"
-        }
-      },
-      "required": [
-        "probability"
-      ]
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
     },
     "def_131": {
       "type": "number",
@@ -24964,6 +25151,75 @@
       "maximum": 1.0
     },
     "def_132": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_133": {
+      "type": "object",
+      "properties": {
+        "probability": {
+          "$ref": "#/definitions/def_134"
+        }
+      },
+      "required": [
+        "probability"
+      ]
+    },
+    "def_134": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_135": {
+      "type": "object",
+      "properties": {
+        "probability": {
+          "$ref": "#/definitions/def_136"
+        }
+      },
+      "required": [
+        "probability"
+      ]
+    },
+    "def_136": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_137": {
+      "type": "object",
+      "properties": {
+        "probability": {
+          "$ref": "#/definitions/def_138"
+        }
+      },
+      "required": [
+        "probability"
+      ]
+    },
+    "def_138": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_139": {
+      "type": "object",
+      "properties": {
+        "probability": {
+          "$ref": "#/definitions/def_140"
+        }
+      },
+      "required": [
+        "probability"
+      ]
+    },
+    "def_140": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_141": {
       "type": "object",
       "properties": {
         "provider": {
@@ -24974,28 +25230,28 @@
         "provider"
       ]
     },
-    "def_133": {
+    "def_142": {
       "type": "object",
       "properties": {
         "probability": {
-          "$ref": "#/definitions/def_134"
+          "$ref": "#/definitions/def_143"
         },
         "exclusion_radius_xz": {
-          "$ref": "#/definitions/def_135"
+          "$ref": "#/definitions/def_144"
         },
         "exclusion_radius_y": {
-          "$ref": "#/definitions/def_136"
+          "$ref": "#/definitions/def_145"
         },
         "block_provider": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
         },
         "required_empty_blocks": {
-          "$ref": "#/definitions/def_137"
+          "$ref": "#/definitions/def_146"
         },
         "directions": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_14"
+            "$ref": "#/definitions/def_16"
           }
         }
       },
@@ -25008,39 +25264,39 @@
         "directions"
       ]
     },
-    "def_134": {
+    "def_143": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_135": {
+    "def_144": {
       "type": "integer",
       "minimum": 0,
       "maximum": 16
     },
-    "def_136": {
+    "def_145": {
       "type": "integer",
       "minimum": 0,
       "maximum": 16
     },
-    "def_137": {
+    "def_146": {
       "type": "integer",
       "minimum": 1,
       "maximum": 16
     },
-    "def_138": {
+    "def_147": {
       "type": "object",
       "properties": {
         "tries": {
-          "$ref": "#/definitions/def_75",
+          "$ref": "#/definitions/def_77",
           "default": 128
         },
         "radius": {
-          "$ref": "#/definitions/def_40",
+          "$ref": "#/definitions/def_42",
           "default": 2
         },
         "height": {
-          "$ref": "#/definitions/def_40",
+          "$ref": "#/definitions/def_42",
           "default": 1
         },
         "block_state_provider": {
@@ -25051,11 +25307,11 @@
         "block_state_provider"
       ]
     },
-    "def_139": {
+    "def_148": {
       "type": "object",
       "properties": {
         "probability": {
-          "$ref": "#/definitions/def_140"
+          "$ref": "#/definitions/def_149"
         },
         "block_provider": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
@@ -25063,7 +25319,7 @@
         "directions": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_14"
+            "$ref": "#/definitions/def_16"
           }
         }
       },
@@ -25073,16 +25329,16 @@
         "directions"
       ]
     },
-    "def_140": {
+    "def_149": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_141": {
+    "def_150": {
       "type": "object",
       "properties": {
         "height": {
-          "$ref": "#/definitions/def_142"
+          "$ref": "#/definitions/def_151"
         },
         "state": {
           "anyOf": [
@@ -25100,12 +25356,12 @@
         "state"
       ]
     },
-    "def_142": {
+    "def_151": {
       "type": "integer",
       "minimum": 0,
       "maximum": 4064
     },
-    "def_143": {
+    "def_152": {
       "type": "object",
       "properties": {
         "fossil_structures": {
@@ -25127,7 +25383,7 @@
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_processor_list"
         },
         "max_empty_corners_allowed": {
-          "$ref": "#/definitions/def_182"
+          "$ref": "#/definitions/def_191"
         }
       },
       "required": [
@@ -25143,12 +25399,12 @@
         {
           "anyOf": [
             {
-              "$ref": "#/definitions/def_144"
+              "$ref": "#/definitions/def_153"
             },
             {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/def_145"
+                "$ref": "#/definitions/def_154"
               }
             }
           ]
@@ -25158,13 +25414,13 @@
         }
       ]
     },
-    "def_144": {
+    "def_153": {
       "type": "object",
       "properties": {
         "processors": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_145"
+            "$ref": "#/definitions/def_154"
           }
         }
       },
@@ -25172,7 +25428,7 @@
         "processors"
       ]
     },
-    "def_145": {
+    "def_154": {
       "type": "object",
       "properties": {
         "processor_type": {
@@ -25204,7 +25460,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_146"
+            "$ref": "#/definitions/def_155"
           }
         },
         {
@@ -25216,7 +25472,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_147"
+            "$ref": "#/definitions/def_156"
           }
         },
         {
@@ -25228,7 +25484,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_148"
+            "$ref": "#/definitions/def_157"
           }
         },
         {
@@ -25240,7 +25496,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_149"
+            "$ref": "#/definitions/def_158"
           }
         },
         {
@@ -25252,7 +25508,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_152"
+            "$ref": "#/definitions/def_161"
           }
         },
         {
@@ -25264,7 +25520,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_153"
+            "$ref": "#/definitions/def_162"
           }
         },
         {
@@ -25276,7 +25532,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_154"
+            "$ref": "#/definitions/def_163"
           }
         },
         {
@@ -25288,7 +25544,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_155"
+            "$ref": "#/definitions/def_164"
           }
         },
         {
@@ -25300,7 +25556,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_156"
+            "$ref": "#/definitions/def_165"
           }
         },
         {
@@ -25312,7 +25568,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_157"
+            "$ref": "#/definitions/def_166"
           }
         },
         {
@@ -25324,13 +25580,13 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_159"
+            "$ref": "#/definitions/def_168"
           }
         }
       ]
     },
-    "def_146": {},
-    "def_147": {
+    "def_155": {},
+    "def_156": {
       "type": "object",
       "properties": {
         "mossiness": {
@@ -25341,7 +25597,7 @@
         "mossiness"
       ]
     },
-    "def_148": {
+    "def_157": {
       "type": "object",
       "properties": {
         "blocks": {
@@ -25362,21 +25618,21 @@
         "blocks"
       ]
     },
-    "def_149": {
+    "def_158": {
       "type": "object",
       "properties": {
         "rottable_blocks": {
-          "$ref": "#/definitions/def_150"
+          "$ref": "#/definitions/def_159"
         },
         "integrity": {
-          "$ref": "#/definitions/def_151"
+          "$ref": "#/definitions/def_160"
         }
       },
       "required": [
         "integrity"
       ]
     },
-    "def_150": {
+    "def_159": {
       "anyOf": [
         {
           "type": "string"
@@ -25399,16 +25655,16 @@
     "registry_fixed:minecraft:block_2": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_151": {
+    "def_160": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_152": {
+    "def_161": {
       "type": "object",
       "properties": {
         "delegate": {
-          "$ref": "#/definitions/def_145"
+          "$ref": "#/definitions/def_154"
         },
         "limit": {
           "anyOf": [
@@ -25418,7 +25674,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -25428,11 +25684,11 @@
         "limit"
       ]
     },
-    "def_153": {
+    "def_162": {
       "type": "object",
       "properties": {
         "heightmap": {
-          "$ref": "#/definitions/def_29",
+          "$ref": "#/definitions/def_31",
           "default": "WORLD_SURFACE_WG"
         },
         "offset": {
@@ -25443,21 +25699,21 @@
         }
       }
     },
-    "def_154": {},
-    "def_155": {},
-    "def_156": {},
-    "def_157": {
+    "def_163": {},
+    "def_164": {},
+    "def_165": {},
+    "def_166": {
       "type": "object",
       "properties": {
         "value": {
-          "$ref": "#/definitions/def_158"
+          "$ref": "#/definitions/def_167"
         }
       },
       "required": [
         "value"
       ]
     },
-    "def_158": {
+    "def_167": {
       "anyOf": [
         {
           "type": "string"
@@ -25480,13 +25736,13 @@
     "registry_fixed:minecraft:block_3": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_159": {
+    "def_168": {
       "type": "object",
       "properties": {
         "rules": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_160"
+            "$ref": "#/definitions/def_169"
           }
         }
       },
@@ -25494,17 +25750,17 @@
         "rules"
       ]
     },
-    "def_160": {
+    "def_169": {
       "type": "object",
       "properties": {
         "input_predicate": {
-          "$ref": "#/definitions/def_161"
+          "$ref": "#/definitions/def_170"
         },
         "location_predicate": {
-          "$ref": "#/definitions/def_161"
+          "$ref": "#/definitions/def_170"
         },
         "position_predicate": {
-          "$ref": "#/definitions/def_172",
+          "$ref": "#/definitions/def_181",
           "default": {
             "predicate_type": "minecraft:always_true"
           }
@@ -25520,7 +25776,7 @@
           ]
         },
         "block_entity_modifier": {
-          "$ref": "#/definitions/def_177",
+          "$ref": "#/definitions/def_186",
           "default": {
             "type": "minecraft:passthrough"
           }
@@ -25532,7 +25788,7 @@
         "output_state"
       ]
     },
-    "def_161": {
+    "def_170": {
       "type": "object",
       "properties": {
         "predicate_type": {
@@ -25563,7 +25819,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_162"
+            "$ref": "#/definitions/def_171"
           }
         },
         {
@@ -25575,7 +25831,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_163"
+            "$ref": "#/definitions/def_172"
           }
         },
         {
@@ -25587,7 +25843,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_164"
+            "$ref": "#/definitions/def_173"
           }
         },
         {
@@ -25599,7 +25855,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_165"
+            "$ref": "#/definitions/def_174"
           }
         },
         {
@@ -25611,7 +25867,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_166"
+            "$ref": "#/definitions/def_175"
           }
         },
         {
@@ -25623,7 +25879,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_167"
+            "$ref": "#/definitions/def_176"
           }
         },
         {
@@ -25635,7 +25891,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_168"
+            "$ref": "#/definitions/def_177"
           }
         },
         {
@@ -25647,7 +25903,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_169"
+            "$ref": "#/definitions/def_178"
           }
         },
         {
@@ -25659,7 +25915,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_170"
+            "$ref": "#/definitions/def_179"
           }
         },
         {
@@ -25671,18 +25927,18 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_171"
+            "$ref": "#/definitions/def_180"
           }
         }
       ]
     },
-    "def_162": {
+    "def_171": {
       "type": "object",
       "properties": {
         "rules": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_161"
+            "$ref": "#/definitions/def_170"
           }
         }
       },
@@ -25690,14 +25946,14 @@
         "rules"
       ]
     },
-    "def_163": {},
-    "def_164": {
+    "def_172": {},
+    "def_173": {
       "type": "object",
       "properties": {
         "rules": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_161"
+            "$ref": "#/definitions/def_170"
           }
         }
       },
@@ -25705,7 +25961,7 @@
         "rules"
       ]
     },
-    "def_165": {
+    "def_174": {
       "type": "object",
       "properties": {
         "block": {
@@ -25716,7 +25972,7 @@
         "block"
       ]
     },
-    "def_166": {
+    "def_175": {
       "type": "object",
       "properties": {
         "block_state": {
@@ -25734,7 +25990,7 @@
         "block_state"
       ]
     },
-    "def_167": {
+    "def_176": {
       "type": "object",
       "properties": {
         "min_inclusive": {
@@ -25753,18 +26009,18 @@
         "max_inclusive"
       ]
     },
-    "def_168": {
+    "def_177": {
       "type": "object",
       "properties": {
         "rule": {
-          "$ref": "#/definitions/def_161"
+          "$ref": "#/definitions/def_170"
         }
       },
       "required": [
         "rule"
       ]
     },
-    "def_169": {
+    "def_178": {
       "type": "object",
       "properties": {
         "block": {
@@ -25779,7 +26035,7 @@
         "probability"
       ]
     },
-    "def_170": {
+    "def_179": {
       "type": "object",
       "properties": {
         "block_state": {
@@ -25801,7 +26057,7 @@
         "probability"
       ]
     },
-    "def_171": {
+    "def_180": {
       "type": "object",
       "properties": {
         "tag": {
@@ -25812,7 +26068,7 @@
         "tag"
       ]
     },
-    "def_172": {
+    "def_181": {
       "type": "object",
       "properties": {
         "predicate_type": {
@@ -25836,7 +26092,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_173"
+            "$ref": "#/definitions/def_182"
           }
         },
         {
@@ -25848,7 +26104,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_174"
+            "$ref": "#/definitions/def_183"
           }
         },
         {
@@ -25860,13 +26116,13 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_175"
+            "$ref": "#/definitions/def_184"
           }
         }
       ]
     },
-    "def_173": {},
-    "def_174": {
+    "def_182": {},
+    "def_183": {
       "type": "object",
       "properties": {
         "min_chance": {
@@ -25891,7 +26147,7 @@
         }
       }
     },
-    "def_175": {
+    "def_184": {
       "type": "object",
       "properties": {
         "min_chance": {
@@ -25915,19 +26171,19 @@
           "default": 0
         },
         "axis": {
-          "$ref": "#/definitions/def_176",
+          "$ref": "#/definitions/def_185",
           "default": "y"
         }
       }
     },
-    "def_176": {
+    "def_185": {
       "enum": [
         "x",
         "y",
         "z"
       ]
     },
-    "def_177": {
+    "def_186": {
       "type": "object",
       "properties": {
         "type": {
@@ -25952,7 +26208,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_178"
+            "$ref": "#/definitions/def_187"
           }
         },
         {
@@ -25964,7 +26220,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_179"
+            "$ref": "#/definitions/def_188"
           }
         },
         {
@@ -25976,7 +26232,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_180"
+            "$ref": "#/definitions/def_189"
           }
         },
         {
@@ -25988,14 +26244,14 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_181"
+            "$ref": "#/definitions/def_190"
           }
         }
       ]
     },
-    "def_178": {},
-    "def_179": {},
-    "def_180": {
+    "def_187": {},
+    "def_188": {},
+    "def_189": {
       "type": "object",
       "properties": {
         "data": {}
@@ -26004,7 +26260,7 @@
         "data"
       ]
     },
-    "def_181": {
+    "def_190": {
       "type": "object",
       "properties": {
         "loot_table": {
@@ -26015,30 +26271,30 @@
         "loot_table"
       ]
     },
-    "def_182": {
+    "def_191": {
       "type": "integer",
       "minimum": 0,
       "maximum": 7
     },
-    "def_183": {},
-    "def_184": {
+    "def_192": {},
+    "def_193": {
       "type": "object",
       "properties": {
         "blocks": {
-          "$ref": "#/definitions/def_185"
+          "$ref": "#/definitions/def_194"
         },
         "layers": {
-          "$ref": "#/definitions/def_188"
+          "$ref": "#/definitions/def_197"
         },
         "crack": {
-          "$ref": "#/definitions/def_190"
+          "$ref": "#/definitions/def_199"
         },
         "use_potential_placements_chance": {
-          "$ref": "#/definitions/def_191",
+          "$ref": "#/definitions/def_200",
           "default": 0.35
         },
         "use_alternate_layer0_chance": {
-          "$ref": "#/definitions/def_191",
+          "$ref": "#/definitions/def_200",
           "default": 0.0
         },
         "placements_require_layer0_alternate": {
@@ -26053,7 +26309,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ],
           "default": {
@@ -26070,7 +26326,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ],
           "default": {
@@ -26087,7 +26343,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ],
           "default": {
@@ -26109,7 +26365,7 @@
           "default": 16
         },
         "noise_multiplier": {
-          "$ref": "#/definitions/def_191",
+          "$ref": "#/definitions/def_200",
           "default": 0.05
         },
         "invalid_blocks_threshold": {
@@ -26125,7 +26381,7 @@
         "invalid_blocks_threshold"
       ]
     },
-    "def_185": {
+    "def_194": {
       "type": "object",
       "properties": {
         "filling_provider": {
@@ -26157,10 +26413,10 @@
           }
         },
         "cannot_replace": {
-          "$ref": "#/definitions/def_186"
+          "$ref": "#/definitions/def_195"
         },
         "invalid_blocks": {
-          "$ref": "#/definitions/def_187"
+          "$ref": "#/definitions/def_196"
         }
       },
       "required": [
@@ -26174,7 +26430,7 @@
         "invalid_blocks"
       ]
     },
-    "def_186": {
+    "def_195": {
       "anyOf": [
         {
           "type": "string"
@@ -26197,7 +26453,7 @@
     "registry_fixed:minecraft:block_4": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_187": {
+    "def_196": {
       "anyOf": [
         {
           "type": "string"
@@ -26220,65 +26476,65 @@
     "registry_fixed:minecraft:block_5": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_188": {
+    "def_197": {
       "type": "object",
       "properties": {
         "filling": {
-          "$ref": "#/definitions/def_189",
+          "$ref": "#/definitions/def_198",
           "default": 1.7
         },
         "inner_layer": {
-          "$ref": "#/definitions/def_189",
+          "$ref": "#/definitions/def_198",
           "default": 2.2
         },
         "middle_layer": {
-          "$ref": "#/definitions/def_189",
+          "$ref": "#/definitions/def_198",
           "default": 3.2
         },
         "outer_layer": {
-          "$ref": "#/definitions/def_189",
+          "$ref": "#/definitions/def_198",
           "default": 4.2
         }
       }
     },
-    "def_189": {
+    "def_198": {
       "type": "number",
       "minimum": 0.01,
       "maximum": 50.0
     },
-    "def_190": {
+    "def_199": {
       "type": "object",
       "properties": {
         "generate_crack_chance": {
-          "$ref": "#/definitions/def_191",
+          "$ref": "#/definitions/def_200",
           "default": 1.0
         },
         "base_crack_size": {
-          "$ref": "#/definitions/def_192",
+          "$ref": "#/definitions/def_201",
           "default": 2.0
         },
         "crack_point_offset": {
-          "$ref": "#/definitions/def_193",
+          "$ref": "#/definitions/def_202",
           "default": 2
         }
       }
     },
-    "def_191": {
+    "def_200": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_192": {
+    "def_201": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 5.0
     },
-    "def_193": {
+    "def_202": {
       "type": "integer",
       "minimum": 0,
       "maximum": 10
     },
-    "def_194": {
+    "def_203": {
       "type": "object",
       "properties": {
         "cap_provider": {
@@ -26303,7 +26559,7 @@
         "can_place_on"
       ]
     },
-    "def_195": {
+    "def_204": {
       "type": "object",
       "properties": {
         "valid_base_block": {
@@ -26362,7 +26618,7 @@
         "replaceable_blocks"
       ]
     },
-    "def_196": {
+    "def_205": {
       "type": "object",
       "properties": {
         "cap_provider": {
@@ -26387,7 +26643,7 @@
         "can_place_on"
       ]
     },
-    "def_197": {
+    "def_206": {
       "type": "object",
       "properties": {
         "state": {
@@ -26405,7 +26661,7 @@
         "state"
       ]
     },
-    "def_198": {
+    "def_207": {
       "type": "object",
       "properties": {
         "fluid": {
@@ -26432,7 +26688,7 @@
         "can_replace_with_barrier"
       ]
     },
-    "def_199": {
+    "def_208": {
       "type": "object",
       "properties": {
         "base_block": {
@@ -26446,10 +26702,10 @@
           ]
         },
         "replaceable_blocks": {
-          "$ref": "#/definitions/def_200"
+          "$ref": "#/definitions/def_209"
         },
         "floor_to_ceiling_search_range": {
-          "$ref": "#/definitions/def_201",
+          "$ref": "#/definitions/def_210",
           "default": 30
         },
         "column_radius": {
@@ -26460,7 +26716,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -26470,12 +26726,12 @@
               "type": "number"
             },
             {
-              "$ref": "#/definitions/def_202"
+              "$ref": "#/definitions/def_211"
             }
           ]
         },
         "max_column_radius_to_cave_height_ratio": {
-          "$ref": "#/definitions/def_207"
+          "$ref": "#/definitions/def_216"
         },
         "stalactite_bluntness": {
           "anyOf": [
@@ -26483,7 +26739,7 @@
               "type": "number"
             },
             {
-              "$ref": "#/definitions/def_202"
+              "$ref": "#/definitions/def_211"
             }
           ]
         },
@@ -26493,7 +26749,7 @@
               "type": "number"
             },
             {
-              "$ref": "#/definitions/def_202"
+              "$ref": "#/definitions/def_211"
             }
           ]
         },
@@ -26503,15 +26759,15 @@
               "type": "number"
             },
             {
-              "$ref": "#/definitions/def_202"
+              "$ref": "#/definitions/def_211"
             }
           ]
         },
         "min_radius_for_wind": {
-          "$ref": "#/definitions/def_208"
+          "$ref": "#/definitions/def_217"
         },
         "min_bluntness_for_wind": {
-          "$ref": "#/definitions/def_209"
+          "$ref": "#/definitions/def_218"
         }
       },
       "required": [
@@ -26527,7 +26783,7 @@
         "min_bluntness_for_wind"
       ]
     },
-    "def_200": {
+    "def_209": {
       "anyOf": [
         {
           "type": "string"
@@ -26550,12 +26806,12 @@
     "registry_fixed:minecraft:block_6": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_201": {
+    "def_210": {
       "type": "integer",
       "minimum": 1,
       "maximum": 512
     },
-    "def_202": {
+    "def_211": {
       "type": "object",
       "properties": {
         "type": {
@@ -26580,7 +26836,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_203"
+            "$ref": "#/definitions/def_212"
           }
         },
         {
@@ -26592,7 +26848,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_204"
+            "$ref": "#/definitions/def_213"
           }
         },
         {
@@ -26604,7 +26860,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_205"
+            "$ref": "#/definitions/def_214"
           }
         },
         {
@@ -26616,12 +26872,12 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_206"
+            "$ref": "#/definitions/def_215"
           }
         }
       ]
     },
-    "def_203": {
+    "def_212": {
       "type": "object",
       "properties": {
         "value": {
@@ -26632,7 +26888,7 @@
         "value"
       ]
     },
-    "def_204": {
+    "def_213": {
       "type": "object",
       "properties": {
         "min_inclusive": {
@@ -26647,7 +26903,7 @@
         "max_exclusive"
       ]
     },
-    "def_205": {
+    "def_214": {
       "type": "object",
       "properties": {
         "mean": {
@@ -26670,7 +26926,7 @@
         "max"
       ]
     },
-    "def_206": {
+    "def_215": {
       "type": "object",
       "properties": {
         "min": {
@@ -26689,30 +26945,30 @@
         "plateau"
       ]
     },
-    "def_207": {
+    "def_216": {
       "type": "number",
       "minimum": 0.1,
       "maximum": 1.0
     },
-    "def_208": {
+    "def_217": {
       "type": "integer",
       "minimum": 0,
       "maximum": 100
     },
-    "def_209": {
+    "def_218": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 5.0
     },
-    "def_210": {},
-    "def_211": {
+    "def_219": {},
+    "def_220": {
       "type": "object",
       "properties": {
         "block": {
-          "$ref": "#/definitions/def_212"
+          "$ref": "#/definitions/def_221"
         },
         "search_range": {
-          "$ref": "#/definitions/def_213",
+          "$ref": "#/definitions/def_222",
           "default": 10
         },
         "can_place_on_floor": {
@@ -26728,11 +26984,11 @@
           "default": false
         },
         "chance_of_spreading": {
-          "$ref": "#/definitions/def_214",
+          "$ref": "#/definitions/def_223",
           "default": 0.5
         },
         "can_be_placed_on": {
-          "$ref": "#/definitions/def_215"
+          "$ref": "#/definitions/def_224"
         }
       },
       "required": [
@@ -26740,7 +26996,7 @@
         "can_be_placed_on"
       ]
     },
-    "def_212": {
+    "def_221": {
       "anyOf": [
         {
           "enum": [
@@ -26753,17 +27009,17 @@
         }
       ]
     },
-    "def_213": {
+    "def_222": {
       "type": "integer",
       "minimum": 1,
       "maximum": 64
     },
-    "def_214": {
+    "def_223": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_215": {
+    "def_224": {
       "anyOf": [
         {
           "type": "string"
@@ -26786,7 +27042,7 @@
     "registry_fixed:minecraft:block_7": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_216": {
+    "def_225": {
       "type": "object",
       "properties": {
         "target": {
@@ -26817,7 +27073,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -26828,21 +27084,21 @@
         "radius"
       ]
     },
-    "def_217": {},
-    "def_218": {
+    "def_226": {},
+    "def_227": {
       "type": "object",
       "properties": {
         "targets": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_219"
+            "$ref": "#/definitions/def_228"
           }
         },
         "size": {
-          "$ref": "#/definitions/def_220"
+          "$ref": "#/definitions/def_229"
         },
         "discard_chance_on_air_exposure": {
-          "$ref": "#/definitions/def_221"
+          "$ref": "#/definitions/def_230"
         }
       },
       "required": [
@@ -26851,11 +27107,11 @@
         "discard_chance_on_air_exposure"
       ]
     },
-    "def_219": {
+    "def_228": {
       "type": "object",
       "properties": {
         "target": {
-          "$ref": "#/definitions/def_161"
+          "$ref": "#/definitions/def_170"
         },
         "state": {
           "anyOf": [
@@ -26873,28 +27129,28 @@
         "state"
       ]
     },
-    "def_220": {
+    "def_229": {
       "type": "integer",
       "minimum": 0,
       "maximum": 64
     },
-    "def_221": {
+    "def_230": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_222": {
+    "def_231": {
       "type": "object",
       "properties": {
         "features": {
-          "$ref": "#/definitions/def_223"
+          "$ref": "#/definitions/def_232"
         }
       },
       "required": [
         "features"
       ]
     },
-    "def_223": {
+    "def_232": {
       "anyOf": [
         {
           "type": "string"
@@ -26917,14 +27173,14 @@
     "registry_file_inline:minecraft:worldgen_placed_feature_1": {
       "anyOf": [
         {
-          "$ref": "#/definitions/def_71"
+          "$ref": "#/definitions/def_73"
         },
         {
           "$ref": "#/definitions/identifier"
         }
       ]
     },
-    "def_224": {
+    "def_233": {
       "type": "object",
       "properties": {
         "block": {
@@ -26941,12 +27197,12 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "max_projection_height": {
-          "$ref": "#/definitions/def_40"
+          "$ref": "#/definitions/def_42"
         }
       },
       "required": [
@@ -26956,7 +27212,7 @@
         "max_projection_height"
       ]
     },
-    "def_225": {
+    "def_234": {
       "type": "object",
       "properties": {
         "feature_true": {
@@ -26971,14 +27227,14 @@
         "feature_false"
       ]
     },
-    "def_226": {
+    "def_235": {
       "type": "object",
       "properties": {
         "block": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
         },
         "accepted_neighbors": {
-          "$ref": "#/definitions/def_227"
+          "$ref": "#/definitions/def_236"
         },
         "can_replace": {
           "$ref": "#/definitions/def_5"
@@ -26991,7 +27247,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -27003,7 +27259,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -27015,7 +27271,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -27029,7 +27285,7 @@
         "y_offset"
       ]
     },
-    "def_227": {
+    "def_236": {
       "anyOf": [
         {
           "type": "string"
@@ -27052,13 +27308,13 @@
     "registry_fixed:minecraft:block_8": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_228": {
+    "def_237": {
       "type": "object",
       "properties": {
         "features": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_229"
+            "$ref": "#/definitions/def_238"
           }
         },
         "default": {
@@ -27070,14 +27326,14 @@
         "default"
       ]
     },
-    "def_229": {
+    "def_238": {
       "type": "object",
       "properties": {
         "feature": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_placed_feature"
         },
         "chance": {
-          "$ref": "#/definitions/def_230"
+          "$ref": "#/definitions/def_239"
         }
       },
       "required": [
@@ -27085,18 +27341,18 @@
         "chance"
       ]
     },
-    "def_230": {
+    "def_239": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_231": {
+    "def_240": {
       "type": "object",
       "properties": {
         "targets": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_219"
+            "$ref": "#/definitions/def_228"
           }
         }
       },
@@ -27104,50 +27360,50 @@
         "targets"
       ]
     },
-    "def_232": {
+    "def_241": {
       "type": "object",
       "properties": {
         "feature": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_placed_feature"
         },
         "required_vertical_space_for_tree": {
-          "$ref": "#/definitions/def_233"
+          "$ref": "#/definitions/def_242"
         },
         "level_test_distance": {
-          "$ref": "#/definitions/def_234"
+          "$ref": "#/definitions/def_243"
         },
         "max_level_deviation": {
-          "$ref": "#/definitions/def_235"
+          "$ref": "#/definitions/def_244"
         },
         "root_radius": {
-          "$ref": "#/definitions/def_236"
+          "$ref": "#/definitions/def_245"
         },
         "root_replaceable": {
-          "$ref": "#/definitions/def_237"
+          "$ref": "#/definitions/def_246"
         },
         "root_state_provider": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
         },
         "root_placement_attempts": {
-          "$ref": "#/definitions/def_238"
+          "$ref": "#/definitions/def_247"
         },
         "root_column_max_height": {
-          "$ref": "#/definitions/def_239"
+          "$ref": "#/definitions/def_248"
         },
         "hanging_root_radius": {
-          "$ref": "#/definitions/def_240"
+          "$ref": "#/definitions/def_249"
         },
         "hanging_roots_vertical_span": {
-          "$ref": "#/definitions/def_241"
+          "$ref": "#/definitions/def_250"
         },
         "hanging_root_state_provider": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
         },
         "hanging_root_placement_attempts": {
-          "$ref": "#/definitions/def_242"
+          "$ref": "#/definitions/def_251"
         },
         "allowed_vertical_water_for_tree": {
-          "$ref": "#/definitions/def_243"
+          "$ref": "#/definitions/def_252"
         },
         "allowed_tree_position": {
           "$ref": "#/definitions/def_5"
@@ -27171,27 +27427,27 @@
         "allowed_tree_position"
       ]
     },
-    "def_233": {
+    "def_242": {
       "type": "integer",
       "minimum": 1,
       "maximum": 64
     },
-    "def_234": {
+    "def_243": {
       "type": "integer",
       "minimum": 0,
       "maximum": 16
     },
-    "def_235": {
+    "def_244": {
       "type": "integer",
       "minimum": 0,
       "maximum": 64
     },
-    "def_236": {
+    "def_245": {
       "type": "integer",
       "minimum": 1,
       "maximum": 64
     },
-    "def_237": {
+    "def_246": {
       "anyOf": [
         {
           "type": "string"
@@ -27214,50 +27470,50 @@
     "registry_fixed:minecraft:block_9": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_238": {
+    "def_247": {
       "type": "integer",
       "minimum": 1,
       "maximum": 256
     },
-    "def_239": {
+    "def_248": {
       "type": "integer",
       "minimum": 1,
       "maximum": 4096
     },
-    "def_240": {
+    "def_249": {
       "type": "integer",
       "minimum": 1,
       "maximum": 64
     },
-    "def_241": {
+    "def_250": {
       "type": "integer",
       "minimum": 1,
       "maximum": 16
     },
-    "def_242": {
+    "def_251": {
       "type": "integer",
       "minimum": 1,
       "maximum": 256
     },
-    "def_243": {
+    "def_252": {
       "type": "integer",
       "minimum": 1,
       "maximum": 64
     },
-    "def_244": {
+    "def_253": {
       "type": "object",
       "properties": {
         "targets": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_219"
+            "$ref": "#/definitions/def_228"
           }
         },
         "size": {
-          "$ref": "#/definitions/def_245"
+          "$ref": "#/definitions/def_254"
         },
         "discard_chance_on_air_exposure": {
-          "$ref": "#/definitions/def_246"
+          "$ref": "#/definitions/def_255"
         }
       },
       "required": [
@@ -27266,33 +27522,33 @@
         "discard_chance_on_air_exposure"
       ]
     },
-    "def_245": {
+    "def_254": {
       "type": "integer",
       "minimum": 0,
       "maximum": 64
     },
-    "def_246": {
+    "def_255": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_247": {
+    "def_256": {
       "type": "object",
       "properties": {
         "charge_count": {
-          "$ref": "#/definitions/def_248"
+          "$ref": "#/definitions/def_257"
         },
         "amount_per_charge": {
-          "$ref": "#/definitions/def_249"
+          "$ref": "#/definitions/def_258"
         },
         "spread_attempts": {
-          "$ref": "#/definitions/def_250"
+          "$ref": "#/definitions/def_259"
         },
         "growth_rounds": {
-          "$ref": "#/definitions/def_251"
+          "$ref": "#/definitions/def_260"
         },
         "spread_rounds": {
-          "$ref": "#/definitions/def_252"
+          "$ref": "#/definitions/def_261"
         }
       },
       "required": [
@@ -27303,43 +27559,43 @@
         "spread_rounds"
       ]
     },
-    "def_248": {
+    "def_257": {
       "type": "integer",
       "minimum": 1,
       "maximum": 32
     },
-    "def_249": {
+    "def_258": {
       "type": "integer",
       "minimum": 1,
       "maximum": 500
     },
-    "def_250": {
+    "def_259": {
       "type": "integer",
       "minimum": 1,
       "maximum": 64
     },
-    "def_251": {
+    "def_260": {
       "type": "integer",
       "minimum": 0,
       "maximum": 8
     },
-    "def_252": {
+    "def_261": {
       "type": "integer",
       "minimum": 0,
       "maximum": 8
     },
-    "def_253": {
+    "def_262": {
       "type": "object",
       "properties": {
         "features": {
-          "$ref": "#/definitions/def_223"
+          "$ref": "#/definitions/def_232"
         }
       },
       "required": [
         "features"
       ]
     },
-    "def_254": {
+    "def_263": {
       "type": "object",
       "properties": {
         "to_place": {
@@ -27354,18 +27610,18 @@
         "to_place"
       ]
     },
-    "def_255": {
+    "def_264": {
       "type": "object",
       "properties": {
         "features": {
-          "$ref": "#/definitions/def_223"
+          "$ref": "#/definitions/def_232"
         }
       },
       "required": [
         "features"
       ]
     },
-    "def_256": {
+    "def_265": {
       "type": "object",
       "properties": {
         "block": {
@@ -27378,10 +27634,10 @@
           }
         },
         "direction": {
-          "$ref": "#/definitions/def_87"
+          "$ref": "#/definitions/def_89"
         },
         "chance_to_continue": {
-          "$ref": "#/definitions/def_257",
+          "$ref": "#/definitions/def_266",
           "default": 1.0
         },
         "cap_feature": {
@@ -27393,12 +27649,12 @@
         "direction"
       ]
     },
-    "def_257": {
+    "def_266": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_258": {
+    "def_267": {
       "type": "object",
       "properties": {
         "base_block": {
@@ -27422,22 +27678,22 @@
           ]
         },
         "replaceable_blocks": {
-          "$ref": "#/definitions/def_259"
+          "$ref": "#/definitions/def_268"
         },
         "chance_of_taller_generation": {
-          "$ref": "#/definitions/def_260",
+          "$ref": "#/definitions/def_269",
           "default": 0.2
         },
         "chance_of_directional_spread": {
-          "$ref": "#/definitions/def_261",
+          "$ref": "#/definitions/def_270",
           "default": 0.7
         },
         "chance_of_spread_radius2": {
-          "$ref": "#/definitions/def_262",
+          "$ref": "#/definitions/def_271",
           "default": 0.5
         },
         "chance_of_spread_radius3": {
-          "$ref": "#/definitions/def_263",
+          "$ref": "#/definitions/def_272",
           "default": 0.5
         }
       },
@@ -27447,7 +27703,7 @@
         "replaceable_blocks"
       ]
     },
-    "def_259": {
+    "def_268": {
       "anyOf": [
         {
           "type": "string"
@@ -27470,27 +27726,27 @@
     "registry_fixed:minecraft:block_10": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_260": {
+    "def_269": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_261": {
+    "def_270": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_262": {
+    "def_271": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_263": {
+    "def_272": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_264": {
+    "def_273": {
       "type": "object",
       "properties": {
         "base_block": {
@@ -27514,10 +27770,10 @@
           ]
         },
         "replaceable_blocks": {
-          "$ref": "#/definitions/def_265"
+          "$ref": "#/definitions/def_274"
         },
         "floor_to_ceiling_search_range": {
-          "$ref": "#/definitions/def_266"
+          "$ref": "#/definitions/def_275"
         },
         "height": {
           "anyOf": [
@@ -27527,7 +27783,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -27539,15 +27795,15 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "max_stalagmite_stalactite_height_diff": {
-          "$ref": "#/definitions/def_267"
+          "$ref": "#/definitions/def_276"
         },
         "height_deviation": {
-          "$ref": "#/definitions/def_268"
+          "$ref": "#/definitions/def_277"
         },
         "speleothem_block_layer_thickness": {
           "anyOf": [
@@ -27557,7 +27813,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -27567,7 +27823,7 @@
               "type": "number"
             },
             {
-              "$ref": "#/definitions/def_202"
+              "$ref": "#/definitions/def_211"
             }
           ]
         },
@@ -27577,21 +27833,21 @@
               "type": "number"
             },
             {
-              "$ref": "#/definitions/def_202"
+              "$ref": "#/definitions/def_211"
             }
           ]
         },
         "chance_of_speleothem_at_max_distance_from_center": {
-          "$ref": "#/definitions/def_269"
+          "$ref": "#/definitions/def_278"
         },
         "max_distance_from_edge_affecting_chance_of_speleothem": {
-          "$ref": "#/definitions/def_270"
+          "$ref": "#/definitions/def_279"
         },
         "max_distance_from_center_affecting_height_bias": {
-          "$ref": "#/definitions/def_271"
+          "$ref": "#/definitions/def_280"
         },
         "placement_options": {
-          "$ref": "#/definitions/def_272",
+          "$ref": "#/definitions/def_281",
           "default": {
             "placement_mode": "floor_and_ceiling",
             "base_block_transformer": "none",
@@ -27616,7 +27872,7 @@
         "max_distance_from_center_affecting_height_bias"
       ]
     },
-    "def_265": {
+    "def_274": {
       "anyOf": [
         {
           "type": "string"
@@ -27639,44 +27895,44 @@
     "registry_fixed:minecraft:block_11": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_266": {
+    "def_275": {
       "type": "integer",
       "minimum": 1,
       "maximum": 512
     },
-    "def_267": {
+    "def_276": {
       "type": "integer",
       "minimum": 0,
       "maximum": 64
     },
-    "def_268": {
+    "def_277": {
       "type": "integer",
       "minimum": 1,
       "maximum": 64
     },
-    "def_269": {
+    "def_278": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_270": {
+    "def_279": {
       "type": "integer",
       "minimum": 1,
       "maximum": 64
     },
-    "def_271": {
+    "def_280": {
       "type": "integer",
       "minimum": 1,
       "maximum": 64
     },
-    "def_272": {
+    "def_281": {
       "type": "object",
       "properties": {
         "placement_mode": {
-          "$ref": "#/definitions/def_273"
+          "$ref": "#/definitions/def_282"
         },
         "base_block_transformer": {
-          "$ref": "#/definitions/def_274"
+          "$ref": "#/definitions/def_283"
         },
         "allow_water_placement": {
           "type": "boolean"
@@ -27688,20 +27944,20 @@
         "allow_water_placement"
       ]
     },
-    "def_273": {
+    "def_282": {
       "enum": [
         "floor_and_ceiling",
         "floor_only",
         "ceiling_only"
       ]
     },
-    "def_274": {
+    "def_283": {
       "enum": [
         "none",
         "set_attached"
       ]
     },
-    "def_275": {
+    "def_284": {
       "type": "object",
       "properties": {
         "state": {
@@ -27727,11 +27983,11 @@
         "can_replace"
       ]
     },
-    "def_276": {
+    "def_285": {
       "type": "object",
       "properties": {
         "state": {
-          "$ref": "#/definitions/def_277"
+          "$ref": "#/definitions/def_286"
         },
         "requires_block_below": {
           "type": "boolean",
@@ -27750,7 +28006,7 @@
           "default": 1
         },
         "valid_blocks": {
-          "$ref": "#/definitions/def_278"
+          "$ref": "#/definitions/def_287"
         }
       },
       "required": [
@@ -27758,7 +28014,7 @@
         "valid_blocks"
       ]
     },
-    "def_277": {
+    "def_286": {
       "type": "object",
       "properties": {
         "Name": {
@@ -27769,9 +28025,7 @@
             {
               "enum": [
                 "minecraft:empty",
-                "minecraft:flowing_water",
                 "minecraft:water",
-                "minecraft:flowing_lava",
                 "minecraft:lava"
               ]
             }
@@ -27783,51 +28037,16 @@
           "if": {
             "properties": {
               "Name": {
-                "const": "minecraft:flowing_water"
-              }
-            }
-          },
-          "then": {
-            "properties": {
-              "falling": {
-                "type": "string"
-              },
-              "level": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        {
-          "if": {
-            "properties": {
-              "Name": {
                 "const": "minecraft:water"
               }
             }
           },
           "then": {
             "properties": {
-              "falling": {
-                "type": "string"
-              }
-            }
-          }
-        },
-        {
-          "if": {
-            "properties": {
-              "Name": {
-                "const": "minecraft:flowing_lava"
-              }
-            }
-          },
-          "then": {
-            "properties": {
-              "falling": {
+              "level": {
                 "type": "string"
               },
-              "level": {
+              "source": {
                 "type": "string"
               }
             }
@@ -27843,7 +28062,10 @@
           },
           "then": {
             "properties": {
-              "falling": {
+              "level": {
+                "type": "string"
+              },
+              "source": {
                 "type": "string"
               }
             }
@@ -27851,7 +28073,7 @@
         }
       ]
     },
-    "def_278": {
+    "def_287": {
       "anyOf": [
         {
           "type": "string"
@@ -27874,7 +28096,7 @@
     "registry_fixed:minecraft:block_12": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_279": {
+    "def_288": {
       "type": "object",
       "properties": {
         "block": {
@@ -27887,7 +28109,7 @@
           "$ref": "#/definitions/def_5"
         },
         "cannot_place_on": {
-          "$ref": "#/definitions/def_280"
+          "$ref": "#/definitions/def_289"
         },
         "cluster_reach": {
           "anyOf": [
@@ -27897,7 +28119,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -27909,7 +28131,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -27921,7 +28143,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -27933,7 +28155,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -27949,7 +28171,7 @@
         "height"
       ]
     },
-    "def_280": {
+    "def_289": {
       "anyOf": [
         {
           "type": "string"
@@ -27972,13 +28194,13 @@
     "registry_fixed:minecraft:block_13": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_281": {
+    "def_290": {
       "type": "object",
       "properties": {
         "templates": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_282"
+            "$ref": "#/definitions/def_291"
           }
         },
         "processors": {
@@ -27989,14 +28211,14 @@
         "templates"
       ]
     },
-    "def_282": {
+    "def_291": {
       "type": "object",
       "properties": {
         "data": {
-          "$ref": "#/definitions/def_283"
+          "$ref": "#/definitions/def_292"
         },
         "weight": {
-          "$ref": "#/definitions/def_40"
+          "$ref": "#/definitions/def_42"
         }
       },
       "required": [
@@ -28004,7 +28226,7 @@
         "weight"
       ]
     },
-    "def_283": {
+    "def_292": {
       "type": "object",
       "properties": {
         "id": {
@@ -28013,7 +28235,7 @@
         "rotations": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_284"
+            "$ref": "#/definitions/def_293"
           },
           "default": [
             "none",
@@ -28027,7 +28249,7 @@
         "id"
       ]
     },
-    "def_284": {
+    "def_293": {
       "enum": [
         "none",
         "clockwise_90",
@@ -28035,31 +28257,31 @@
         "counterclockwise_90"
       ]
     },
-    "def_285": {
+    "def_294": {
       "type": "object",
       "properties": {
         "trunk_provider": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
         },
         "trunk_placer": {
-          "$ref": "#/definitions/def_286"
+          "$ref": "#/definitions/def_295"
         },
         "foliage_provider": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
         },
         "foliage_placer": {
-          "$ref": "#/definitions/def_329"
+          "$ref": "#/definitions/def_338"
         },
         "root_placer": {
-          "$ref": "#/definitions/def_352"
+          "$ref": "#/definitions/def_361"
         },
         "minimum_size": {
-          "$ref": "#/definitions/def_362"
+          "$ref": "#/definitions/def_371"
         },
         "decorators": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_116"
+            "$ref": "#/definitions/def_125"
           }
         },
         "ignore_vines": {
@@ -28080,7 +28302,7 @@
         "below_trunk_provider"
       ]
     },
-    "def_286": {
+    "def_295": {
       "type": "object",
       "properties": {
         "type": {
@@ -28111,7 +28333,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_287"
+            "$ref": "#/definitions/def_296"
           }
         },
         {
@@ -28123,7 +28345,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_291"
+            "$ref": "#/definitions/def_300"
           }
         },
         {
@@ -28135,7 +28357,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_295"
+            "$ref": "#/definitions/def_304"
           }
         },
         {
@@ -28147,7 +28369,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_299"
+            "$ref": "#/definitions/def_308"
           }
         },
         {
@@ -28159,7 +28381,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_303"
+            "$ref": "#/definitions/def_312"
           }
         },
         {
@@ -28171,7 +28393,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_307"
+            "$ref": "#/definitions/def_316"
           }
         },
         {
@@ -28183,7 +28405,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_311"
+            "$ref": "#/definitions/def_320"
           }
         },
         {
@@ -28195,7 +28417,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_315"
+            "$ref": "#/definitions/def_324"
           }
         },
         {
@@ -28207,7 +28429,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_321"
+            "$ref": "#/definitions/def_330"
           }
         },
         {
@@ -28219,22 +28441,22 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_325"
+            "$ref": "#/definitions/def_334"
           }
         }
       ]
     },
-    "def_287": {
+    "def_296": {
       "type": "object",
       "properties": {
         "base_height": {
-          "$ref": "#/definitions/def_288"
+          "$ref": "#/definitions/def_297"
         },
         "height_rand_a": {
-          "$ref": "#/definitions/def_289"
+          "$ref": "#/definitions/def_298"
         },
         "height_rand_b": {
-          "$ref": "#/definitions/def_290"
+          "$ref": "#/definitions/def_299"
         },
         "trunk_width": {
           "anyOf": [
@@ -28244,7 +28466,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ],
           "default": 1
@@ -28256,83 +28478,10 @@
         "height_rand_b"
       ]
     },
-    "def_288": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 32
-    },
-    "def_289": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 24
-    },
-    "def_290": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 24
-    },
-    "def_291": {
-      "type": "object",
-      "properties": {
-        "base_height": {
-          "$ref": "#/definitions/def_292"
-        },
-        "height_rand_a": {
-          "$ref": "#/definitions/def_293"
-        },
-        "height_rand_b": {
-          "$ref": "#/definitions/def_294"
-        }
-      },
-      "required": [
-        "base_height",
-        "height_rand_a",
-        "height_rand_b"
-      ]
-    },
-    "def_292": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 32
-    },
-    "def_293": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 24
-    },
-    "def_294": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 24
-    },
-    "def_295": {
-      "type": "object",
-      "properties": {
-        "base_height": {
-          "$ref": "#/definitions/def_296"
-        },
-        "height_rand_a": {
-          "$ref": "#/definitions/def_297"
-        },
-        "height_rand_b": {
-          "$ref": "#/definitions/def_298"
-        }
-      },
-      "required": [
-        "base_height",
-        "height_rand_a",
-        "height_rand_b"
-      ]
-    },
-    "def_296": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 32
-    },
     "def_297": {
       "type": "integer",
       "minimum": 0,
-      "maximum": 24
+      "maximum": 32
     },
     "def_298": {
       "type": "integer",
@@ -28340,16 +28489,21 @@
       "maximum": 24
     },
     "def_299": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "def_300": {
       "type": "object",
       "properties": {
         "base_height": {
-          "$ref": "#/definitions/def_300"
-        },
-        "height_rand_a": {
           "$ref": "#/definitions/def_301"
         },
-        "height_rand_b": {
+        "height_rand_a": {
           "$ref": "#/definitions/def_302"
+        },
+        "height_rand_b": {
+          "$ref": "#/definitions/def_303"
         }
       },
       "required": [
@@ -28358,15 +28512,10 @@
         "height_rand_b"
       ]
     },
-    "def_300": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 32
-    },
     "def_301": {
       "type": "integer",
       "minimum": 0,
-      "maximum": 24
+      "maximum": 32
     },
     "def_302": {
       "type": "integer",
@@ -28374,16 +28523,21 @@
       "maximum": 24
     },
     "def_303": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "def_304": {
       "type": "object",
       "properties": {
         "base_height": {
-          "$ref": "#/definitions/def_304"
-        },
-        "height_rand_a": {
           "$ref": "#/definitions/def_305"
         },
-        "height_rand_b": {
+        "height_rand_a": {
           "$ref": "#/definitions/def_306"
+        },
+        "height_rand_b": {
+          "$ref": "#/definitions/def_307"
         }
       },
       "required": [
@@ -28392,15 +28546,10 @@
         "height_rand_b"
       ]
     },
-    "def_304": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 32
-    },
     "def_305": {
       "type": "integer",
       "minimum": 0,
-      "maximum": 24
+      "maximum": 32
     },
     "def_306": {
       "type": "integer",
@@ -28408,16 +28557,21 @@
       "maximum": 24
     },
     "def_307": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "def_308": {
       "type": "object",
       "properties": {
         "base_height": {
-          "$ref": "#/definitions/def_308"
-        },
-        "height_rand_a": {
           "$ref": "#/definitions/def_309"
         },
-        "height_rand_b": {
+        "height_rand_a": {
           "$ref": "#/definitions/def_310"
+        },
+        "height_rand_b": {
+          "$ref": "#/definitions/def_311"
         }
       },
       "required": [
@@ -28426,15 +28580,10 @@
         "height_rand_b"
       ]
     },
-    "def_308": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 32
-    },
     "def_309": {
       "type": "integer",
       "minimum": 0,
-      "maximum": 24
+      "maximum": 32
     },
     "def_310": {
       "type": "integer",
@@ -28442,19 +28591,92 @@
       "maximum": 24
     },
     "def_311": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "def_312": {
       "type": "object",
       "properties": {
         "base_height": {
-          "$ref": "#/definitions/def_312"
-        },
-        "height_rand_a": {
           "$ref": "#/definitions/def_313"
         },
-        "height_rand_b": {
+        "height_rand_a": {
           "$ref": "#/definitions/def_314"
         },
+        "height_rand_b": {
+          "$ref": "#/definitions/def_315"
+        }
+      },
+      "required": [
+        "base_height",
+        "height_rand_a",
+        "height_rand_b"
+      ]
+    },
+    "def_313": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 32
+    },
+    "def_314": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "def_315": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "def_316": {
+      "type": "object",
+      "properties": {
+        "base_height": {
+          "$ref": "#/definitions/def_317"
+        },
+        "height_rand_a": {
+          "$ref": "#/definitions/def_318"
+        },
+        "height_rand_b": {
+          "$ref": "#/definitions/def_319"
+        }
+      },
+      "required": [
+        "base_height",
+        "height_rand_a",
+        "height_rand_b"
+      ]
+    },
+    "def_317": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 32
+    },
+    "def_318": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "def_319": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "def_320": {
+      "type": "object",
+      "properties": {
+        "base_height": {
+          "$ref": "#/definitions/def_321"
+        },
+        "height_rand_a": {
+          "$ref": "#/definitions/def_322"
+        },
+        "height_rand_b": {
+          "$ref": "#/definitions/def_323"
+        },
         "min_height_for_leaves": {
-          "$ref": "#/definitions/def_75",
+          "$ref": "#/definitions/def_77",
           "default": 1
         },
         "bend_length": {
@@ -28465,7 +28687,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -28477,32 +28699,32 @@
         "bend_length"
       ]
     },
-    "def_312": {
+    "def_321": {
       "type": "integer",
       "minimum": 0,
       "maximum": 32
     },
-    "def_313": {
+    "def_322": {
       "type": "integer",
       "minimum": 0,
       "maximum": 24
     },
-    "def_314": {
+    "def_323": {
       "type": "integer",
       "minimum": 0,
       "maximum": 24
     },
-    "def_315": {
+    "def_324": {
       "type": "object",
       "properties": {
         "base_height": {
-          "$ref": "#/definitions/def_316"
+          "$ref": "#/definitions/def_325"
         },
         "height_rand_a": {
-          "$ref": "#/definitions/def_317"
+          "$ref": "#/definitions/def_326"
         },
         "height_rand_b": {
-          "$ref": "#/definitions/def_318"
+          "$ref": "#/definitions/def_327"
         },
         "extra_branch_steps": {
           "anyOf": [
@@ -28512,12 +28734,12 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "place_branch_per_log_probability": {
-          "$ref": "#/definitions/def_319"
+          "$ref": "#/definitions/def_328"
         },
         "extra_branch_length": {
           "anyOf": [
@@ -28527,12 +28749,12 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "can_grow_through": {
-          "$ref": "#/definitions/def_320"
+          "$ref": "#/definitions/def_329"
         }
       },
       "required": [
@@ -28545,27 +28767,27 @@
         "can_grow_through"
       ]
     },
-    "def_316": {
+    "def_325": {
       "type": "integer",
       "minimum": 0,
       "maximum": 32
     },
-    "def_317": {
+    "def_326": {
       "type": "integer",
       "minimum": 0,
       "maximum": 24
     },
-    "def_318": {
+    "def_327": {
       "type": "integer",
       "minimum": 0,
       "maximum": 24
     },
-    "def_319": {
+    "def_328": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_320": {
+    "def_329": {
       "anyOf": [
         {
           "type": "string"
@@ -28588,17 +28810,17 @@
     "registry_fixed:minecraft:block_14": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_321": {
+    "def_330": {
       "type": "object",
       "properties": {
         "base_height": {
-          "$ref": "#/definitions/def_322"
+          "$ref": "#/definitions/def_331"
         },
         "height_rand_a": {
-          "$ref": "#/definitions/def_323"
+          "$ref": "#/definitions/def_332"
         },
         "height_rand_b": {
-          "$ref": "#/definitions/def_324"
+          "$ref": "#/definitions/def_333"
         },
         "branch_count": {
           "anyOf": [
@@ -28608,7 +28830,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -28620,12 +28842,12 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "branch_start_offset_from_top": {
-          "$ref": "#/definitions/def_34"
+          "$ref": "#/definitions/def_36"
         },
         "branch_end_offset_from_top": {
           "anyOf": [
@@ -28635,7 +28857,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -28650,32 +28872,32 @@
         "branch_end_offset_from_top"
       ]
     },
-    "def_322": {
+    "def_331": {
       "type": "integer",
       "minimum": 0,
       "maximum": 32
     },
-    "def_323": {
+    "def_332": {
       "type": "integer",
       "minimum": 0,
       "maximum": 24
     },
-    "def_324": {
+    "def_333": {
       "type": "integer",
       "minimum": 0,
       "maximum": 24
     },
-    "def_325": {
+    "def_334": {
       "type": "object",
       "properties": {
         "base_height": {
-          "$ref": "#/definitions/def_326"
+          "$ref": "#/definitions/def_335"
         },
         "height_rand_a": {
-          "$ref": "#/definitions/def_327"
+          "$ref": "#/definitions/def_336"
         },
         "height_rand_b": {
-          "$ref": "#/definitions/def_328"
+          "$ref": "#/definitions/def_337"
         },
         "trunk_height_above_branches": {
           "anyOf": [
@@ -28685,7 +28907,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -28697,7 +28919,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -28710,22 +28932,22 @@
         "branch_amount"
       ]
     },
-    "def_326": {
+    "def_335": {
       "type": "integer",
       "minimum": 0,
       "maximum": 32
     },
-    "def_327": {
+    "def_336": {
       "type": "integer",
       "minimum": 0,
       "maximum": 24
     },
-    "def_328": {
+    "def_337": {
       "type": "integer",
       "minimum": 0,
       "maximum": 24
     },
-    "def_329": {
+    "def_338": {
       "type": "object",
       "properties": {
         "type": {
@@ -28758,7 +28980,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_330"
+            "$ref": "#/definitions/def_339"
           }
         },
         {
@@ -28770,7 +28992,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_332"
+            "$ref": "#/definitions/def_341"
           }
         },
         {
@@ -28782,7 +29004,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_333"
+            "$ref": "#/definitions/def_342"
           }
         },
         {
@@ -28794,7 +29016,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_334"
+            "$ref": "#/definitions/def_343"
           }
         },
         {
@@ -28806,7 +29028,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_335"
+            "$ref": "#/definitions/def_344"
           }
         },
         {
@@ -28818,7 +29040,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_337"
+            "$ref": "#/definitions/def_346"
           }
         },
         {
@@ -28830,7 +29052,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_339"
+            "$ref": "#/definitions/def_348"
           }
         },
         {
@@ -28842,7 +29064,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_341"
+            "$ref": "#/definitions/def_350"
           }
         },
         {
@@ -28854,7 +29076,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_342"
+            "$ref": "#/definitions/def_351"
           }
         },
         {
@@ -28866,7 +29088,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_343"
+            "$ref": "#/definitions/def_352"
           }
         },
         {
@@ -28878,7 +29100,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_345"
+            "$ref": "#/definitions/def_354"
           }
         },
         {
@@ -28890,261 +29112,10 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_350"
+            "$ref": "#/definitions/def_359"
           }
         }
       ]
-    },
-    "def_330": {
-      "type": "object",
-      "properties": {
-        "radius": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "offset": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "height": {
-          "$ref": "#/definitions/def_331"
-        }
-      },
-      "required": [
-        "radius",
-        "offset",
-        "height"
-      ]
-    },
-    "def_331": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 16
-    },
-    "def_332": {
-      "type": "object",
-      "properties": {
-        "radius": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "offset": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "trunk_height": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        }
-      },
-      "required": [
-        "radius",
-        "offset",
-        "trunk_height"
-      ]
-    },
-    "def_333": {
-      "type": "object",
-      "properties": {
-        "radius": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "offset": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "height": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        }
-      },
-      "required": [
-        "radius",
-        "offset",
-        "height"
-      ]
-    },
-    "def_334": {
-      "type": "object",
-      "properties": {
-        "radius": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "offset": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        }
-      },
-      "required": [
-        "radius",
-        "offset"
-      ]
-    },
-    "def_335": {
-      "type": "object",
-      "properties": {
-        "radius": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "offset": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "height": {
-          "$ref": "#/definitions/def_336"
-        }
-      },
-      "required": [
-        "radius",
-        "offset",
-        "height"
-      ]
-    },
-    "def_336": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 16
-    },
-    "def_337": {
-      "type": "object",
-      "properties": {
-        "radius": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "offset": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "height": {
-          "$ref": "#/definitions/def_338"
-        }
-      },
-      "required": [
-        "radius",
-        "offset",
-        "height"
-      ]
-    },
-    "def_338": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 16
     },
     "def_339": {
       "type": "object",
@@ -29157,7 +29128,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -29169,7 +29140,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -29199,7 +29170,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -29211,11 +29182,11 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
-        "crown_height": {
+        "trunk_height": {
           "anyOf": [
             {
               "type": "integer",
@@ -29223,7 +29194,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
@@ -29231,7 +29202,7 @@
       "required": [
         "radius",
         "offset",
-        "crown_height"
+        "trunk_height"
       ]
     },
     "def_342": {
@@ -29245,7 +29216,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -29257,14 +29228,27 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "height": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
             }
           ]
         }
       },
       "required": [
         "radius",
-        "offset"
+        "offset",
+        "height"
       ]
     },
     "def_343": {
@@ -29278,7 +29262,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -29290,39 +29274,17 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
-        },
-        "foliage_height": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "leaf_placement_attempts": {
-          "$ref": "#/definitions/def_344"
         }
       },
       "required": [
         "radius",
-        "offset",
-        "foliage_height",
-        "leaf_placement_attempts"
+        "offset"
       ]
     },
     "def_344": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 256
-    },
-    "def_345": {
       "type": "object",
       "properties": {
         "radius": {
@@ -29333,7 +29295,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -29345,11 +29307,29 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "height": {
+          "$ref": "#/definitions/def_345"
+        }
+      },
+      "required": [
+        "radius",
+        "offset",
+        "height"
+      ]
+    },
+    "def_345": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16
+    },
+    "def_346": {
+      "type": "object",
+      "properties": {
+        "radius": {
           "anyOf": [
             {
               "type": "integer",
@@ -29357,52 +29337,78 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
-        "wide_bottom_layer_hole_chance": {
-          "$ref": "#/definitions/def_346"
+        "offset": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
         },
-        "corner_hole_chance": {
+        "height": {
           "$ref": "#/definitions/def_347"
+        }
+      },
+      "required": [
+        "radius",
+        "offset",
+        "height"
+      ]
+    },
+    "def_347": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16
+    },
+    "def_348": {
+      "type": "object",
+      "properties": {
+        "radius": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
         },
-        "hanging_leaves_chance": {
-          "$ref": "#/definitions/def_348"
+        "offset": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
         },
-        "hanging_leaves_extension_chance": {
+        "height": {
           "$ref": "#/definitions/def_349"
         }
       },
       "required": [
         "radius",
         "offset",
-        "height",
-        "wide_bottom_layer_hole_chance",
-        "corner_hole_chance",
-        "hanging_leaves_chance",
-        "hanging_leaves_extension_chance"
+        "height"
       ]
     },
-    "def_346": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
-    "def_347": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
-    "def_348": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
     "def_349": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16
     },
     "def_350": {
       "type": "object",
@@ -29415,7 +29421,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -29427,7 +29433,141 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "crown_height": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        }
+      },
+      "required": [
+        "radius",
+        "offset",
+        "crown_height"
+      ]
+    },
+    "def_351": {
+      "type": "object",
+      "properties": {
+        "radius": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        }
+      },
+      "required": [
+        "radius",
+        "offset"
+      ]
+    },
+    "def_352": {
+      "type": "object",
+      "properties": {
+        "radius": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "foliage_height": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "leaf_placement_attempts": {
+          "$ref": "#/definitions/def_353"
+        }
+      },
+      "required": [
+        "radius",
+        "offset",
+        "foliage_height",
+        "leaf_placement_attempts"
+      ]
+    },
+    "def_353": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 256
+    },
+    "def_354": {
+      "type": "object",
+      "properties": {
+        "radius": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -29439,12 +29579,94 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "wide_bottom_layer_hole_chance": {
+          "$ref": "#/definitions/def_355"
+        },
+        "corner_hole_chance": {
+          "$ref": "#/definitions/def_356"
+        },
+        "hanging_leaves_chance": {
+          "$ref": "#/definitions/def_357"
+        },
+        "hanging_leaves_extension_chance": {
+          "$ref": "#/definitions/def_358"
+        }
+      },
+      "required": [
+        "radius",
+        "offset",
+        "height",
+        "wide_bottom_layer_hole_chance",
+        "corner_hole_chance",
+        "hanging_leaves_chance",
+        "hanging_leaves_extension_chance"
+      ]
+    },
+    "def_355": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_356": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_357": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_358": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_359": {
+      "type": "object",
+      "properties": {
+        "radius": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "height": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "side_hole_chance": {
-          "$ref": "#/definitions/def_351"
+          "$ref": "#/definitions/def_360"
         }
       },
       "required": [
@@ -29454,12 +29676,12 @@
         "side_hole_chance"
       ]
     },
-    "def_351": {
+    "def_360": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_352": {
+    "def_361": {
       "type": "object",
       "properties": {
         "type": {
@@ -29481,12 +29703,12 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_353"
+            "$ref": "#/definitions/def_362"
           }
         }
       ]
     },
-    "def_353": {
+    "def_362": {
       "type": "object",
       "properties": {
         "trunk_offset_y": {
@@ -29497,7 +29719,7 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
@@ -29505,10 +29727,10 @@
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
         },
         "above_root_placement": {
-          "$ref": "#/definitions/def_354"
+          "$ref": "#/definitions/def_363"
         },
         "mangrove_root_placement": {
-          "$ref": "#/definitions/def_356"
+          "$ref": "#/definitions/def_365"
         }
       },
       "required": [
@@ -29517,14 +29739,14 @@
         "mangrove_root_placement"
       ]
     },
-    "def_354": {
+    "def_363": {
       "type": "object",
       "properties": {
         "above_root_provider": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
         },
         "above_root_placement_chance": {
-          "$ref": "#/definitions/def_355"
+          "$ref": "#/definitions/def_364"
         }
       },
       "required": [
@@ -29532,31 +29754,31 @@
         "above_root_placement_chance"
       ]
     },
-    "def_355": {
+    "def_364": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_356": {
+    "def_365": {
       "type": "object",
       "properties": {
         "can_grow_through": {
-          "$ref": "#/definitions/def_357"
+          "$ref": "#/definitions/def_366"
         },
         "muddy_roots_in": {
-          "$ref": "#/definitions/def_358"
+          "$ref": "#/definitions/def_367"
         },
         "muddy_roots_provider": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
         },
         "max_root_width": {
-          "$ref": "#/definitions/def_359"
+          "$ref": "#/definitions/def_368"
         },
         "max_root_length": {
-          "$ref": "#/definitions/def_360"
+          "$ref": "#/definitions/def_369"
         },
         "random_skew_chance": {
-          "$ref": "#/definitions/def_361"
+          "$ref": "#/definitions/def_370"
         }
       },
       "required": [
@@ -29568,7 +29790,7 @@
         "random_skew_chance"
       ]
     },
-    "def_357": {
+    "def_366": {
       "anyOf": [
         {
           "type": "string"
@@ -29591,7 +29813,7 @@
     "registry_fixed:minecraft:block_15": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_358": {
+    "def_367": {
       "anyOf": [
         {
           "type": "string"
@@ -29614,22 +29836,22 @@
     "registry_fixed:minecraft:block_16": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_359": {
+    "def_368": {
       "type": "integer",
       "minimum": 1,
       "maximum": 12
     },
-    "def_360": {
+    "def_369": {
       "type": "integer",
       "minimum": 1,
       "maximum": 64
     },
-    "def_361": {
+    "def_370": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_362": {
+    "def_371": {
       "type": "object",
       "properties": {
         "type": {
@@ -29652,7 +29874,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_363"
+            "$ref": "#/definitions/def_372"
           }
         },
         {
@@ -29664,120 +29886,120 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_368"
+            "$ref": "#/definitions/def_377"
           }
         }
       ]
     },
-    "def_363": {
+    "def_372": {
       "type": "object",
       "properties": {
         "limit": {
-          "$ref": "#/definitions/def_364",
-          "default": 1
-        },
-        "lower_size": {
-          "$ref": "#/definitions/def_365",
-          "default": 0
-        },
-        "upper_size": {
-          "$ref": "#/definitions/def_366",
-          "default": 1
-        },
-        "min_clipped_height": {
-          "$ref": "#/definitions/def_367"
-        }
-      }
-    },
-    "def_364": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 81
-    },
-    "def_365": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 16
-    },
-    "def_366": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 16
-    },
-    "def_367": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 80
-    },
-    "def_368": {
-      "type": "object",
-      "properties": {
-        "limit": {
-          "$ref": "#/definitions/def_369",
-          "default": 1
-        },
-        "upper_limit": {
-          "$ref": "#/definitions/def_370",
-          "default": 1
-        },
-        "lower_size": {
-          "$ref": "#/definitions/def_371",
-          "default": 0
-        },
-        "middle_size": {
-          "$ref": "#/definitions/def_372",
-          "default": 1
-        },
-        "upper_size": {
           "$ref": "#/definitions/def_373",
           "default": 1
         },
+        "lower_size": {
+          "$ref": "#/definitions/def_374",
+          "default": 0
+        },
+        "upper_size": {
+          "$ref": "#/definitions/def_375",
+          "default": 1
+        },
         "min_clipped_height": {
-          "$ref": "#/definitions/def_374"
+          "$ref": "#/definitions/def_376"
         }
       }
-    },
-    "def_369": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 80
-    },
-    "def_370": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 80
-    },
-    "def_371": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 16
-    },
-    "def_372": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 16
     },
     "def_373": {
       "type": "integer",
       "minimum": 0,
-      "maximum": 16
+      "maximum": 81
     },
     "def_374": {
       "type": "integer",
       "minimum": 0,
-      "maximum": 80
+      "maximum": 16
     },
     "def_375": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16
+    },
+    "def_376": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 80
+    },
+    "def_377": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "$ref": "#/definitions/def_378",
+          "default": 1
+        },
+        "upper_limit": {
+          "$ref": "#/definitions/def_379",
+          "default": 1
+        },
+        "lower_size": {
+          "$ref": "#/definitions/def_380",
+          "default": 0
+        },
+        "middle_size": {
+          "$ref": "#/definitions/def_381",
+          "default": 1
+        },
+        "upper_size": {
+          "$ref": "#/definitions/def_382",
+          "default": 1
+        },
+        "min_clipped_height": {
+          "$ref": "#/definitions/def_383"
+        }
+      }
+    },
+    "def_378": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 80
+    },
+    "def_379": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 80
+    },
+    "def_380": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16
+    },
+    "def_381": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16
+    },
+    "def_382": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16
+    },
+    "def_383": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 80
+    },
+    "def_384": {
       "type": "object",
       "properties": {
         "floor_search_range": {
-          "$ref": "#/definitions/def_376"
+          "$ref": "#/definitions/def_385"
         },
         "placement_radius_around_floor": {
-          "$ref": "#/definitions/def_377"
+          "$ref": "#/definitions/def_386"
         },
         "placement_probability_per_valid_position": {
-          "$ref": "#/definitions/def_378"
+          "$ref": "#/definitions/def_387"
         }
       },
       "required": [
@@ -29786,137 +30008,21 @@
         "placement_probability_per_valid_position"
       ]
     },
-    "def_376": {
+    "def_385": {
       "type": "integer",
       "minimum": 0,
       "maximum": 512
     },
-    "def_377": {
+    "def_386": {
       "type": "integer",
       "minimum": 0,
       "maximum": 64
     },
-    "def_378": {
+    "def_387": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_379": {
-      "type": "object",
-      "properties": {
-        "replaceable": {
-          "$ref": "#/definitions/def_380"
-        },
-        "ground_state": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
-        },
-        "vegetation_feature": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_placed_feature"
-        },
-        "surface": {
-          "$ref": "#/definitions/def_381"
-        },
-        "depth": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "extra_bottom_block_chance": {
-          "$ref": "#/definitions/def_382"
-        },
-        "vertical_range": {
-          "$ref": "#/definitions/def_383"
-        },
-        "vegetation_chance": {
-          "$ref": "#/definitions/def_384"
-        },
-        "xz_radius": {
-          "anyOf": [
-            {
-              "type": "integer",
-              "minimum": -2147483648,
-              "maximum": 2147483647
-            },
-            {
-              "$ref": "#/definitions/def_32"
-            }
-          ]
-        },
-        "extra_edge_column_chance": {
-          "$ref": "#/definitions/def_385"
-        }
-      },
-      "required": [
-        "replaceable",
-        "ground_state",
-        "vegetation_feature",
-        "surface",
-        "depth",
-        "extra_bottom_block_chance",
-        "vertical_range",
-        "vegetation_chance",
-        "xz_radius",
-        "extra_edge_column_chance"
-      ]
-    },
-    "def_380": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "anyOf": [
-            {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/registry_fixed:minecraft:block_17"
-              }
-            },
-            {
-              "$ref": "#/definitions/registry_fixed:minecraft:block_17"
-            }
-          ]
-        }
-      ]
-    },
-    "registry_fixed:minecraft:block_17": {
-      "$ref": "#/definitions/registry:minecraft:block"
-    },
-    "def_381": {
-      "enum": [
-        "ceiling",
-        "floor"
-      ]
-    },
-    "def_382": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
-    "def_383": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 256
-    },
-    "def_384": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
-    "def_385": {
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0
-    },
-    "def_386": {},
-    "def_387": {},
     "def_388": {
       "type": "object",
       "properties": {
@@ -29930,7 +30036,7 @@
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_placed_feature"
         },
         "surface": {
-          "$ref": "#/definitions/def_381"
+          "$ref": "#/definitions/def_390"
         },
         "depth": {
           "anyOf": [
@@ -29940,18 +30046,18 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "extra_bottom_block_chance": {
-          "$ref": "#/definitions/def_390"
-        },
-        "vertical_range": {
           "$ref": "#/definitions/def_391"
         },
-        "vegetation_chance": {
+        "vertical_range": {
           "$ref": "#/definitions/def_392"
+        },
+        "vegetation_chance": {
+          "$ref": "#/definitions/def_393"
         },
         "xz_radius": {
           "anyOf": [
@@ -29961,12 +30067,12 @@
               "maximum": 2147483647
             },
             {
-              "$ref": "#/definitions/def_32"
+              "$ref": "#/definitions/def_34"
             }
           ]
         },
         "extra_edge_column_chance": {
-          "$ref": "#/definitions/def_393"
+          "$ref": "#/definitions/def_394"
         }
       },
       "required": [
@@ -29992,6 +30098,122 @@
             {
               "type": "array",
               "items": {
+                "$ref": "#/definitions/registry_fixed:minecraft:block_17"
+              }
+            },
+            {
+              "$ref": "#/definitions/registry_fixed:minecraft:block_17"
+            }
+          ]
+        }
+      ]
+    },
+    "registry_fixed:minecraft:block_17": {
+      "$ref": "#/definitions/registry:minecraft:block"
+    },
+    "def_390": {
+      "enum": [
+        "ceiling",
+        "floor"
+      ]
+    },
+    "def_391": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_392": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 256
+    },
+    "def_393": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_394": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "def_395": {},
+    "def_396": {},
+    "def_397": {
+      "type": "object",
+      "properties": {
+        "replaceable": {
+          "$ref": "#/definitions/def_398"
+        },
+        "ground_state": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_block_state_provider"
+        },
+        "vegetation_feature": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_placed_feature"
+        },
+        "surface": {
+          "$ref": "#/definitions/def_390"
+        },
+        "depth": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "extra_bottom_block_chance": {
+          "$ref": "#/definitions/def_399"
+        },
+        "vertical_range": {
+          "$ref": "#/definitions/def_400"
+        },
+        "vegetation_chance": {
+          "$ref": "#/definitions/def_401"
+        },
+        "xz_radius": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_34"
+            }
+          ]
+        },
+        "extra_edge_column_chance": {
+          "$ref": "#/definitions/def_402"
+        }
+      },
+      "required": [
+        "replaceable",
+        "ground_state",
+        "vegetation_feature",
+        "surface",
+        "depth",
+        "extra_bottom_block_chance",
+        "vertical_range",
+        "vegetation_chance",
+        "xz_radius",
+        "extra_edge_column_chance"
+      ]
+    },
+    "def_398": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
                 "$ref": "#/definitions/registry_fixed:minecraft:block_18"
               }
             },
@@ -30005,33 +30227,33 @@
     "registry_fixed:minecraft:block_18": {
       "$ref": "#/definitions/registry:minecraft:block"
     },
-    "def_390": {
+    "def_399": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_391": {
+    "def_400": {
       "type": "integer",
       "minimum": 1,
       "maximum": 256
     },
-    "def_392": {
+    "def_401": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_393": {
+    "def_402": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_394": {
+    "def_403": {
       "type": "object",
       "properties": {
         "features": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_395"
+            "$ref": "#/definitions/def_404"
           }
         }
       },
@@ -30039,14 +30261,14 @@
         "features"
       ]
     },
-    "def_395": {
+    "def_404": {
       "type": "object",
       "properties": {
         "data": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_placed_feature"
         },
         "weight": {
-          "$ref": "#/definitions/def_40"
+          "$ref": "#/definitions/def_42"
         }
       },
       "required": [

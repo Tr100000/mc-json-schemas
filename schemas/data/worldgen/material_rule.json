@@ -718,6 +718,11 @@
             "minecraft:terracotta",
             "minecraft:coal_block",
             "minecraft:packed_ice",
+            "minecraft:packed_ice_bricks",
+            "minecraft:packed_ice_brick_slab",
+            "minecraft:packed_ice_brick_stairs",
+            "minecraft:packed_ice_brick_wall",
+            "minecraft:chiseled_packed_ice",
             "minecraft:sunflower",
             "minecraft:lilac",
             "minecraft:rose_bush",
@@ -836,6 +841,7 @@
             "minecraft:repeating_command_block",
             "minecraft:chain_command_block",
             "minecraft:frosted_ice",
+            "minecraft:brittle_ice",
             "minecraft:magma_block",
             "minecraft:nether_wart_block",
             "minecraft:red_nether_bricks",
@@ -2023,6 +2029,11 @@
                 "minecraft:terracotta",
                 "minecraft:coal_block",
                 "minecraft:packed_ice",
+                "minecraft:packed_ice_bricks",
+                "minecraft:packed_ice_brick_slab",
+                "minecraft:packed_ice_brick_stairs",
+                "minecraft:packed_ice_brick_wall",
+                "minecraft:chiseled_packed_ice",
                 "minecraft:sunflower",
                 "minecraft:lilac",
                 "minecraft:rose_bush",
@@ -2141,6 +2152,7 @@
                 "minecraft:repeating_command_block",
                 "minecraft:chain_command_block",
                 "minecraft:frosted_ice",
+                "minecraft:brittle_ice",
                 "minecraft:magma_block",
                 "minecraft:nether_wart_block",
                 "minecraft:red_nether_bricks",
@@ -7244,6 +7256,9 @@
             "properties": {
               "has_record": {
                 "type": "string"
+              },
+              "playlist_mode": {
+                "type": "string"
               }
             }
           }
@@ -10731,6 +10746,81 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:packed_ice_brick_slab"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:packed_ice_brick_stairs"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "half": {
+                "type": "string"
+              },
+              "shape": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:packed_ice_brick_wall"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "east": {
+                "type": "string"
+              },
+              "north": {
+                "type": "string"
+              },
+              "south": {
+                "type": "string"
+              },
+              "up": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              },
+              "west": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:sunflower"
               }
             }
@@ -12878,6 +12968,22 @@
             "properties": {
               "Name": {
                 "const": "minecraft:frosted_ice"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "age": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:brittle_ice"
               }
             }
           },
@@ -21746,7 +21852,7 @@
             "minecraft:interval_select",
             "minecraft:cache",
             "minecraft:blend_density",
-            "minecraft:interpolated",
+            "minecraft:upscale",
             "minecraft:slice",
             "minecraft:find_top_surface",
             "minecraft:old_blended_noise"
@@ -22241,7 +22347,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:interpolated"
+                "const": "minecraft:upscale"
               }
             }
           },
@@ -22258,7 +22364,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_81"
+            "$ref": "#/definitions/def_83"
           }
         },
         {
@@ -22270,7 +22376,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_82"
+            "$ref": "#/definitions/def_84"
           }
         },
         {
@@ -22282,7 +22388,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_84"
+            "$ref": "#/definitions/def_87"
           }
         }
       ]
@@ -22976,24 +23082,53 @@
         "input": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
         },
-        "cell_size_xz": {
+        "x": {
           "$ref": "#/definitions/def_80"
         },
-        "cell_size_y": {
+        "y": {
+          "$ref": "#/definitions/def_80"
+        },
+        "z": {
           "$ref": "#/definitions/def_80"
         }
       },
       "required": [
         "input",
-        "cell_size_xz",
-        "cell_size_y"
+        "x",
+        "y",
+        "z"
       ]
     },
     "def_80": {
-      "type": "integer",
-      "minimum": 1
+      "type": "object",
+      "properties": {
+        "mode": {
+          "$ref": "#/definitions/def_81"
+        },
+        "cell_size": {
+          "$ref": "#/definitions/def_82"
+        }
+      },
+      "required": [
+        "mode",
+        "cell_size"
+      ]
     },
     "def_81": {
+      "enum": [
+        "nearest_neighbor",
+        "interpolate_linear",
+        "interpolate_cosine",
+        "interpolate_cubic",
+        "b_spline_cubic"
+      ]
+    },
+    "def_82": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 64
+    },
+    "def_83": {
       "type": "object",
       "properties": {
         "axis": {
@@ -23014,7 +23149,7 @@
         "input"
       ]
     },
-    "def_82": {
+    "def_84": {
       "type": "object",
       "properties": {
         "density": {
@@ -23024,10 +23159,10 @@
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
         },
         "lower_bound": {
-          "$ref": "#/definitions/def_83"
+          "$ref": "#/definitions/def_85"
         },
         "cell_height": {
-          "$ref": "#/definitions/def_80"
+          "$ref": "#/definitions/def_86"
         }
       },
       "required": [
@@ -23037,28 +23172,32 @@
         "cell_height"
       ]
     },
-    "def_83": {
+    "def_85": {
       "type": "integer",
       "minimum": -4064,
       "maximum": 4062
     },
-    "def_84": {
+    "def_86": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "def_87": {
       "type": "object",
       "properties": {
         "xz_scale": {
-          "$ref": "#/definitions/def_85"
+          "$ref": "#/definitions/def_88"
         },
         "y_scale": {
-          "$ref": "#/definitions/def_85"
+          "$ref": "#/definitions/def_88"
         },
         "xz_factor": {
-          "$ref": "#/definitions/def_85"
+          "$ref": "#/definitions/def_88"
         },
         "y_factor": {
-          "$ref": "#/definitions/def_85"
+          "$ref": "#/definitions/def_88"
         },
         "smear_scale_multiplier": {
-          "$ref": "#/definitions/def_86"
+          "$ref": "#/definitions/def_89"
         }
       },
       "required": [
@@ -23069,12 +23208,12 @@
         "smear_scale_multiplier"
       ]
     },
-    "def_85": {
+    "def_88": {
       "type": "number",
       "minimum": 0.001,
       "maximum": 1000.0
     },
-    "def_86": {
+    "def_89": {
       "type": "number",
       "minimum": 1.0,
       "maximum": 8.0

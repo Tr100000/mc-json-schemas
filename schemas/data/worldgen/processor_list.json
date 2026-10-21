@@ -835,6 +835,11 @@
             "minecraft:terracotta",
             "minecraft:coal_block",
             "minecraft:packed_ice",
+            "minecraft:packed_ice_bricks",
+            "minecraft:packed_ice_brick_slab",
+            "minecraft:packed_ice_brick_stairs",
+            "minecraft:packed_ice_brick_wall",
+            "minecraft:chiseled_packed_ice",
             "minecraft:sunflower",
             "minecraft:lilac",
             "minecraft:rose_bush",
@@ -953,6 +958,7 @@
             "minecraft:repeating_command_block",
             "minecraft:chain_command_block",
             "minecraft:frosted_ice",
+            "minecraft:brittle_ice",
             "minecraft:magma_block",
             "minecraft:nether_wart_block",
             "minecraft:red_nether_bricks",
@@ -2140,6 +2146,11 @@
                 "minecraft:terracotta",
                 "minecraft:coal_block",
                 "minecraft:packed_ice",
+                "minecraft:packed_ice_bricks",
+                "minecraft:packed_ice_brick_slab",
+                "minecraft:packed_ice_brick_stairs",
+                "minecraft:packed_ice_brick_wall",
+                "minecraft:chiseled_packed_ice",
                 "minecraft:sunflower",
                 "minecraft:lilac",
                 "minecraft:rose_bush",
@@ -2258,6 +2269,7 @@
                 "minecraft:repeating_command_block",
                 "minecraft:chain_command_block",
                 "minecraft:frosted_ice",
+                "minecraft:brittle_ice",
                 "minecraft:magma_block",
                 "minecraft:nether_wart_block",
                 "minecraft:red_nether_bricks",
@@ -7361,6 +7373,9 @@
             "properties": {
               "has_record": {
                 "type": "string"
+              },
+              "playlist_mode": {
+                "type": "string"
               }
             }
           }
@@ -10848,6 +10863,81 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:packed_ice_brick_slab"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:packed_ice_brick_stairs"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "half": {
+                "type": "string"
+              },
+              "shape": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:packed_ice_brick_wall"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "east": {
+                "type": "string"
+              },
+              "north": {
+                "type": "string"
+              },
+              "south": {
+                "type": "string"
+              },
+              "up": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              },
+              "west": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:sunflower"
               }
             }
@@ -12995,6 +13085,22 @@
             "properties": {
               "Name": {
                 "const": "minecraft:frosted_ice"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "age": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:brittle_ice"
               }
             }
           },

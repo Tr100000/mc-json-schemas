@@ -59,7 +59,7 @@
             "minecraft:interval_select",
             "minecraft:cache",
             "minecraft:blend_density",
-            "minecraft:interpolated",
+            "minecraft:upscale",
             "minecraft:slice",
             "minecraft:find_top_surface",
             "minecraft:old_blended_noise"
@@ -554,7 +554,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:interpolated"
+                "const": "minecraft:upscale"
               }
             }
           },
@@ -571,7 +571,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_55"
+            "$ref": "#/definitions/def_57"
           }
         },
         {
@@ -583,7 +583,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_56"
+            "$ref": "#/definitions/def_58"
           }
         },
         {
@@ -595,7 +595,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_58"
+            "$ref": "#/definitions/def_61"
           }
         }
       ]
@@ -1310,24 +1310,53 @@
         "input": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
         },
-        "cell_size_xz": {
+        "x": {
           "$ref": "#/definitions/def_54"
         },
-        "cell_size_y": {
+        "y": {
+          "$ref": "#/definitions/def_54"
+        },
+        "z": {
           "$ref": "#/definitions/def_54"
         }
       },
       "required": [
         "input",
-        "cell_size_xz",
-        "cell_size_y"
+        "x",
+        "y",
+        "z"
       ]
     },
     "def_54": {
-      "type": "integer",
-      "minimum": 1
+      "type": "object",
+      "properties": {
+        "mode": {
+          "$ref": "#/definitions/def_55"
+        },
+        "cell_size": {
+          "$ref": "#/definitions/def_56"
+        }
+      },
+      "required": [
+        "mode",
+        "cell_size"
+      ]
     },
     "def_55": {
+      "enum": [
+        "nearest_neighbor",
+        "interpolate_linear",
+        "interpolate_cosine",
+        "interpolate_cubic",
+        "b_spline_cubic"
+      ]
+    },
+    "def_56": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 64
+    },
+    "def_57": {
       "type": "object",
       "properties": {
         "axis": {
@@ -1348,7 +1377,7 @@
         "input"
       ]
     },
-    "def_56": {
+    "def_58": {
       "type": "object",
       "properties": {
         "density": {
@@ -1358,10 +1387,10 @@
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
         },
         "lower_bound": {
-          "$ref": "#/definitions/def_57"
+          "$ref": "#/definitions/def_59"
         },
         "cell_height": {
-          "$ref": "#/definitions/def_54"
+          "$ref": "#/definitions/def_60"
         }
       },
       "required": [
@@ -1371,28 +1400,32 @@
         "cell_height"
       ]
     },
-    "def_57": {
+    "def_59": {
       "type": "integer",
       "minimum": -4064,
       "maximum": 4062
     },
-    "def_58": {
+    "def_60": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "def_61": {
       "type": "object",
       "properties": {
         "xz_scale": {
-          "$ref": "#/definitions/def_59"
+          "$ref": "#/definitions/def_62"
         },
         "y_scale": {
-          "$ref": "#/definitions/def_59"
+          "$ref": "#/definitions/def_62"
         },
         "xz_factor": {
-          "$ref": "#/definitions/def_59"
+          "$ref": "#/definitions/def_62"
         },
         "y_factor": {
-          "$ref": "#/definitions/def_59"
+          "$ref": "#/definitions/def_62"
         },
         "smear_scale_multiplier": {
-          "$ref": "#/definitions/def_60"
+          "$ref": "#/definitions/def_63"
         }
       },
       "required": [
@@ -1403,12 +1436,12 @@
         "smear_scale_multiplier"
       ]
     },
-    "def_59": {
+    "def_62": {
       "type": "number",
       "minimum": 0.001,
       "maximum": 1000.0
     },
-    "def_60": {
+    "def_63": {
       "type": "number",
       "minimum": 1.0,
       "maximum": 8.0

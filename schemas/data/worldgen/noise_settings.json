@@ -27,7 +27,7 @@
         "spawn_target": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_92"
+            "$ref": "#/definitions/def_95"
           }
         },
         "sea_level": {
@@ -39,7 +39,7 @@
           "type": "boolean"
         },
         "aquifers": {
-          "$ref": "#/definitions/def_95"
+          "$ref": "#/definitions/def_98"
         },
         "legacy_random_source": {
           "type": "boolean"
@@ -47,7 +47,7 @@
         "debug_functions": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_96"
+            "$ref": "#/definitions/def_99"
           },
           "default": []
         }
@@ -707,6 +707,11 @@
             "minecraft:terracotta",
             "minecraft:coal_block",
             "minecraft:packed_ice",
+            "minecraft:packed_ice_bricks",
+            "minecraft:packed_ice_brick_slab",
+            "minecraft:packed_ice_brick_stairs",
+            "minecraft:packed_ice_brick_wall",
+            "minecraft:chiseled_packed_ice",
             "minecraft:sunflower",
             "minecraft:lilac",
             "minecraft:rose_bush",
@@ -825,6 +830,7 @@
             "minecraft:repeating_command_block",
             "minecraft:chain_command_block",
             "minecraft:frosted_ice",
+            "minecraft:brittle_ice",
             "minecraft:magma_block",
             "minecraft:nether_wart_block",
             "minecraft:red_nether_bricks",
@@ -2012,6 +2018,11 @@
                 "minecraft:terracotta",
                 "minecraft:coal_block",
                 "minecraft:packed_ice",
+                "minecraft:packed_ice_bricks",
+                "minecraft:packed_ice_brick_slab",
+                "minecraft:packed_ice_brick_stairs",
+                "minecraft:packed_ice_brick_wall",
+                "minecraft:chiseled_packed_ice",
                 "minecraft:sunflower",
                 "minecraft:lilac",
                 "minecraft:rose_bush",
@@ -2130,6 +2141,7 @@
                 "minecraft:repeating_command_block",
                 "minecraft:chain_command_block",
                 "minecraft:frosted_ice",
+                "minecraft:brittle_ice",
                 "minecraft:magma_block",
                 "minecraft:nether_wart_block",
                 "minecraft:red_nether_bricks",
@@ -7233,6 +7245,9 @@
             "properties": {
               "has_record": {
                 "type": "string"
+              },
+              "playlist_mode": {
+                "type": "string"
               }
             }
           }
@@ -10720,6 +10735,81 @@
           "if": {
             "properties": {
               "Name": {
+                "const": "minecraft:packed_ice_brick_slab"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:packed_ice_brick_stairs"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "half": {
+                "type": "string"
+              },
+              "shape": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:packed_ice_brick_wall"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "east": {
+                "type": "string"
+              },
+              "north": {
+                "type": "string"
+              },
+              "south": {
+                "type": "string"
+              },
+              "up": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              },
+              "west": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
                 "const": "minecraft:sunflower"
               }
             }
@@ -12867,6 +12957,22 @@
             "properties": {
               "Name": {
                 "const": "minecraft:frosted_ice"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "age": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:brittle_ice"
               }
             }
           },
@@ -21278,7 +21384,7 @@
             "minecraft:interval_select",
             "minecraft:cache",
             "minecraft:blend_density",
-            "minecraft:interpolated",
+            "minecraft:upscale",
             "minecraft:slice",
             "minecraft:find_top_surface",
             "minecraft:old_blended_noise"
@@ -21773,7 +21879,7 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:interpolated"
+                "const": "minecraft:upscale"
               }
             }
           },
@@ -21790,7 +21896,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_61"
+            "$ref": "#/definitions/def_63"
           }
         },
         {
@@ -21802,7 +21908,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_62"
+            "$ref": "#/definitions/def_64"
           }
         },
         {
@@ -21814,7 +21920,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_64"
+            "$ref": "#/definitions/def_67"
           }
         }
       ]
@@ -22508,24 +22614,53 @@
         "input": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
         },
-        "cell_size_xz": {
+        "x": {
           "$ref": "#/definitions/def_60"
         },
-        "cell_size_y": {
+        "y": {
+          "$ref": "#/definitions/def_60"
+        },
+        "z": {
           "$ref": "#/definitions/def_60"
         }
       },
       "required": [
         "input",
-        "cell_size_xz",
-        "cell_size_y"
+        "x",
+        "y",
+        "z"
       ]
     },
     "def_60": {
-      "type": "integer",
-      "minimum": 1
+      "type": "object",
+      "properties": {
+        "mode": {
+          "$ref": "#/definitions/def_61"
+        },
+        "cell_size": {
+          "$ref": "#/definitions/def_62"
+        }
+      },
+      "required": [
+        "mode",
+        "cell_size"
+      ]
     },
     "def_61": {
+      "enum": [
+        "nearest_neighbor",
+        "interpolate_linear",
+        "interpolate_cosine",
+        "interpolate_cubic",
+        "b_spline_cubic"
+      ]
+    },
+    "def_62": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 64
+    },
+    "def_63": {
       "type": "object",
       "properties": {
         "axis": {
@@ -22546,7 +22681,7 @@
         "input"
       ]
     },
-    "def_62": {
+    "def_64": {
       "type": "object",
       "properties": {
         "density": {
@@ -22556,10 +22691,10 @@
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
         },
         "lower_bound": {
-          "$ref": "#/definitions/def_63"
+          "$ref": "#/definitions/def_65"
         },
         "cell_height": {
-          "$ref": "#/definitions/def_60"
+          "$ref": "#/definitions/def_66"
         }
       },
       "required": [
@@ -22569,28 +22704,32 @@
         "cell_height"
       ]
     },
-    "def_63": {
+    "def_65": {
       "type": "integer",
       "minimum": -4064,
       "maximum": 4062
     },
-    "def_64": {
+    "def_66": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "def_67": {
       "type": "object",
       "properties": {
         "xz_scale": {
-          "$ref": "#/definitions/def_65"
+          "$ref": "#/definitions/def_68"
         },
         "y_scale": {
-          "$ref": "#/definitions/def_65"
+          "$ref": "#/definitions/def_68"
         },
         "xz_factor": {
-          "$ref": "#/definitions/def_65"
+          "$ref": "#/definitions/def_68"
         },
         "y_factor": {
-          "$ref": "#/definitions/def_65"
+          "$ref": "#/definitions/def_68"
         },
         "smear_scale_multiplier": {
-          "$ref": "#/definitions/def_66"
+          "$ref": "#/definitions/def_69"
         }
       },
       "required": [
@@ -22601,12 +22740,12 @@
         "smear_scale_multiplier"
       ]
     },
-    "def_65": {
+    "def_68": {
       "type": "number",
       "minimum": 0.001,
       "maximum": 1000.0
     },
-    "def_66": {
+    "def_69": {
       "type": "number",
       "minimum": 1.0,
       "maximum": 8.0
@@ -22614,14 +22753,14 @@
     "registry_file_inline:minecraft:worldgen_material_rule": {
       "anyOf": [
         {
-          "$ref": "#/definitions/def_67"
+          "$ref": "#/definitions/def_70"
         },
         {
           "$ref": "#/definitions/identifier"
         }
       ]
     },
-    "def_67": {
+    "def_70": {
       "type": "object",
       "properties": {
         "type": {
@@ -22647,7 +22786,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_68"
+            "$ref": "#/definitions/def_71"
           }
         },
         {
@@ -22659,7 +22798,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_69"
+            "$ref": "#/definitions/def_72"
           }
         },
         {
@@ -22671,7 +22810,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_70"
+            "$ref": "#/definitions/def_73"
           }
         },
         {
@@ -22683,7 +22822,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_71"
+            "$ref": "#/definitions/def_74"
           }
         },
         {
@@ -22695,12 +22834,12 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_90"
+            "$ref": "#/definitions/def_93"
           }
         }
       ]
     },
-    "def_68": {
+    "def_71": {
       "type": "object",
       "properties": {
         "result_state": {
@@ -22718,8 +22857,8 @@
         "result_state"
       ]
     },
-    "def_69": {},
-    "def_70": {
+    "def_72": {},
+    "def_73": {
       "type": "object",
       "properties": {
         "sequence": {
@@ -22733,7 +22872,7 @@
         "sequence"
       ]
     },
-    "def_71": {
+    "def_74": {
       "type": "object",
       "properties": {
         "if_true": {
@@ -22751,14 +22890,14 @@
     "registry_file_inline:minecraft:worldgen_material_condition": {
       "anyOf": [
         {
-          "$ref": "#/definitions/def_72"
+          "$ref": "#/definitions/def_75"
         },
         {
           "$ref": "#/definitions/identifier"
         }
       ]
     },
-    "def_72": {
+    "def_75": {
       "type": "object",
       "properties": {
         "type": {
@@ -22790,7 +22929,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_73"
+            "$ref": "#/definitions/def_76"
           }
         },
         {
@@ -22802,7 +22941,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_75"
+            "$ref": "#/definitions/def_78"
           }
         },
         {
@@ -22814,7 +22953,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_76"
+            "$ref": "#/definitions/def_79"
           }
         },
         {
@@ -22826,7 +22965,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_79"
+            "$ref": "#/definitions/def_82"
           }
         },
         {
@@ -22838,7 +22977,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_81"
+            "$ref": "#/definitions/def_84"
           }
         },
         {
@@ -22850,7 +22989,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_83"
+            "$ref": "#/definitions/def_86"
           }
         },
         {
@@ -22862,7 +23001,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_84"
+            "$ref": "#/definitions/def_87"
           }
         },
         {
@@ -22874,7 +23013,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_85"
+            "$ref": "#/definitions/def_88"
           }
         },
         {
@@ -22886,7 +23025,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_86"
+            "$ref": "#/definitions/def_89"
           }
         },
         {
@@ -22898,7 +23037,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_87"
+            "$ref": "#/definitions/def_90"
           }
         },
         {
@@ -22910,23 +23049,23 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_88"
+            "$ref": "#/definitions/def_91"
           }
         }
       ]
     },
-    "def_73": {
+    "def_76": {
       "type": "object",
       "properties": {
         "biome_is": {
-          "$ref": "#/definitions/def_74"
+          "$ref": "#/definitions/def_77"
         }
       },
       "required": [
         "biome_is"
       ]
     },
-    "def_74": {
+    "def_77": {
       "anyOf": [
         {
           "type": "string"
@@ -22949,7 +23088,7 @@
     "registry_fixed:minecraft:worldgen_biome": {
       "$ref": "#/definitions/identifier"
     },
-    "def_75": {
+    "def_78": {
       "type": "object",
       "properties": {
         "noise": {
@@ -22972,17 +23111,17 @@
         "max_threshold"
       ]
     },
-    "def_76": {
+    "def_79": {
       "type": "object",
       "properties": {
         "random_name": {
           "$ref": "#/definitions/identifier"
         },
         "true_at_and_below": {
-          "$ref": "#/definitions/def_77"
+          "$ref": "#/definitions/def_80"
         },
         "false_at_and_above": {
-          "$ref": "#/definitions/def_77"
+          "$ref": "#/definitions/def_80"
         }
       },
       "required": [
@@ -22991,7 +23130,7 @@
         "false_at_and_above"
       ]
     },
-    "def_77": {
+    "def_80": {
       "type": "object",
       "oneOf": [
         {
@@ -23000,7 +23139,7 @@
           ],
           "properties": {
             "absolute": {
-              "$ref": "#/definitions/def_78"
+              "$ref": "#/definitions/def_81"
             }
           },
           "additionalProperties": false
@@ -23011,7 +23150,7 @@
           ],
           "properties": {
             "above_bottom": {
-              "$ref": "#/definitions/def_78"
+              "$ref": "#/definitions/def_81"
             }
           },
           "additionalProperties": false
@@ -23022,7 +23161,7 @@
           ],
           "properties": {
             "below_top": {
-              "$ref": "#/definitions/def_78"
+              "$ref": "#/definitions/def_81"
             }
           },
           "additionalProperties": false
@@ -23033,26 +23172,26 @@
           ],
           "properties": {
             "relative_to_sea_level": {
-              "$ref": "#/definitions/def_78"
+              "$ref": "#/definitions/def_81"
             }
           },
           "additionalProperties": false
         }
       ]
     },
-    "def_78": {
+    "def_81": {
       "type": "integer",
       "minimum": -2032,
       "maximum": 2031
     },
-    "def_79": {
+    "def_82": {
       "type": "object",
       "properties": {
         "anchor": {
-          "$ref": "#/definitions/def_77"
+          "$ref": "#/definitions/def_80"
         },
         "surface_depth_multiplier": {
-          "$ref": "#/definitions/def_80"
+          "$ref": "#/definitions/def_83"
         },
         "add_stone_depth": {
           "type": "boolean"
@@ -23064,12 +23203,12 @@
         "add_stone_depth"
       ]
     },
-    "def_80": {
+    "def_83": {
       "type": "integer",
       "minimum": -20,
       "maximum": 20
     },
-    "def_81": {
+    "def_84": {
       "type": "object",
       "properties": {
         "offset": {
@@ -23078,7 +23217,7 @@
           "maximum": 2147483647
         },
         "surface_depth_multiplier": {
-          "$ref": "#/definitions/def_82"
+          "$ref": "#/definitions/def_85"
         },
         "add_stone_depth": {
           "type": "boolean"
@@ -23090,14 +23229,14 @@
         "add_stone_depth"
       ]
     },
-    "def_82": {
+    "def_85": {
       "type": "integer",
       "minimum": -20,
       "maximum": 20
     },
-    "def_83": {},
-    "def_84": {},
-    "def_85": {
+    "def_86": {},
+    "def_87": {},
+    "def_88": {
       "type": "object",
       "properties": {
         "invert": {
@@ -23108,9 +23247,9 @@
         "invert"
       ]
     },
-    "def_86": {},
-    "def_87": {},
-    "def_88": {
+    "def_89": {},
+    "def_90": {},
+    "def_91": {
       "type": "object",
       "properties": {
         "offset": {
@@ -23127,7 +23266,7 @@
           "maximum": 2147483647
         },
         "surface_type": {
-          "$ref": "#/definitions/def_89"
+          "$ref": "#/definitions/def_92"
         }
       },
       "required": [
@@ -23137,13 +23276,13 @@
         "surface_type"
       ]
     },
-    "def_89": {
+    "def_92": {
       "enum": [
         "ceiling",
         "floor"
       ]
     },
-    "def_90": {
+    "def_93": {
       "type": "object",
       "properties": {
         "ore_block": {
@@ -23177,7 +23316,7 @@
           ]
         },
         "raw_ore_chance": {
-          "$ref": "#/definitions/def_91"
+          "$ref": "#/definitions/def_94"
         },
         "density": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
@@ -23199,12 +23338,12 @@
         "filler_gap"
       ]
     },
-    "def_91": {
+    "def_94": {
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0
     },
-    "def_92": {
+    "def_95": {
       "type": "object",
       "propertyNames": {
         "$ref": "#/definitions/registry_fixed:minecraft:worldgen_density_function"
@@ -23212,18 +23351,18 @@
       "additionalProperties": {
         "anyOf": [
           {
-            "$ref": "#/definitions/def_93"
+            "$ref": "#/definitions/def_96"
           },
           {
             "anyOf": [
               {
                 "type": "array",
                 "items": {
-                  "$ref": "#/definitions/def_93"
+                  "$ref": "#/definitions/def_96"
                 }
               },
               {
-                "$ref": "#/definitions/def_94"
+                "$ref": "#/definitions/def_97"
               }
             ]
           }
@@ -23233,19 +23372,19 @@
     "registry_fixed:minecraft:worldgen_density_function": {
       "$ref": "#/definitions/identifier"
     },
-    "def_93": {
+    "def_96": {
       "type": "number",
       "minimum": -2.0,
       "maximum": 2.0
     },
-    "def_94": {
+    "def_97": {
       "type": "object",
       "properties": {
         "min": {
-          "$ref": "#/definitions/def_93"
+          "$ref": "#/definitions/def_96"
         },
         "max": {
-          "$ref": "#/definitions/def_93"
+          "$ref": "#/definitions/def_96"
         }
       },
       "required": [
@@ -23253,7 +23392,7 @@
         "max"
       ]
     },
-    "def_95": {
+    "def_98": {
       "type": "object",
       "properties": {
         "barrier": {
@@ -23284,7 +23423,7 @@
         "surface_level"
       ]
     },
-    "def_96": {
+    "def_99": {
       "type": "object",
       "properties": {
         "label": {
