@@ -62,6 +62,7 @@
             "minecraft:upscale",
             "minecraft:slice",
             "minecraft:find_top_surface",
+            "minecraft:domain_warp",
             "minecraft:old_blended_noise"
           ]
         }
@@ -175,7 +176,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_18"
+            "$ref": "#/definitions/def_20"
           }
         },
         {
@@ -187,7 +188,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_19"
+            "$ref": "#/definitions/def_21"
           }
         },
         {
@@ -199,7 +200,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_20"
+            "$ref": "#/definitions/def_22"
           }
         },
         {
@@ -211,7 +212,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_21"
+            "$ref": "#/definitions/def_23"
           }
         },
         {
@@ -223,7 +224,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_22"
+            "$ref": "#/definitions/def_24"
           }
         },
         {
@@ -235,7 +236,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_23"
+            "$ref": "#/definitions/def_25"
           }
         },
         {
@@ -247,7 +248,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_24"
+            "$ref": "#/definitions/def_26"
           }
         },
         {
@@ -259,7 +260,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_25"
+            "$ref": "#/definitions/def_27"
           }
         },
         {
@@ -271,7 +272,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_26"
+            "$ref": "#/definitions/def_28"
           }
         },
         {
@@ -283,7 +284,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_27"
+            "$ref": "#/definitions/def_29"
           }
         },
         {
@@ -295,7 +296,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_28"
+            "$ref": "#/definitions/def_30"
           }
         },
         {
@@ -307,7 +308,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_29"
+            "$ref": "#/definitions/def_31"
           }
         },
         {
@@ -319,7 +320,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_30"
+            "$ref": "#/definitions/def_32"
           }
         },
         {
@@ -331,7 +332,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_31"
+            "$ref": "#/definitions/def_33"
           }
         },
         {
@@ -343,7 +344,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_32"
+            "$ref": "#/definitions/def_34"
           }
         },
         {
@@ -355,7 +356,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_33"
+            "$ref": "#/definitions/def_35"
           }
         },
         {
@@ -367,7 +368,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_34"
+            "$ref": "#/definitions/def_36"
           }
         },
         {
@@ -379,7 +380,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_35"
+            "$ref": "#/definitions/def_37"
           }
         },
         {
@@ -391,7 +392,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_36"
+            "$ref": "#/definitions/def_38"
           }
         },
         {
@@ -403,7 +404,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_37"
+            "$ref": "#/definitions/def_39"
           }
         },
         {
@@ -415,7 +416,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_38"
+            "$ref": "#/definitions/def_40"
           }
         },
         {
@@ -427,7 +428,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_39"
+            "$ref": "#/definitions/def_41"
           }
         },
         {
@@ -439,7 +440,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_40"
+            "$ref": "#/definitions/def_42"
           }
         },
         {
@@ -451,7 +452,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_41"
+            "$ref": "#/definitions/def_43"
           }
         },
         {
@@ -463,7 +464,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_42"
+            "$ref": "#/definitions/def_44"
           }
         },
         {
@@ -475,7 +476,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_43"
+            "$ref": "#/definitions/def_45"
           }
         },
         {
@@ -487,7 +488,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_47"
+            "$ref": "#/definitions/def_49"
           }
         },
         {
@@ -499,7 +500,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_48"
+            "$ref": "#/definitions/def_50"
           }
         },
         {
@@ -511,7 +512,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_49"
+            "$ref": "#/definitions/def_51"
           }
         },
         {
@@ -523,7 +524,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_50"
+            "$ref": "#/definitions/def_52"
           }
         },
         {
@@ -535,7 +536,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_51"
+            "$ref": "#/definitions/def_53"
           }
         },
         {
@@ -547,7 +548,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_52"
+            "$ref": "#/definitions/def_54"
           }
         },
         {
@@ -559,7 +560,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_53"
+            "$ref": "#/definitions/def_55"
           }
         },
         {
@@ -571,7 +572,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_57"
+            "$ref": "#/definitions/def_59"
           }
         },
         {
@@ -583,7 +584,19 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_58"
+            "$ref": "#/definitions/def_60"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:domain_warp"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_63"
           }
         },
         {
@@ -595,7 +608,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_61"
+            "$ref": "#/definitions/def_64"
           }
         }
       ]
@@ -776,14 +789,28 @@
           "default": "clamp_to_edge"
         },
         "from_coordinate": {
-          "type": "integer",
-          "minimum": -2147483648,
-          "maximum": 2147483647
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_18"
+            }
+          ]
         },
         "to_coordinate": {
-          "type": "integer",
-          "minimum": -2147483648,
-          "maximum": 2147483647
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_18"
+            }
+          ]
         },
         "from_value": {
           "$ref": "#/definitions/def"
@@ -816,25 +843,57 @@
     },
     "def_18": {
       "type": "object",
-      "properties": {
-        "noise": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_noise"
+      "oneOf": [
+        {
+          "required": [
+            "absolute"
+          ],
+          "properties": {
+            "absolute": {
+              "$ref": "#/definitions/def_19"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "required": [
+            "above_bottom"
+          ],
+          "properties": {
+            "above_bottom": {
+              "$ref": "#/definitions/def_19"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "required": [
+            "below_top"
+          ],
+          "properties": {
+            "below_top": {
+              "$ref": "#/definitions/def_19"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "required": [
+            "relative_to_sea_level"
+          ],
+          "properties": {
+            "relative_to_sea_level": {
+              "$ref": "#/definitions/def_19"
+            }
+          },
+          "additionalProperties": false
         }
-      },
-      "required": [
-        "noise"
       ]
     },
     "def_19": {
-      "type": "object",
-      "properties": {
-        "noise": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_noise"
-        }
-      },
-      "required": [
-        "noise"
-      ]
+      "type": "integer",
+      "minimum": -2032,
+      "maximum": 2031
     },
     "def_20": {
       "type": "object",
@@ -850,23 +909,23 @@
     "def_21": {
       "type": "object",
       "properties": {
-        "input": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        "noise": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_noise"
         }
       },
       "required": [
-        "input"
+        "noise"
       ]
     },
     "def_22": {
       "type": "object",
       "properties": {
-        "input": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        "noise": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_noise"
         }
       },
       "required": [
-        "input"
+        "noise"
       ]
     },
     "def_23": {
@@ -973,10 +1032,6 @@
       "properties": {
         "input": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
-        },
-        "multiple": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
-          "default": 1.0
         }
       },
       "required": [
@@ -988,10 +1043,6 @@
       "properties": {
         "input": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
-        },
-        "multiple": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
-          "default": 1.0
         }
       },
       "required": [
@@ -1031,31 +1082,31 @@
     "def_36": {
       "type": "object",
       "properties": {
-        "left": {
+        "input": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
         },
-        "right": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        "multiple": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 1.0
         }
       },
       "required": [
-        "left",
-        "right"
+        "input"
       ]
     },
     "def_37": {
       "type": "object",
       "properties": {
-        "left": {
+        "input": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
         },
-        "right": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        "multiple": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 1.0
         }
       },
       "required": [
-        "left",
-        "right"
+        "input"
       ]
     },
     "def_38": {
@@ -1121,6 +1172,36 @@
     "def_42": {
       "type": "object",
       "properties": {
+        "left": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "right": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "left",
+        "right"
+      ]
+    },
+    "def_43": {
+      "type": "object",
+      "properties": {
+        "left": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "right": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "left",
+        "right"
+      ]
+    },
+    "def_44": {
+      "type": "object",
+      "properties": {
         "base": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
         },
@@ -1133,28 +1214,28 @@
         "exponent"
       ]
     },
-    "def_43": {
+    "def_45": {
       "type": "object",
       "properties": {
         "spline": {
-          "$ref": "#/definitions/def_44"
+          "$ref": "#/definitions/def_46"
         }
       },
       "required": [
         "spline"
       ]
     },
-    "def_44": {
+    "def_46": {
       "anyOf": [
         {
           "type": "number"
         },
         {
-          "$ref": "#/definitions/def_45"
+          "$ref": "#/definitions/def_47"
         }
       ]
     },
-    "def_45": {
+    "def_47": {
       "type": "object",
       "properties": {
         "coordinate": {
@@ -1163,7 +1244,7 @@
         "points": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/def_46"
+            "$ref": "#/definitions/def_48"
           }
         }
       },
@@ -1172,14 +1253,14 @@
         "points"
       ]
     },
-    "def_46": {
+    "def_48": {
       "type": "object",
       "properties": {
         "location": {
           "type": "number"
         },
         "value": {
-          "$ref": "#/definitions/def_44"
+          "$ref": "#/definitions/def_46"
         },
         "derivative": {
           "type": "number"
@@ -1191,7 +1272,7 @@
         "derivative"
       ]
     },
-    "def_47": {
+    "def_49": {
       "type": "object",
       "properties": {
         "alpha": {
@@ -1210,7 +1291,7 @@
         "second"
       ]
     },
-    "def_48": {
+    "def_50": {
       "type": "object",
       "properties": {
         "input": {
@@ -1229,7 +1310,7 @@
         "max"
       ]
     },
-    "def_49": {
+    "def_51": {
       "type": "object",
       "properties": {
         "input": {
@@ -1256,7 +1337,7 @@
         "when_out_of_range"
       ]
     },
-    "def_50": {
+    "def_52": {
       "type": "object",
       "properties": {
         "input": {
@@ -1282,42 +1363,42 @@
         "functions"
       ]
     },
-    "def_51": {
-      "type": "object",
-      "properties": {
-        "input": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
-        }
-      },
-      "required": [
-        "input"
-      ]
-    },
-    "def_52": {
-      "type": "object",
-      "properties": {
-        "input": {
-          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
-        }
-      },
-      "required": [
-        "input"
-      ]
-    },
     "def_53": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_54": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_55": {
       "type": "object",
       "properties": {
         "input": {
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
         },
         "x": {
-          "$ref": "#/definitions/def_54"
+          "$ref": "#/definitions/def_56"
         },
         "y": {
-          "$ref": "#/definitions/def_54"
+          "$ref": "#/definitions/def_56"
         },
         "z": {
-          "$ref": "#/definitions/def_54"
+          "$ref": "#/definitions/def_56"
         }
       },
       "required": [
@@ -1327,14 +1408,14 @@
         "z"
       ]
     },
-    "def_54": {
+    "def_56": {
       "type": "object",
       "properties": {
         "mode": {
-          "$ref": "#/definitions/def_55"
+          "$ref": "#/definitions/def_57"
         },
         "cell_size": {
-          "$ref": "#/definitions/def_56"
+          "$ref": "#/definitions/def_58"
         }
       },
       "required": [
@@ -1342,7 +1423,7 @@
         "cell_size"
       ]
     },
-    "def_55": {
+    "def_57": {
       "enum": [
         "nearest_neighbor",
         "interpolate_linear",
@@ -1351,12 +1432,12 @@
         "b_spline_cubic"
       ]
     },
-    "def_56": {
+    "def_58": {
       "type": "integer",
       "minimum": 1,
       "maximum": 64
     },
-    "def_57": {
+    "def_59": {
       "type": "object",
       "properties": {
         "axis": {
@@ -1377,7 +1458,7 @@
         "input"
       ]
     },
-    "def_58": {
+    "def_60": {
       "type": "object",
       "properties": {
         "density": {
@@ -1387,10 +1468,10 @@
           "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
         },
         "lower_bound": {
-          "$ref": "#/definitions/def_59"
+          "$ref": "#/definitions/def_61"
         },
         "cell_height": {
-          "$ref": "#/definitions/def_60"
+          "$ref": "#/definitions/def_62"
         }
       },
       "required": [
@@ -1400,32 +1481,55 @@
         "cell_height"
       ]
     },
-    "def_59": {
+    "def_61": {
       "type": "integer",
       "minimum": -4064,
       "maximum": 4062
     },
-    "def_60": {
+    "def_62": {
       "type": "integer",
       "minimum": 1
     },
-    "def_61": {
+    "def_63": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "offset_x": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 0.0
+        },
+        "offset_y": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 0.0
+        },
+        "offset_z": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 0.0
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_64": {
       "type": "object",
       "properties": {
         "xz_scale": {
-          "$ref": "#/definitions/def_62"
+          "$ref": "#/definitions/def_65"
         },
         "y_scale": {
-          "$ref": "#/definitions/def_62"
+          "$ref": "#/definitions/def_65"
         },
         "xz_factor": {
-          "$ref": "#/definitions/def_62"
+          "$ref": "#/definitions/def_65"
         },
         "y_factor": {
-          "$ref": "#/definitions/def_62"
+          "$ref": "#/definitions/def_65"
         },
         "smear_scale_multiplier": {
-          "$ref": "#/definitions/def_63"
+          "$ref": "#/definitions/def_66"
         }
       },
       "required": [
@@ -1436,12 +1540,12 @@
         "smear_scale_multiplier"
       ]
     },
-    "def_62": {
+    "def_65": {
       "type": "number",
       "minimum": 0.001,
       "maximum": 1000.0
     },
-    "def_63": {
+    "def_66": {
       "type": "number",
       "minimum": 1.0,
       "maximum": 8.0

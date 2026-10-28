@@ -347,6 +347,10 @@
                 "minecraft:snow",
                 "minecraft:ice",
                 "minecraft:snow_block",
+                "minecraft:snow_bricks",
+                "minecraft:snow_brick_slab",
+                "minecraft:snow_brick_stairs",
+                "minecraft:snow_brick_wall",
                 "minecraft:cactus",
                 "minecraft:cactus_flower",
                 "minecraft:clay",
@@ -5808,6 +5812,81 @@
           "then": {
             "properties": {
               "layers": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:snow_brick_slab"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:snow_brick_stairs"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "half": {
+                "type": "string"
+              },
+              "shape": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:snow_brick_wall"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "east": {
+                "type": "string"
+              },
+              "north": {
+                "type": "string"
+              },
+              "south": {
+                "type": "string"
+              },
+              "up": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              },
+              "west": {
                 "type": "string"
               }
             }
@@ -20546,6 +20625,10 @@
             "minecraft:snow",
             "minecraft:ice",
             "minecraft:snow_block",
+            "minecraft:snow_bricks",
+            "minecraft:snow_brick_slab",
+            "minecraft:snow_brick_stairs",
+            "minecraft:snow_brick_wall",
             "minecraft:cactus",
             "minecraft:cactus_flower",
             "minecraft:clay",

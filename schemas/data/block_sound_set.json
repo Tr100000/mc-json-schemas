@@ -1478,6 +1478,7 @@
             "minecraft:entity.frostbite.death",
             "minecraft:entity.frostbite.hurt",
             "minecraft:entity.frostbite.step",
+            "minecraft:block.ice_crystal.ambient",
             "minecraft:block.icicle.land",
             "minecraft:entity.ice_ball.break",
             "minecraft:entity.ice_ball.throw",

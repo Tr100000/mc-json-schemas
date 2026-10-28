@@ -435,6 +435,10 @@
             "minecraft:snow",
             "minecraft:ice",
             "minecraft:snow_block",
+            "minecraft:snow_bricks",
+            "minecraft:snow_brick_slab",
+            "minecraft:snow_brick_stairs",
+            "minecraft:snow_brick_wall",
             "minecraft:cactus",
             "minecraft:cactus_flower",
             "minecraft:clay",
@@ -1746,6 +1750,10 @@
                 "minecraft:snow",
                 "minecraft:ice",
                 "minecraft:snow_block",
+                "minecraft:snow_bricks",
+                "minecraft:snow_brick_slab",
+                "minecraft:snow_brick_stairs",
+                "minecraft:snow_brick_wall",
                 "minecraft:cactus",
                 "minecraft:cactus_flower",
                 "minecraft:clay",
@@ -7207,6 +7215,81 @@
           "then": {
             "properties": {
               "layers": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:snow_brick_slab"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:snow_brick_stairs"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "half": {
+                "type": "string"
+              },
+              "shape": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:snow_brick_wall"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "east": {
+                "type": "string"
+              },
+              "north": {
+                "type": "string"
+              },
+              "south": {
+                "type": "string"
+              },
+              "up": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              },
+              "west": {
                 "type": "string"
               }
             }
@@ -21855,6 +21938,7 @@
             "minecraft:upscale",
             "minecraft:slice",
             "minecraft:find_top_surface",
+            "minecraft:domain_warp",
             "minecraft:old_blended_noise"
           ]
         }
@@ -22383,12 +22467,24 @@
           "if": {
             "properties": {
               "type": {
-                "const": "minecraft:old_blended_noise"
+                "const": "minecraft:domain_warp"
               }
             }
           },
           "then": {
             "$ref": "#/definitions/def_87"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:old_blended_noise"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/def_88"
           }
         }
       ]
@@ -22548,14 +22644,28 @@
           "default": "clamp_to_edge"
         },
         "from_coordinate": {
-          "type": "integer",
-          "minimum": -2147483648,
-          "maximum": 2147483647
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_11"
+            }
+          ]
         },
         "to_coordinate": {
-          "type": "integer",
-          "minimum": -2147483648,
-          "maximum": 2147483647
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": -2147483648,
+              "maximum": 2147483647
+            },
+            {
+              "$ref": "#/definitions/def_11"
+            }
+          ]
         },
         "from_value": {
           "$ref": "#/definitions/def_26"
@@ -23184,20 +23294,43 @@
     "def_87": {
       "type": "object",
       "properties": {
+        "input": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function"
+        },
+        "offset_x": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 0.0
+        },
+        "offset_y": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 0.0
+        },
+        "offset_z": {
+          "$ref": "#/definitions/registry_file_inline:minecraft:worldgen_density_function",
+          "default": 0.0
+        }
+      },
+      "required": [
+        "input"
+      ]
+    },
+    "def_88": {
+      "type": "object",
+      "properties": {
         "xz_scale": {
-          "$ref": "#/definitions/def_88"
+          "$ref": "#/definitions/def_89"
         },
         "y_scale": {
-          "$ref": "#/definitions/def_88"
+          "$ref": "#/definitions/def_89"
         },
         "xz_factor": {
-          "$ref": "#/definitions/def_88"
+          "$ref": "#/definitions/def_89"
         },
         "y_factor": {
-          "$ref": "#/definitions/def_88"
+          "$ref": "#/definitions/def_89"
         },
         "smear_scale_multiplier": {
-          "$ref": "#/definitions/def_89"
+          "$ref": "#/definitions/def_90"
         }
       },
       "required": [
@@ -23208,12 +23341,12 @@
         "smear_scale_multiplier"
       ]
     },
-    "def_88": {
+    "def_89": {
       "type": "number",
       "minimum": 0.001,
       "maximum": 1000.0
     },
-    "def_89": {
+    "def_90": {
       "type": "number",
       "minimum": 1.0,
       "maximum": 8.0
