@@ -1223,6 +1223,18 @@
             "minecraft:cinnabar_brick_wall",
             "minecraft:chiseled_cinnabar",
             "minecraft:calcite",
+            "minecraft:calcite_pillar",
+            "minecraft:calcite_slab",
+            "minecraft:calcite_stairs",
+            "minecraft:calcite_wall",
+            "minecraft:polished_calcite",
+            "minecraft:polished_calcite_slab",
+            "minecraft:polished_calcite_stairs",
+            "minecraft:polished_calcite_wall",
+            "minecraft:polished_calcite_bricks",
+            "minecraft:polished_calcite_brick_slab",
+            "minecraft:polished_calcite_brick_stairs",
+            "minecraft:polished_calcite_brick_wall",
             "minecraft:tinted_glass",
             "minecraft:powder_snow",
             "minecraft:sculk_sensor",
@@ -1231,6 +1243,7 @@
             "minecraft:sculk_vein",
             "minecraft:sculk_catalyst",
             "minecraft:sculk_shrieker",
+            "minecraft:chiseled_soulshale",
             "minecraft:copper_block",
             "minecraft:exposed_copper",
             "minecraft:weathered_copper",
@@ -2538,6 +2551,18 @@
                 "minecraft:cinnabar_brick_wall",
                 "minecraft:chiseled_cinnabar",
                 "minecraft:calcite",
+                "minecraft:calcite_pillar",
+                "minecraft:calcite_slab",
+                "minecraft:calcite_stairs",
+                "minecraft:calcite_wall",
+                "minecraft:polished_calcite",
+                "minecraft:polished_calcite_slab",
+                "minecraft:polished_calcite_stairs",
+                "minecraft:polished_calcite_wall",
+                "minecraft:polished_calcite_bricks",
+                "minecraft:polished_calcite_brick_slab",
+                "minecraft:polished_calcite_brick_stairs",
+                "minecraft:polished_calcite_brick_wall",
                 "minecraft:tinted_glass",
                 "minecraft:powder_snow",
                 "minecraft:sculk_sensor",
@@ -2546,6 +2571,7 @@
                 "minecraft:sculk_vein",
                 "minecraft:sculk_catalyst",
                 "minecraft:sculk_shrieker",
+                "minecraft:chiseled_soulshale",
                 "minecraft:copper_block",
                 "minecraft:exposed_copper",
                 "minecraft:weathered_copper",
@@ -18841,6 +18867,247 @@
             "properties": {
               "Name": {
                 "const": "minecraft:cinnabar_brick_wall"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "east": {
+                "type": "string"
+              },
+              "north": {
+                "type": "string"
+              },
+              "south": {
+                "type": "string"
+              },
+              "up": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              },
+              "west": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:calcite_pillar"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "axis": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:calcite_slab"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:calcite_stairs"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "half": {
+                "type": "string"
+              },
+              "shape": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:calcite_wall"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "east": {
+                "type": "string"
+              },
+              "north": {
+                "type": "string"
+              },
+              "south": {
+                "type": "string"
+              },
+              "up": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              },
+              "west": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:polished_calcite_slab"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:polished_calcite_stairs"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "half": {
+                "type": "string"
+              },
+              "shape": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:polished_calcite_wall"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "east": {
+                "type": "string"
+              },
+              "north": {
+                "type": "string"
+              },
+              "south": {
+                "type": "string"
+              },
+              "up": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              },
+              "west": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:polished_calcite_brick_slab"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:polished_calcite_brick_stairs"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facing": {
+                "type": "string"
+              },
+              "half": {
+                "type": "string"
+              },
+              "shape": {
+                "type": "string"
+              },
+              "waterlogged": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "Name": {
+                "const": "minecraft:polished_calcite_brick_wall"
               }
             }
           },

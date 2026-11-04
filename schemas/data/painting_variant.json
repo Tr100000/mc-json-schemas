@@ -1232,6 +1232,18 @@
             "minecraft:cobbled_deepslate",
             "minecraft:polished_deepslate",
             "minecraft:calcite",
+            "minecraft:calcite_pillar",
+            "minecraft:calcite_slab",
+            "minecraft:calcite_stairs",
+            "minecraft:calcite_wall",
+            "minecraft:polished_calcite",
+            "minecraft:polished_calcite_slab",
+            "minecraft:polished_calcite_stairs",
+            "minecraft:polished_calcite_wall",
+            "minecraft:polished_calcite_bricks",
+            "minecraft:polished_calcite_brick_slab",
+            "minecraft:polished_calcite_brick_stairs",
+            "minecraft:polished_calcite_brick_wall",
             "minecraft:tuff",
             "minecraft:tuff_slab",
             "minecraft:tuff_stairs",
@@ -1731,6 +1743,7 @@
             "minecraft:sculk_vein",
             "minecraft:sculk_catalyst",
             "minecraft:sculk_shrieker",
+            "minecraft:chiseled_soulshale",
             "minecraft:enchanting_table",
             "minecraft:end_portal_frame",
             "minecraft:end_stone",
@@ -2700,6 +2713,7 @@
             "minecraft:music_disc_creator",
             "minecraft:music_disc_creator_music_box",
             "minecraft:music_disc_far",
+            "minecraft:music_disc_flurry",
             "minecraft:music_disc_lava_chicken",
             "minecraft:music_disc_mall",
             "minecraft:music_disc_mellohi",
@@ -4739,6 +4753,18 @@
             "minecraft:cinnabar_brick_wall",
             "minecraft:chiseled_cinnabar",
             "minecraft:calcite",
+            "minecraft:calcite_pillar",
+            "minecraft:calcite_slab",
+            "minecraft:calcite_stairs",
+            "minecraft:calcite_wall",
+            "minecraft:polished_calcite",
+            "minecraft:polished_calcite_slab",
+            "minecraft:polished_calcite_stairs",
+            "minecraft:polished_calcite_wall",
+            "minecraft:polished_calcite_bricks",
+            "minecraft:polished_calcite_brick_slab",
+            "minecraft:polished_calcite_brick_stairs",
+            "minecraft:polished_calcite_brick_wall",
             "minecraft:tinted_glass",
             "minecraft:powder_snow",
             "minecraft:sculk_sensor",
@@ -4747,6 +4773,7 @@
             "minecraft:sculk_vein",
             "minecraft:sculk_catalyst",
             "minecraft:sculk_shrieker",
+            "minecraft:chiseled_soulshale",
             "minecraft:copper_block",
             "minecraft:exposed_copper",
             "minecraft:weathered_copper",
@@ -6621,6 +6648,7 @@
             "minecraft:music_disc.cat",
             "minecraft:music_disc.chirp",
             "minecraft:music_disc.far",
+            "minecraft:music_disc.flurry",
             "minecraft:music_disc.lava_chicken",
             "minecraft:music_disc.mall",
             "minecraft:music_disc.mellohi",
@@ -6753,6 +6781,7 @@
             "minecraft:entity.parrot.imitate.ender_dragon",
             "minecraft:entity.parrot.imitate.endermite",
             "minecraft:entity.parrot.imitate.evoker",
+            "minecraft:entity.parrot.imitate.frostbite",
             "minecraft:entity.parrot.imitate.ghast",
             "minecraft:entity.parrot.imitate.guardian",
             "minecraft:entity.parrot.imitate.hoglin",
@@ -7919,6 +7948,11 @@
             "minecraft:block.ice_crystal.place",
             "minecraft:block.ice_crystal.hit",
             "minecraft:block.ice_crystal.fall",
+            "minecraft:block.chiseled_soulshale.break",
+            "minecraft:block.chiseled_soulshale.step",
+            "minecraft:block.chiseled_soulshale.place",
+            "minecraft:block.chiseled_soulshale.hit",
+            "minecraft:block.chiseled_soulshale.fall",
             "minecraft:block.lily_pad.place",
             "minecraft:block.bamboo_sapling.break",
             "minecraft:block.bamboo_sapling.place",
@@ -8715,6 +8749,18 @@
             "minecraft:cobbled_deepslate",
             "minecraft:polished_deepslate",
             "minecraft:calcite",
+            "minecraft:calcite_pillar",
+            "minecraft:calcite_slab",
+            "minecraft:calcite_stairs",
+            "minecraft:calcite_wall",
+            "minecraft:polished_calcite",
+            "minecraft:polished_calcite_slab",
+            "minecraft:polished_calcite_stairs",
+            "minecraft:polished_calcite_wall",
+            "minecraft:polished_calcite_bricks",
+            "minecraft:polished_calcite_brick_slab",
+            "minecraft:polished_calcite_brick_stairs",
+            "minecraft:polished_calcite_brick_wall",
             "minecraft:tuff",
             "minecraft:tuff_slab",
             "minecraft:tuff_stairs",
@@ -9214,6 +9260,7 @@
             "minecraft:sculk_vein",
             "minecraft:sculk_catalyst",
             "minecraft:sculk_shrieker",
+            "minecraft:chiseled_soulshale",
             "minecraft:enchanting_table",
             "minecraft:end_portal_frame",
             "minecraft:end_stone",
@@ -10183,6 +10230,7 @@
             "minecraft:music_disc_creator",
             "minecraft:music_disc_creator_music_box",
             "minecraft:music_disc_far",
+            "minecraft:music_disc_flurry",
             "minecraft:music_disc_lava_chicken",
             "minecraft:music_disc_mall",
             "minecraft:music_disc_mellohi",
@@ -14407,6 +14455,42 @@
         "minecraft:calcite": {
           "type": "string"
         },
+        "minecraft:calcite_pillar": {
+          "type": "string"
+        },
+        "minecraft:calcite_slab": {
+          "type": "string"
+        },
+        "minecraft:calcite_stairs": {
+          "type": "string"
+        },
+        "minecraft:calcite_wall": {
+          "type": "string"
+        },
+        "minecraft:polished_calcite": {
+          "type": "string"
+        },
+        "minecraft:polished_calcite_slab": {
+          "type": "string"
+        },
+        "minecraft:polished_calcite_stairs": {
+          "type": "string"
+        },
+        "minecraft:polished_calcite_wall": {
+          "type": "string"
+        },
+        "minecraft:polished_calcite_bricks": {
+          "type": "string"
+        },
+        "minecraft:polished_calcite_brick_slab": {
+          "type": "string"
+        },
+        "minecraft:polished_calcite_brick_stairs": {
+          "type": "string"
+        },
+        "minecraft:polished_calcite_brick_wall": {
+          "type": "string"
+        },
         "minecraft:tinted_glass": {
           "type": "string"
         },
@@ -14429,6 +14513,9 @@
           "type": "string"
         },
         "minecraft:sculk_shrieker": {
+          "type": "string"
+        },
+        "minecraft:chiseled_soulshale": {
           "type": "string"
         },
         "minecraft:copper_block": {
