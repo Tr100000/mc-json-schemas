@@ -37,7 +37,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_30"
+            "$ref": "#/definitions/def_18"
           }
         }
       ]
@@ -64,7 +64,7 @@
           "$ref": "#/definitions/identifier"
         },
         "max_ticks": {
-          "$ref": "#/definitions/def_27"
+          "$ref": "#/definitions/def_15"
         },
         "setup_ticks": {
           "$ref": "#/definitions/def_6",
@@ -75,7 +75,7 @@
           "default": true
         },
         "rotation": {
-          "$ref": "#/definitions/def_28",
+          "$ref": "#/definitions/def_16",
           "default": "none"
         },
         "manual_only": {
@@ -83,11 +83,11 @@
           "default": false
         },
         "max_attempts": {
-          "$ref": "#/definitions/def_27",
+          "$ref": "#/definitions/def_15",
           "default": 1
         },
         "required_successes": {
-          "$ref": "#/definitions/def_27",
+          "$ref": "#/definitions/def_15",
           "default": 1
         },
         "sky_access": {
@@ -95,7 +95,7 @@
           "default": false
         },
         "padding": {
-          "$ref": "#/definitions/def_29",
+          "$ref": "#/definitions/def_17",
           "default": 0
         }
       },
@@ -203,7 +203,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_24"
+            "$ref": "#/definitions/def_12"
           }
         },
         {
@@ -215,7 +215,7 @@
             }
           },
           "then": {
-            "$ref": "#/definitions/def_25"
+            "$ref": "#/definitions/def_13"
           }
         }
       ]
@@ -344,7 +344,9 @@
           "type": "boolean"
         },
         "minecraft:fire_spread_radius_around_player": {
-          "$ref": "#/definitions/def_12"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:forgive_dead_players": {
           "type": "boolean"
@@ -374,22 +376,34 @@
           "type": "boolean"
         },
         "minecraft:max_block_modifications": {
-          "$ref": "#/definitions/def_13"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:max_command_forks": {
-          "$ref": "#/definitions/def_14"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:max_command_sequence_length": {
-          "$ref": "#/definitions/def_15"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:max_entity_cramming": {
-          "$ref": "#/definitions/def_16"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:max_minecart_speed": {
-          "$ref": "#/definitions/def_17"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:max_snow_accumulation_height": {
-          "$ref": "#/definitions/def_18"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:mob_drops": {
           "type": "boolean"
@@ -407,13 +421,19 @@
           "type": "boolean"
         },
         "minecraft:players_nether_portal_creative_delay": {
-          "$ref": "#/definitions/def_19"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:players_nether_portal_default_delay": {
-          "$ref": "#/definitions/def_20"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:players_sleeping_percentage": {
-          "$ref": "#/definitions/def_21"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:projectiles_can_break_blocks": {
           "type": "boolean"
@@ -425,13 +445,17 @@
           "type": "boolean"
         },
         "minecraft:random_tick_speed": {
-          "$ref": "#/definitions/def_22"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:reduced_debug_info": {
           "type": "boolean"
         },
         "minecraft:respawn_radius": {
-          "$ref": "#/definitions/def_23"
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
         },
         "minecraft:send_command_feedback": {
           "type": "boolean"
@@ -484,66 +508,6 @@
       }
     },
     "def_12": {
-      "type": "integer",
-      "minimum": -1,
-      "maximum": 2147483647
-    },
-    "def_13": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 2147483647
-    },
-    "def_14": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 2147483647
-    },
-    "def_15": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 2147483647
-    },
-    "def_16": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 2147483647
-    },
-    "def_17": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 1000
-    },
-    "def_18": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 8
-    },
-    "def_19": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 2147483647
-    },
-    "def_20": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 2147483647
-    },
-    "def_21": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 2147483647
-    },
-    "def_22": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 2147483647
-    },
-    "def_23": {
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 2147483647
-    },
-    "def_24": {
       "type": "object",
       "properties": {
         "timelines": {
@@ -560,29 +524,29 @@
     "registry_fixed:minecraft:timeline": {
       "$ref": "#/definitions/identifier"
     },
-    "def_25": {
+    "def_13": {
       "type": "object",
       "properties": {
         "weather": {
-          "$ref": "#/definitions/def_26"
+          "$ref": "#/definitions/def_14"
         }
       },
       "required": [
         "weather"
       ]
     },
-    "def_26": {
+    "def_14": {
       "enum": [
         "clear",
         "rain",
         "thunder"
       ]
     },
-    "def_27": {
+    "def_15": {
       "type": "integer",
       "minimum": 1
     },
-    "def_28": {
+    "def_16": {
       "enum": [
         "none",
         "clockwise_90",
@@ -590,12 +554,12 @@
         "counterclockwise_90"
       ]
     },
-    "def_29": {
+    "def_17": {
       "type": "integer",
       "minimum": 0,
       "maximum": 128
     },
-    "def_30": {
+    "def_18": {
       "type": "object",
       "allOf": [
         {
