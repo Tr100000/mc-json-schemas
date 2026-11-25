@@ -7779,6 +7779,10 @@
     "def_76": {
       "type": "object",
       "properties": {
+        "split_lines": {
+          "type": "boolean",
+          "default": true
+        },
         "hide_tooltip": {
           "type": "boolean",
           "default": false
